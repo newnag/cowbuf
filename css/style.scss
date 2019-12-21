@@ -1,0 +1,14 @@
+$head-back:#2d2d2d;
+$head-color:#fff;
+$text-color:#000;
+$price-color:#c20000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: $head-back;
+}
