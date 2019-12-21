@@ -3,9 +3,102 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Sarabun';
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container, nav {
+  margin: 0 auto;
+  width: 75%;
 }
 
 header {
   background: #2d2d2d;
+}
+
+header .main-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+header .main-head .right-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header .main-head .right-head .member-head a .login-regis {
+  color: #fff;
+  background: #c20000;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+header .main-head .right-head .icon-head {
+  color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 3%;
+}
+
+header .main-head .right-head .icon-head i {
+  font-size: 20px;
+  margin-left: 18%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2% 0;
+}
+
+nav ul li {
+  margin-right: 3%;
+}
+
+nav ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #c20000;
+}
+
+nav ul li .active {
+  border-bottom: 2px solid #c20000;
 }
 /*# sourceMappingURL=style.css.map */

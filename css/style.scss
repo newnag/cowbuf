@@ -7,8 +7,88 @@ $price-color:#c20000;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Sarabun';
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.container{
+    margin: 0 auto;
+    width: 75%;
 }
 
 header{
     background: $head-back;
+
+    .main-head{
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin: 0 auto;
+        padding: 10px 0;
+
+        .right-head{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+
+            .member-head{
+
+                a{
+                    .login-regis{
+                        color: $head-color;
+                        background: $price-color;
+                        padding: 5px;
+                        border-radius: 5px;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }  
+                
+                }
+            }
+            .icon-head{
+                color: $head-color;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 3%;
+
+                i{
+                    font-size: 20px;
+                    margin-left: 18%;
+                }
+            }
+        }
+    }
+}
+
+nav{
+    @extend .container;
+
+    ul{
+        display: flex;
+        margin: 2% 0;
+
+        li{
+            margin-right: 3%;
+            
+            a{
+                font-size: 18px;
+                font-weight: 600;
+                color: $text-color;
+
+                &:hover{
+                    border-bottom: 2px solid $price-color;
+                }  
+            }
+            .active{
+                border-bottom: 2px solid $price-color;
+            }
+        }
+    }
 }
