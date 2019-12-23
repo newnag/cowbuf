@@ -9,6 +9,10 @@ $left-menu-color: #c6c4c4;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Sarabun';
+
+    &:focus{
+        outline: unset;
+    }
 }
 a{
     text-decoration: none;
@@ -49,11 +53,22 @@ li{
         color: $left-menu-color;
     }
 }
+@mixin menu_footer {
+    li{
+        a{
+            color: inherit;
+            font-size: 14px;
+        }
+    }
+}
 
 //คลาสใช้บ่อย
 .container{
     margin: 0 auto;
     width: 75%;
+}
+.head-foot{
+    margin-bottom: 15px;
 }
 
 //ส่วนหัว
@@ -191,38 +206,48 @@ nav{
         }
 
         .left-box-menu{
-            a{
-                color: $head-color;
+            margin-top: 20%;
 
-                .box{
-                    position: relative;
+            .box{
+                position: relative;
+                margin-bottom: 5%;
 
-                    img{
-                        width: 100%;
-                        height: 100%;
-                    }
-                    .box-menu-logo{
-                        width: 20%;
-                        height: auto;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                    }
-                    h2{
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        -webkit-transform: translate(-50%, -50%);
-                        transform: translate(-50%, -50%);
-                        width: 100%;
-                        text-align: center;
-                    }
-                    button{
-                        position: absolute;
-                        bottom: 0;
-                        left: 50%;
-                        transform: translateX(-50%);
-                    }
+                img:first-child{
+                    width: 100%;
+                    height: 100%;
+                    filter: brightness(0.7);
+                    
+                }
+                .box-menu-logo{
+                    width: 30%;
+                    height: auto;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 10px 0 0 0;
+                }
+                h3{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    text-align: center;
+                    color: $head-color;
+                    font-size: 26px;
+                }
+                button{
+                    position: absolute;
+                    bottom: 10%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 40%;
+                    height: 20%;
+                    border: unset;
+                    border-radius: 15px;
+                    cursor: pointer;
+                    color: $price-color;
                 }
             }
         }
@@ -325,4 +350,82 @@ nav{
     }
 }
 
+//ส่วนท้าย
+footer{
+    background: $head-back;
 
+    .footer-section{
+        @extend .container;
+
+        display: grid;
+        grid-template-columns: 10% 50% 10% 30%;
+        padding: 3% 0;
+
+        .help-foot,.cate-foot{
+            color: $left-menu-color;
+
+            .menu{
+                @include menu_footer();
+            }
+        }
+
+        .grid-cat-foot{
+            display: grid;
+            grid-template-rows: repeat(7,1fr);
+            grid-auto-flow: column;
+
+            @include menu_footer();
+        }
+
+        .social-foot{
+            color: $left-menu-color;
+
+            .social{
+                .icon{
+                    a{
+                        color: inherit;
+                        margin-right: 10%;
+                       
+                    }
+                }
+            }
+
+            .receive-news{
+                margin-top: 20%;
+
+                .input{
+                    position: relative;
+
+                    input{
+                        width: 100%;
+                        background: $text-color;
+                        border: 1px solid $left-menu-color;
+                        border-radius: 10px;
+                        color: $left-menu-color;
+                        padding: 2%;
+                    }
+
+                    button{
+                        position: absolute;
+                        right: 5%;
+                        top: 5%;
+                        border: unset;
+                        background: unset;
+                        color: $head-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+.copyright{
+    text-align: center;
+    background: $price-color;
+    
+    a{
+        color: $head-color;
+    }
+}
