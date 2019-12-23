@@ -17,6 +17,39 @@ li{
     list-style: none;
 }
 
+//คลาสสำหรับ include
+@mixin head_menu {
+    cursor: pointer;
+    background: $price-color;
+    color: $head-color;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+
+    i{
+        margin: 0 3%;
+    }
+}
+@mixin left_menu {
+    display: flex;
+    flex-direction: column;
+    background: #352c2c;
+    padding: 0 5%;
+    border-radius: 0 0 10px 10px;
+}
+@mixin li_menu_left {
+    cursor: pointer;
+    margin: 5% 0;
+    border-bottom: 1px solid #fff;
+    padding-left: 3%;
+    padding-bottom: 7%;
+    position: relative;
+
+    a,span{
+        color: $left-menu-color;
+    }
+}
+
 //คลาสใช้บ่อย
 .container{
     margin: 0 auto;
@@ -98,7 +131,7 @@ nav{
 }
 
 
-//ส่วนเเนื้อหาหลัก
+//ส่วนเนื้อหาหลัก
 .grid-body{
     display: grid;
     grid-template-columns: 14% 85%;
@@ -109,32 +142,18 @@ nav{
         //เมนูซ้าย
         .left-menu{
             .head-menu{
-                cursor: pointer;
-                background: $price-color;
-                color: $head-color;
+                @include head_menu;
             }
 
             .menu-left{
-                display: flex;
-                flex-direction: column;
-                background: #352c2c;
-                padding: 0 5%;
+                @include left_menu;
 
                 li{
-                    cursor: pointer;
-                    margin: 5% 0;
-                    border-bottom: 1px solid #fff;
-                    padding-left: 3%;
-                    padding-bottom: 7%;
-                    position: relative;
-
-                    a,span{
-                        color: $left-menu-color;
-                    }
+                    @include li_menu_left();
 
                     .sub-menu{
                         display: none;
-                        margin-top: 10%;
+                        margin-top: 15%;
 
                         li{
                             padding-left: 10%;
@@ -154,6 +173,59 @@ nav{
                 }
             }
         }
+
+        .article-menu{
+            margin-top: 20%;
+
+            .head-menu{
+                @include head_menu;
+            }
+
+            ul{
+                @include left_menu();
+
+                li{
+                    @include li_menu_left();
+                }
+           }
+        }
+
+        .left-box-menu{
+            a{
+                color: $head-color;
+
+                .box{
+                    position: relative;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .box-menu-logo{
+                        width: 20%;
+                        height: auto;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    h2{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        width: 100%;
+                        text-align: center;
+                    }
+                    button{
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
     }
 
     //ส่วนขวามือ
@@ -161,6 +233,94 @@ nav{
         //ข้อความเลื่อน
         .marquee{
             margin-bottom: 2%;
+        }
+
+        // กล่องสินค้าหน้าแรก
+        article{
+            margin: 4% 0;
+
+            .head-text{
+                background-image: linear-gradient(to right, $price-color , $text-color);
+                border-radius: 15px;
+                
+                .text{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px 2%;
+
+                    h1,span{
+                        color: $head-color;
+                        font-weight: 100;
+                    }
+                    h1{
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .grid-box{
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+                grid-gap: 1%;
+                grid-row-gap: 3%;
+                margin-top: 3%;
+
+                a{
+                    color: $text-color;
+
+                    .box{
+                        figure{
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .title{
+                            height: 3rem;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+
+                           h2{
+                                font-size: 18px;
+                                font-weight: 400;
+                           }
+                        }
+                        .price{
+                            display: grid;
+                            margin-top: 3%;
+                            color: $price-color;
+
+                            span{
+                                &:first-child{
+                                    font-size: 12px;
+                                }
+                                &:last-child{
+                                    font-size: 22px;
+                                }
+                            }     
+                        }
+                        .date{
+                            margin-top: 3%;
+                            font-size: 12px;
+                        }
+                        .bet{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 3%;
+
+                            .star,.credit{
+                                font-size: 12px;
+                            }
+                            .star i,.credit i{
+                                color: #ffb402;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
