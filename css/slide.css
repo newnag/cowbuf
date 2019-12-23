@@ -1,0 +1,64 @@
+.owl-carousel{
+    position: relative;
+}
+
+.owl-nav{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0!important;
+}
+
+.owl-dots{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.owl-nav .owl-prev,.owl-nav .owl-next{
+    font-size: 5rem!important;
+    color: #fff!important;
+    opacity: 0.4;
+    margin: 0 1% 0 1%!important;
+}
+
+.owl-nav .owl-prev:hover,.owl-nav .owl-next:hover{
+    opacity: 1;
+    background: inherit!important;
+    transition: all .3s;
+}
+
+.owl-carousel .item{
+    position: relative;
+}
+
+.owl-carousel .item .detail-post{
+    position: absolute;
+    top: 35%;
+    padding: 0 25%;
+}
+
+.owl-carousel .item .detail-post p{
+    color: #e4e4e4;
+}
+
+.owl-carousel .item .detail-post button{
+    margin: 3% 0;
+    position: absolute;
+    left: 50%;
+    border: unset;
+    width: 10%;
+    height: 50%;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-size: x-large;
+    opacity: 0.8;
+}
+.owl-carousel .item .detail-post button:focus{
+    outline: unset;
+}
+

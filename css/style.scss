@@ -2,6 +2,7 @@ $head-back:#2d2d2d;
 $head-color:#fff;
 $text-color:#000;
 $price-color:#c20000;
+$left-menu-color: #c6c4c4;
 
 *{
     margin: 0;
@@ -16,11 +17,13 @@ li{
     list-style: none;
 }
 
+//คลาสใช้บ่อย
 .container{
     margin: 0 auto;
     width: 75%;
 }
 
+//ส่วนหัว
 header{
     background: $head-back;
 
@@ -67,6 +70,7 @@ header{
     }
 }
 
+// ส่วนเมนู
 nav{
     @extend .container;
 
@@ -92,3 +96,73 @@ nav{
         }
     }
 }
+
+
+//ส่วนเเนื้อหาหลัก
+.grid-body{
+    display: grid;
+    grid-template-columns: 14% 85%;
+    grid-gap: 1%;
+
+    //ส่วนซ้าย
+    .left-side{
+        //เมนูซ้าย
+        .left-menu{
+            .head-menu{
+                cursor: pointer;
+                background: $price-color;
+                color: $head-color;
+            }
+
+            .menu-left{
+                display: flex;
+                flex-direction: column;
+                background: #352c2c;
+                padding: 0 5%;
+
+                li{
+                    cursor: pointer;
+                    margin: 5% 0;
+                    border-bottom: 1px solid #fff;
+                    padding-left: 3%;
+                    padding-bottom: 7%;
+                    position: relative;
+
+                    a,span{
+                        color: $left-menu-color;
+                    }
+
+                    .sub-menu{
+                        display: none;
+                        margin-top: 10%;
+
+                        li{
+                            padding-left: 10%;
+                        }
+                    }
+
+                    i{
+                        color: $head-color;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+
+                    &:nth-child(18){
+                        margin-top: 15%;
+                    }
+                }
+            }
+        }
+    }
+
+    //ส่วนขวามือ
+    .main-side{
+        //ข้อความเลื่อน
+        .marquee{
+            margin-bottom: 2%;
+        }
+    }
+}
+
+

@@ -101,4 +101,67 @@ nav ul li a:hover {
 nav ul li .active {
   border-bottom: 2px solid #c20000;
 }
+
+.grid-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 14% 85%;
+      grid-template-columns: 14% 85%;
+  grid-gap: 1%;
+}
+
+.grid-body .left-side .left-menu .head-menu {
+  cursor: pointer;
+  background: #c20000;
+  color: #fff;
+}
+
+.grid-body .left-side .left-menu .menu-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #352c2c;
+  padding: 0 5%;
+}
+
+.grid-body .left-side .left-menu .menu-left li {
+  cursor: pointer;
+  margin: 5% 0;
+  border-bottom: 1px solid #fff;
+  padding-left: 3%;
+  padding-bottom: 7%;
+  position: relative;
+}
+
+.grid-body .left-side .left-menu .menu-left li a, .grid-body .left-side .left-menu .menu-left li span {
+  color: #c6c4c4;
+}
+
+.grid-body .left-side .left-menu .menu-left li .sub-menu {
+  display: none;
+  margin-top: 10%;
+}
+
+.grid-body .left-side .left-menu .menu-left li .sub-menu li {
+  padding-left: 10%;
+}
+
+.grid-body .left-side .left-menu .menu-left li i {
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.grid-body .left-side .left-menu .menu-left li:nth-child(18) {
+  margin-top: 15%;
+}
+
+.grid-body .main-side .marquee {
+  margin-bottom: 2%;
+}
 /*# sourceMappingURL=style.css.map */

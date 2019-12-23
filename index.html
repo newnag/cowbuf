@@ -7,8 +7,14 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/slide.css">
     <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link href="https://fonts.googleapis.com/css?family=Sarabun:300,300i,400,400i,700,700i&display=swap&subset=thai" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 </head>
 <body>
     <!-- ส่วนหัวเว็บ -->
@@ -54,5 +60,248 @@
         </ul>
     </nav>
     
+    <!-- เนื้อหา -->
+    <main>
+        <div class="container grid-body">
+            <!-- ฝั่งซ้ายมือ -->
+            <div class="left-side">
+                <div class="left-menu">
+                    <!-- หัวเมนูหมวดหมู่ -->
+                    <div class="head-menu"><h2>หมวดหมู่</h2></div>
+
+                    <!-- เมนู -->
+                    <ul class="menu-left">
+                        <li><a href="">สินค้าแนะนำ</a></li>
+
+                        <li><span>วัว</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-วัวงาม</a></li>
+                                <li><a href="">-วัวบาร์มัน</a></li>
+                                <li><a href="">-วัวโลเลย์</a></li>
+                                <li><a href="">-วัวอินดู-บราซิล</a></li>
+                                <li><a href="">-วัวลูกผสม</a></li>
+                                <li><a href="">-วัวพันธุ์พื้นเมือง</a></li>
+                                <li><a href="">-วัวสายพันธุ์อื่นๆ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>ควาย</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-ควายงาม</a></li>
+                                <li><a href="">-ควายสีเผือก</a></li>
+                                <li><a href="">-ควายลูกผสม</a></li>
+                                <li><a href="">-ควายพันธุ์เมือง</a></li>
+                                <li><a href="">-ควายสายพันธุ์อื่นๆ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>ข้าว</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-ข้าวหอมมะลิ</a></li>
+                                <li><a href="">-ข้าวเหนียว กข เมล็ดยาว</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>อาหารทะเล</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-อาหารทะเลสด</a></li>
+                                <li><a href="">-อาหารทะเลแห้ง</a></li>
+                                <li><a href="">-อาหารทะเลแปรรูป</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>เครื่องดื่ม</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-น้ำแร่</a></li>
+                                <li><a href="">-น้ำดื่ม</a></li>
+                                <li><a href="">-น้ำข้าว</a></li>
+                                <li><a href="">-น้ำผัก-ผลไม้</a></li>
+                                <li><a href="">-อื่นๆ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>บรรจุภัณฑ์</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-กระดาษ</a></li>
+                                <li><a href="">-เครื่องจักสาน</a></li>
+                                <li><a href="">-ถุงผ้า</a></li>
+                                <li><a href="">-เชือกปอป่าน</a></li>
+                                <li><a href="">-อื่นๆ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>อุปกรณ์</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-เครื่องยนต์เกษตรมือสอง</a></li>
+                                <li><a href="">-สิ่งประดิษฐ์ใหม่</a></li>
+                                <li><a href="">-ปุ๋ยอินทรีย์</a></li>
+                                <li><a href="">-วัสดุปลูกอื่นๆ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>ระบบจัดการฟาร์ม</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-ระบบน้ำ</a></li>
+                                <li><a href="">-ระบบไฟฟ้า</a></li>
+                                <li><a href="">-ระบบการผลิต</a></li>
+                                <li><a href="">-ระบบบำรุงรักษา</a></li>
+                                <li><a href="">-ระบบเก็บเกี่ยว</a></li>
+                                <li><a href="">-อื่นๆ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>สินค้า OTOP</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-ผ้าทอมือ</a></li>
+                                <li><a href="">-ผ้าไหม</a></li>
+                                <li><a href="">-ผ้าคราม</a></li>
+                                <li><a href="">-เสื่อกก</a></li>
+                                <li><a href="">-อื่นๆ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>เทคโนโลยี</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-หุ่นยนต์</a></li>
+                                <li><a href="">-โดรน</a></li>
+                                <li><a href="">-สูตรอาหาร</a></li>
+                                <li><a href="">-โซล่าร์</a></li>
+                                <li><a href="">-อื่นๆ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>พืชอาหารสัตว์</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-หญ้าสด</a></li>
+                                <li><a href="">-ฟางอัดก้อน</a></li>
+                                <li><a href="">-รำข้าว</a></li>
+                                <li><a href="">-ปลายข้าว</a></li>
+                                <li><a href="">-มันเส้นสะอาด</a></li>
+                                <li><a href="">-อาหารสัตว์สำเร็จรูป</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>เครื่องปรุงอาหาร</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-น้ำปรุงรส</a></li>
+                                <li><a href="">-น้ำยา</a></li>
+                                <li><a href="">-น้ำชุป</a></li>
+                                <li><a href="">-อื่นๆ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>หิวธรรมชาติ</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-หินแม่น้ำโขง</a></li>
+                                <li><a href="">-หินประดับ</a></li>
+                                <li><a href="">-หินทราย หินแกะสลัก</a></li>
+                                <li><a href="">-อื่นๆ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>ที่ดิน</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-ที่นา</a></li>
+                                <li><a href="">-ที่สวน</a></li>
+                                <li><a href="">-ที่ไร่</a></li>
+                                <li><a href="">-ที่ราบลุ่มน้ำ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>กล้าไม้</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-ไม้สัก</a></li>
+                                <li><a href="">-ไม้ยางนา</a></li>
+                                <li><a href="">-ไม้ประดู่</a></li>
+                                <li><a href="">-ไม้พยูง</a></li>
+                                <li><a href="">-อื่นๆ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>บริการ</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-บริการขนส่ง</a></li>
+                                <li><a href="">-บริการขุดเจาะบาดาล</a></li>
+                                <li><a href="">-บริการรื้อ-ถอนเคลื่อนย้าย</a></li>
+                                <li><a href="">-บริการบรรจุหีบห่อ</a></li>
+                                <li><a href="">-บริการผสมเทียม</a></li>
+                                <li><a href="">-บริการอื่นๆ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+
+                        <li><span>หมวดสินค้าเพื่อกิจกรรม</span></li>
+                        <li><span>การกุศล</span>
+                            <ul class="sub-menu">
+                                <li><a href="">-ที่ไร่</a></li>
+                                <li><a href="">-ที่ราบลุ่มน้ำ</a></li>
+                            </ul>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ฝั่งขวามือ -->
+            <div class="main-side">
+                <!-- ข้อความเลื่อน -->
+                <div class="marquee">
+                    <marquee>Test text. Test text. Test text. Test text. Test text.</marquee>
+                </div>
+
+                <!-- สไลด์รูป -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="img/hidcote_manor_1254X700_Hidcote.png" alt="">
+                        <div class="detail-post">
+                            <p>ก่อนหน้าซูโม่ปักขคณนาวัจนะแมมโบ้ ไหร่สเตชั่นจิ๊กซอว์ ซูม เซ็นเซอร์วอฟเฟิลดยุกแต๋ว ดีมานด์อัตลักษณ์วอล์กสี่แยก ติ๋มทับซ้อน เนอะแรลลี่ ซิ่งแฟนซี 
+                                เอเซียโค้ช สุนทรีย์คลับ เปปเปอร์มินต์ ทอร์นาโดพาร์ทเนอร์ภคันทลาพาธโซนี่โฮป 
+                                หลวงตาเทียมทานซังเต ศิรินทร์ น็อคโดมิโนว้อดก้านู้ด แหม็บเวณิกา
+                            </p>
+                            <a href=""><button>View</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/hidcote_manor_1254X700_Hidcote.png" alt="">
+                        <div class="detail-post">
+                            <p>ก่อนหน้าซูโม่ปักขคณนาวัจนะแมมโบ้ ไหร่สเตชั่นจิ๊กซอว์ ซูม เซ็นเซอร์วอฟเฟิลดยุกแต๋ว ดีมานด์อัตลักษณ์วอล์กสี่แยก ติ๋มทับซ้อน เนอะแรลลี่ ซิ่งแฟนซี 
+                                เอเซียโค้ช สุนทรีย์คลับ เปปเปอร์มินต์ ทอร์นาโดพาร์ทเนอร์ภคันทลาพาธโซนี่โฮป 
+                                หลวงตาเทียมทานซังเต ศิรินทร์ น็อคโดมิโนว้อดก้านู้ด แหม็บเวณิกา
+                            </p>
+                            <a href=""><button>View</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/hidcote_manor_1254X700_Hidcote.png" alt="">
+                        <div class="detail-post">
+                            <p>ก่อนหน้าซูโม่ปักขคณนาวัจนะแมมโบ้ ไหร่สเตชั่นจิ๊กซอว์ ซูม เซ็นเซอร์วอฟเฟิลดยุกแต๋ว ดีมานด์อัตลักษณ์วอล์กสี่แยก ติ๋มทับซ้อน เนอะแรลลี่ ซิ่งแฟนซี 
+                                เอเซียโค้ช สุนทรีย์คลับ เปปเปอร์มินต์ ทอร์นาโดพาร์ทเนอร์ภคันทลาพาธโซนี่โฮป 
+                                หลวงตาเทียมทานซังเต ศิรินทร์ น็อคโดมิโนว้อดก้านู้ด แหม็บเวณิกา
+                            </p>
+                            <a href=""><button>View</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
