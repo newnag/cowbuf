@@ -1,0 +1,126 @@
+$head-back:#2d2d2d;
+$head-color:#fff;
+$text-color:#000;
+$price-color:#c20000;
+$left-menu-color: #c6c4c4;
+
+
+.top-zone{
+    display: grid;
+    grid-template-columns: 55% 44%;
+    grid-gap: 1%;
+
+    .slide-img{
+        .show-img{
+            figure{
+                img{
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+        }
+
+        .select-img{
+            margin-top: 5%;
+
+            figure{
+                width: 70px!important;
+                margin: 0 10px;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .detail{
+        .breadcrum{
+            a{
+                color: $price-color;
+                font-size: 1vw;
+            }
+        }
+
+        .title{
+            height: 5rem;
+            overflow: hidden;
+
+            h1{
+                font-weight: 100;
+            }
+        }
+
+        .detail-bet{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin: 2% 0;
+
+            .day,.price,.buynow{
+                display: grid;
+
+                span:first-child{
+                    font-size: 1vw;
+                }
+            }
+
+            .day{
+                span:nth-child(2){
+                    font-size: 1.7vw;
+                }
+            }
+
+            .price,.buynow{
+                color: $price-color;
+
+                span:nth-child(2){
+                    font-size: 1.7vw;
+                }
+            }
+        }
+
+        .distric{
+            font-size: 0.7vw;
+            color: #ffb200;
+            margin-top: 10%;
+        }
+
+        .share{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin: 3% 0;
+
+            .button-share,.favorites{
+                display: flex;
+                align-items: center;
+
+                span{
+                    width: 50%;
+                    font-size: 0.7vw;
+                }
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .requirement{
+            margin-top: 10%!important;
+        }
+        .requirement,.rate{
+            margin-top: 2%;
+
+            span{
+                margin-right: 1%;
+                font-size: 0.7vw;
+            }
+            i{
+                color: #ffb200;
+            }
+        }
+    }
+
+}
+
+
