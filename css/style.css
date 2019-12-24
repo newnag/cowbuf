@@ -25,6 +25,7 @@ li {
 
 .head-foot {
   margin-bottom: 15px;
+  font-size: 1vw;
 }
 
 header {
@@ -85,6 +86,10 @@ header .main-head .right-head .icon-head i {
   margin-left: 18%;
 }
 
+nav {
+  position: relative;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +115,27 @@ nav ul li .active {
   border-bottom: 2px solid #c20000;
 }
 
+nav .status-credit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+nav .status-credit .red-star i {
+  color: #c20000;
+}
+
+nav .status-credit .star i {
+  color: #ffb300;
+}
+
+nav .status-credit .coin i {
+  color: #ffb300;
+}
+
 .grid-body {
   display: -ms-grid;
   display: grid;
@@ -129,10 +155,15 @@ nav ul li .active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1vw;
 }
 
 .grid-body .left-side .left-menu .head-menu i {
   margin: 0 3%;
+}
+
+.grid-body .left-side .left-menu .head-menu h2 {
+  font-weight: 100;
 }
 
 .grid-body .left-side .left-menu .menu-left {
@@ -159,6 +190,11 @@ nav ul li .active {
 
 .grid-body .left-side .left-menu .menu-left li a, .grid-body .left-side .left-menu .menu-left li span {
   color: #c6c4c4;
+  font-size: 0.8vw;
+}
+
+.grid-body .left-side .left-menu .menu-left li .fa-bell {
+  color: #ffb300;
 }
 
 .grid-body .left-side .left-menu .menu-left li .sub-menu {
@@ -196,10 +232,15 @@ nav ul li .active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1vw;
 }
 
 .grid-body .left-side .article-menu .head-menu i {
   margin: 0 3%;
+}
+
+.grid-body .left-side .article-menu .head-menu h2 {
+  font-weight: 100;
 }
 
 .grid-body .left-side .article-menu ul {
@@ -226,6 +267,7 @@ nav ul li .active {
 
 .grid-body .left-side .article-menu ul li a, .grid-body .left-side .article-menu ul li span {
   color: #c6c4c4;
+  font-size: 0.8vw;
 }
 
 .grid-body .left-side .left-box-menu {
@@ -262,7 +304,7 @@ nav ul li .active {
   width: 100%;
   text-align: center;
   color: #fff;
-  font-size: 26px;
+  font-size: 1.3vw;
 }
 
 .grid-body .left-side .left-box-menu .box button {
@@ -403,7 +445,7 @@ footer .footer-section .help-foot, footer .footer-section .cate-foot {
 
 footer .footer-section .help-foot .menu li a, footer .footer-section .cate-foot .menu li a {
   color: inherit;
-  font-size: 14px;
+  font-size: 0.7vw;
 }
 
 footer .footer-section .grid-cat-foot {
@@ -416,7 +458,7 @@ footer .footer-section .grid-cat-foot {
 
 footer .footer-section .grid-cat-foot li a {
   color: inherit;
-  font-size: 14px;
+  font-size: 0.7vw;
 }
 
 footer .footer-section .social-foot {
@@ -453,6 +495,22 @@ footer .footer-section .social-foot .receive-news .input button {
   background: unset;
   color: #fff;
   cursor: pointer;
+}
+
+footer .footer-section .info {
+  text-align: center;
+}
+
+footer .footer-section .info figure img {
+  width: 60%;
+  height: auto;
+}
+
+footer .footer-section .info .detail {
+  text-align: left;
+  padding-left: 25%;
+  color: #c6c4c4;
+  font-size: 0.7vw;
 }
 
 .copyright {

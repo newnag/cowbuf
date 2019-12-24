@@ -29,9 +29,14 @@ li{
     border-radius: 10px 10px 0 0;
     display: flex;
     align-items: center;
+    font-size: 1vw;
 
     i{
         margin: 0 3%;
+    }
+
+    h2{
+        font-weight: 100;
     }
 }
 @mixin left_menu {
@@ -51,13 +56,14 @@ li{
 
     a,span{
         color: $left-menu-color;
+        font-size: 0.8vw;
     }
 }
 @mixin menu_footer {
     li{
         a{
             color: inherit;
-            font-size: 14px;
+            font-size: 0.7vw;
         }
     }
 }
@@ -69,6 +75,7 @@ li{
 }
 .head-foot{
     margin-bottom: 15px;
+    font-size: 1vw;
 }
 
 //ส่วนหัว
@@ -121,6 +128,7 @@ header{
 // ส่วนเมนู
 nav{
     @extend .container;
+    position: relative;
 
     ul{
         display: flex;
@@ -140,6 +148,31 @@ nav{
             }
             .active{
                 border-bottom: 2px solid $price-color;
+            }
+        }
+    }
+
+    .status-credit{
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        .red-star{
+            i{
+                color: $price-color;
+            }
+        }
+
+        .star{
+            i{
+                color: #ffb300;
+            }
+        }
+
+        .coin{
+            i{
+                color: #ffb300;
             }
         }
     }
@@ -165,6 +198,10 @@ nav{
 
                 li{
                     @include li_menu_left();
+
+                    .fa-bell{
+                        color: #ffb300;
+                    }
 
                     .sub-menu{
                         display: none;
@@ -235,7 +272,8 @@ nav{
                     width: 100%;
                     text-align: center;
                     color: $head-color;
-                    font-size: 26px;
+                    //font-size: 26px;
+                    font-size: 1.3vw;
                 }
                 button{
                     position: absolute;
@@ -415,6 +453,24 @@ footer{
                         cursor: pointer;
                     }
                 }
+            }
+        }
+
+        .info{
+            text-align: center;
+
+            figure{
+                img{
+                    width: 60%;
+                    height: auto;
+                }
+            }
+
+            .detail{
+                text-align: left;
+                padding-left: 25%;
+                color: $left-menu-color;
+                font-size: 0.7vw;
             }
         }
     }
