@@ -52,3 +52,27 @@ $('.slider-for').slick({
     arrows:false,
     autoplay:false
   });
+
+  // บวกลบจำนวนบิด
+  function add_num(){
+    var bid = $('.place-coin .button .number .input-number input').val();
+    num = parseInt(bid)+1;
+    $('.place-coin .button .number .input-number input').val(num);
+    return num;
+  }
+  function minus_num(){
+    var bid = $('.place-coin .button .number .input-number input').val();
+    num = parseInt(bid)-1;
+    $('.place-coin .button .number .input-number input').val(num);
+    return num;
+}
+  $('.place-coin .button .number .input-number #plus_bid').click(function(){
+    if($('.place-coin .button .number .input-number input').val()<9){
+        add_num();
+    }
+  });
+  $('.place-coin .button .number .input-number #minus_bid').click(function(){
+    if($('.place-coin .button .number .input-number input').val()>1){  
+        minus_num();  
+    }
+  });
