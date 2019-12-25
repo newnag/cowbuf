@@ -76,3 +76,13 @@ $('.slider-for').slick({
         minus_num();  
     }
   });
+
+  // ดู password
+  function view_password(){
+    var see_pass = document.getElementById("pass");
+    if (see_pass.type === "password") {
+        see_pass.type = "text";
+    } else {
+        see_pass.type = "password";
+    }
+  };

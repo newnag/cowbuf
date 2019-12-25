@@ -1,0 +1,101 @@
+$head-back:#2d2d2d;
+$head-color:#fff;
+$text-color:#000;
+$price-color:#c20000;
+$left-menu-color: #c6c4c4;
+
+.login{
+    .head-text{
+        background-image: linear-gradient(to right, $price-color , $text-color);
+        border-radius: 15px;
+        
+        .text{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 2%;
+    
+            h1,span{
+                color: $head-color;
+                font-weight: 100;
+            }
+            h1{
+                font-size: 22px;
+            }
+        }
+    }
+
+    .form-login{
+        margin-top: 10%;
+
+        h2{
+            color: $head-color;
+            background: #515151;
+            font-weight: normal;
+            border-radius: 10px 10px 0 0;
+            padding: 1% 1%;
+        }
+
+        form{
+            padding: 3% 2%;
+            background: #342b2c;
+
+            .input-login{
+                display: grid;
+                position: relative;
+
+                label{
+                    color: $head-color;
+                }
+                input{
+                    background: $head-back;
+                    color: $left-menu-color;
+                    border: unset;
+                    height: 3rem;
+                    padding-left: 2%;
+                }
+                .view{
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    color: $left-menu-color;
+                    cursor: pointer;
+                }
+ 
+            }
+        }
+
+        .forget-register{
+            display: flex;
+            justify-content: space-between;
+            margin: 2% 0;
+
+            .forget{
+                a{
+                    color: $price-color;
+                    font-size: 1vw;
+                }
+            }
+            .register{
+                a{
+                    color: #8db2df;
+                    font-size: 1vw;
+                }
+            }
+        }
+
+        .login-button{
+            text-align: center;
+
+            button{
+                border: unset;
+                border-radius: 20px;
+                color: $head-color;
+                background: $price-color;
+                width: 20%;
+                height: 2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

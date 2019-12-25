@@ -57,6 +57,10 @@
                         case 'about':
                             @include "template/about.php";
                             break;
+
+                        case 'login':
+                            @include "page_member/login.php";
+                            break;
                     }
                 ?>
 
