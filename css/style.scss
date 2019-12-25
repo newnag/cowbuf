@@ -526,3 +526,35 @@ footer{
         text-align: center;
     }
 }
+
+.registraltion-job{
+    margin-top: 2%;
+
+    .button-share{
+        text-align: end;
+    }
+
+    .text-content{
+        width: 60%;
+        margin: 5% auto;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .button{
+        text-align: center;
+
+        button{
+            border: unset;
+            border-radius: 20px;
+            background: $price-color;
+            color: $head-color;
+            width: 20%;
+            height: 30px;
+            font-size: 1vw;
+            cursor: pointer;
+        }
+    }
+}

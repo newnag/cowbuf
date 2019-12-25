@@ -41,6 +41,14 @@
                         case 'detail-product':
                             @include "template/detail-product.php";
                             break;
+
+                        case 'registration-job':
+                            @include "template/registration-job.php";
+                            break;
+
+                        case 'article':
+                            @include "template/article.php";
+                            break;
                     }
                 ?>
 

@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/style.min.css?=<?=date('his'); ?>">
+<link rel="stylesheet" href="css/page-article.min.css?v=<?=date('his'); ?>">
 <link rel="stylesheet" href="css/detail-product.min.css">
 <link rel="stylesheet" href="css/slide.css">
 <link href="fontawesome/css/all.css" rel="stylesheet">

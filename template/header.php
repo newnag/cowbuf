@@ -47,8 +47,8 @@
     <nav>
         <ul>
             <li><a href="home" class="active">หน้าหลัก</a></li>
-            <li><a href="">สมัครงานด่วน</a></li>
-            <li><a href="">บทความ</a></li>
+            <li><a href="registration-job">สมัครงานด่วน</a></li>
+            <li><a href="article">บทความ</a></li>
             <li><a href="">เกี่ยวกับเรา</a></li>
             <li><a href="contact">ติดต่อเรา</a></li>
         </ul>

@@ -561,4 +561,36 @@ footer .footer-section .info .detail {
 .contact .map {
   text-align: center;
 }
+
+.registraltion-job {
+  margin-top: 2%;
+}
+
+.registraltion-job .button-share {
+  text-align: end;
+}
+
+.registraltion-job .text-content {
+  width: 60%;
+  margin: 5% auto;
+}
+
+.registraltion-job .text-content img {
+  width: 100%;
+}
+
+.registraltion-job .button {
+  text-align: center;
+}
+
+.registraltion-job .button button {
+  border: unset;
+  border-radius: 20px;
+  background: #c20000;
+  color: #fff;
+  width: 20%;
+  height: 30px;
+  font-size: 1vw;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
