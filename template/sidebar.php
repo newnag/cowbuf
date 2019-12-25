@@ -1,92 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>วัวงามควายงาม</title>
-
-    <link rel="stylesheet" href="/css/style.min.css">
-    <link rel="stylesheet" href="/css/slide.css">
-    <link href="/fontawesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Sarabun:300,300i,400,400i,700,700i&display=swap&subset=thai" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="/css/detail-product.min.css">
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-</head>
-<body>
-    <!-- ส่วนหัวเว็บ -->
-    <header>
-        <div class="main-head">
-            <div class="left-head">
-                <div class="logo-head">
-                    <!-- โลโก้หัวเว็บ -->
-                    <a href=""><img src="/img/logo_ora.png" alt=""></a>
-                </div>
-            </div>
-
-            <div class="right-head">
-                <!-- ปุ่มกดเข้าสู่ระบบ/สมัคร -->
-                <div class="member-head">
-                    <a href="">
-                        <div class="login-regis">
-                            <i class="fas fa-sign-in-alt"></i>
-                            <span>เข้าสู่ระบบ/สมัครสมาชิก</span>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- ไอค่อนที่หัวเว็บ -->
-                <div class="icon-head">
-                    <i class="fas fa-search"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-line"></i>
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- เมนูบน -->
-    <nav>
-        <ul>
-            <li><a href="/index.html" class="active">หน้าหลัก</a></li>
-            <li><a href="">สมัครงานด่วน</a></li>
-            <li><a href="">บทความ</a></li>
-            <li><a href="">เกี่ยวกับเรา</a></li>
-            <li><a href="/contact.html">ติดต่อเรา</a></li>
-        </ul>
-
-        <!-- ส่วนนี้จะแสดงต่อเมื่อเข้าสู่ระบบ -->
-        <div class="status-credit">
-            <div class="red-star">
-                <span>1000K</span>
-                <i class="fas fa-star"></i>
-            </div>
-
-            <div class="star">
-                <span>1000K</span>
-                <i class="fas fa-star"></i>
-            </div>
-
-            <div class="coin">
-                <span>9999K</span>
-                <i class="fas fa-coins"></i>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- เนื้อหา -->
-    <main>
-        <div class="container grid-body">
-            <!-- ฝั่งซ้ายมือ -->
-            <div class="left-side">
+<div class="left-side">
                 <!-- หัวเมนูหมวดหมู่ -->
                 <div class="left-menu">
                     <div class="head-menu"><i class="fas fa-chevron-up"></i><h2>หมวดหมู่</h2></div>
@@ -299,134 +211,24 @@
                 <!-- กล่องซ้ายมือที่3 -->
                 <div class="left-box-menu">
                     <div class="box">
-                        <img src="/img/andrew_neel_ute2XAFQU2I_unspla.png" alt="">
-                        <img class="box-menu-logo" src="/img/logo_ora.png" alt="">
+                        <img src="img/andrew_neel_ute2XAFQU2I_unspla.png" alt="">
+                        <img class="box-menu-logo" src="img/logo_ora.png" alt="">
                         <h3>สมัครงานด่วน</h3>
                         <a href=""><button>คลิก</button></a>
                     </div>
 
                     <div class="box">
-                        <img src="/img/sharon_mccutcheon_8lnbXtxFGZw_.png" alt="">
-                        <img class="box-menu-logo" src="/img/logo_ora.png" alt="">
+                        <img src="img/sharon_mccutcheon_8lnbXtxFGZw_.png" alt="">
+                        <img class="box-menu-logo" src="img/logo_ora.png" alt="">
                         <h3>แจ้งข่าวดี</h3>
                         <a href=""><button>คลิก</button></a>
                     </div>
 
                     <div class="box">
-                        <img src="/img/ID6a0120a607c3bf970c019b01b8b1.png" alt="">
-                        <img class="box-menu-logo" src="/img/logo_ora.png" alt="">
+                        <img src="img/ID6a0120a607c3bf970c019b01b8b1.png" alt="">
+                        <img class="box-menu-logo" src="img/logo_ora.png" alt="">
                         <h3>คุยกับสัตวแพทย์</h3>
                         <a href=""><button>คลิก</button></a>
                     </div>
                 </div>
             </div>
-
-            <!-- ฝั่งขวามือ -->
-            <div class="main-side">
-                <!-- ข้อความเลื่อน -->
-                <div class="marquee">
-                    <marquee>Test text. Test text. Test text. Test text. Test text.</marquee>
-                </div>
-
-                <div class="contact">
-                    <div class="head-contact">
-                        <h1>ติดต่อเรา</h1>
-                    </div>
-
-                    <div class="text-contact">
-                        <h2>เยอร์บีร่าซาร์อุปนายิกาเอสเปรสโซโต๊ะจีน โอเปร่าซาดิสต์เรตคีตปฏิภาณ ตนเอง เบอร์รีฟาสต์ฟู้ด</h2>
-                    </div>
-
-                    <div class="contact-button">
-                        <a href=""><img src="/img/button/contact_face.JPG" alt=""></a>
-                        <a href=""><img src="/img/button/contact_line.JPG" alt=""></a>
-                        <a href=""><img src="/img/button/email.JPG" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- ส่วนท้าย -->
-    <footer>
-        <div class="footer-section">
-            <div class="help-foot">
-                <div class="head-foot"><span>ช่วยเหลือ</span></div>
-
-                <div class="menu">
-                    <li><a href="">การสมัครสมาชิก</a></li>
-                    <li><a href="">วิธีเติมเงินเครดิต</a></li>
-                    <li><a href="">วิธีการประมูล</a></li>
-                    <li><a href="">วิธีการจัดส่ง</a></li>
-                    <li><a href="">คำถามที่พบบ่อย</a></li>
-                    <li><a href="">วิธีเรตดาว</a></li>
-                </div>
-            </div>
-
-            <div class="cate-foot">
-                <div class="head-foot"><span>หมวดหมู่</span></div>
-
-                <div class="grid-cat-foot">
-                    <li><a href="">วัว</a></li>
-                    <li><a href="">ควาย</a></li>
-                    <li><a href="">ข้าว</a></li>
-                    <li><a href="">อาหารทะเล</a></li>
-                    <li><a href="">เครื่องดื่ม</a></li>
-                    <li><a href="">บรรจุภัณฑ์</a></li>
-                    <li><a href="">อุปกรณ์</a></li>
-                    <li><a href="">ระบบจัดการฟาร์ม</a></li>
-                    <li><a href="">สินค้า OTOP</a></li>
-                    <li><a href="">เทคโนโลยี</a></li>
-                    <li><a href="">พืชอาหารสัตว์</a></li>
-                    <li><a href="">เครื่องปรุงอาหาร</a></li>
-                    <li><a href="">หินธรรมชาติ</a></li>
-                    <li><a href="">ที่ดิน</a></li>
-                    <li><a href="">กล้าไม้</a></li>
-                    <li><a href="">หมวดสินค้าเพื่อกิจกรรม</a></li>
-                    <li><a href="">การกุศล</a></li>
-                </div>
-            </div>
-
-            <div class="social-foot">
-                <div class="social">
-                    <div class="head-foot"><span>Social</span></div>
-                    <div class="icon">
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-line"></i></a>
-                        <a href=""><i class="fas fa-mobile-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="receive-news">
-                    <div class="head-foot"><span>รับข่าวสาร</span></div>
-
-                    <form action="/">
-                        <div class="input">
-                            <input type="text">
-                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="info">
-                <figure>
-                    <img src="/img/logo_ora.png" alt="">
-                </figure>
-
-                <div class="detail">
-                    <p>500 Terry francois Street, San Francisco</p>
-                    <p>CA 94158</p>
-                    <p>info@mysite Tel:123-456-789</p>
-                    <p>Line ID: Line12345</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="copyright"><a href="">วัวงามควายงาม.com</a></div>
-
-    <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="/slick/slick.min.js"></script>
-    <script src="/js/app.js"></script>
-</body>
-</html>

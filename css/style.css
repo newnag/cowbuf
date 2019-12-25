@@ -540,4 +540,25 @@ footer .footer-section .info .detail {
   margin: 10% auto;
   text-align: center;
 }
+
+.contact .contact-button {
+  text-align: center;
+}
+
+.contact .contact-button img {
+  margin: 0 1%;
+}
+
+.contact .address {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.contact .address p {
+  font-size: 1.5vw;
+}
+
+.contact .map {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

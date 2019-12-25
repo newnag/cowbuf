@@ -504,4 +504,25 @@ footer{
         margin: 10% auto;
         text-align: center;
     }
+
+    .contact-button{
+        text-align: center;
+
+        img{
+            margin: 0 1%;
+        }
+    }
+
+    .address{
+        text-align: center;
+        margin: 5% 0;
+
+        p{
+            font-size: 1.5vw;
+        }
+    }
+
+    .map{
+        text-align: center;
+    }
 }
