@@ -7,7 +7,7 @@
 
     <div class="grid-box">
         <?php for($i=0;$i<=14;$i++): ?>
-            <a href="">
+            <a href="article-page">
                 <div class="box">
                     <figure><img src="img/work.jpg" alt=""></figure>
 

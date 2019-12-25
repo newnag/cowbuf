@@ -49,6 +49,14 @@
                         case 'article':
                             @include "template/article.php";
                             break;
+
+                        case 'article-page':
+                            @include "template/article-page.php";
+                            break;
+
+                        case 'about':
+                            @include "template/about.php";
+                            break;
                     }
                 ?>
 

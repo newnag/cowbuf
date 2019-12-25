@@ -64,4 +64,13 @@
 .article .grid-box a .box .date span {
   margin: 0 2%;
 }
+
+.article .text-content {
+  width: 60%;
+  margin: 5% auto;
+}
+
+.article .text-content img {
+  width: 100%;
+}
 /*# sourceMappingURL=page-article.css.map */
