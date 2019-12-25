@@ -23,7 +23,7 @@
 
         <div class="forget-register">
             <div class="forget">
-                <a href="">ลืมรหัสผ่าน</a>
+                <a href="forget">ลืมรหัสผ่าน</a>
             </div>
 
             <div class="register">

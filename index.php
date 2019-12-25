@@ -65,6 +65,10 @@
                         case 'register':
                             @include "page_member/register.php";
                             break;
+
+                        case 'forget':
+                            @include "page_member/forgetPass.php";
+                            break;
                     }
                 ?>
 

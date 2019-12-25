@@ -86,3 +86,15 @@ $('.slider-for').slick({
         see_pass.type = "password";
     }
   };
+
+  // เปิดกล่องสร้างรหัสผ่านใหม่
+  $('.login-button #forget-button').click(function(){
+    $('.dialog-forget').fadeIn();
+    $('.bg-dialog').show();
+  });
+
+  //ปิดกล่องก็อปปี้รหัสผ่านใหม่
+  $('.new-pass .button #copy-newpass').click(function(){
+    $('.dialog-forget').fadeOut();
+    $('.bg-dialog').hide();
+  });

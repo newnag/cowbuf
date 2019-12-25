@@ -92,6 +92,7 @@
 
 .login .form-login .login-button {
   text-align: center;
+  margin: 2% 0;
 }
 
 .login .form-login .login-button button {
@@ -188,6 +189,7 @@
 
 .register-page .form-register .login-button {
   text-align: center;
+  margin: 2% 0;
 }
 
 .register-page .form-register .login-button button {
@@ -198,5 +200,161 @@
   width: 20%;
   height: 2rem;
   cursor: pointer;
+}
+
+.forget .head-text {
+  background-image: -webkit-gradient(linear, left top, right top, from(#c20000), to(#000));
+  background-image: linear-gradient(to right, #c20000, #000);
+  border-radius: 15px;
+}
+
+.forget .head-text .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 2%;
+}
+
+.forget .head-text .text h1, .forget .head-text .text span {
+  color: #fff;
+  font-weight: 100;
+}
+
+.forget .head-text .text h1 {
+  font-size: 22px;
+}
+
+.forget .form-forget {
+  margin-top: 3%;
+}
+
+.forget .form-forget h2 {
+  color: #fff;
+  background: #515151;
+  font-weight: normal;
+  border-radius: 10px 10px 0 0;
+  padding: 1% 1%;
+}
+
+.forget .form-forget form {
+  padding: 3% 2%;
+  background: #342b2c;
+}
+
+.forget .form-forget form .input-login {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  margin: 2% 0;
+}
+
+.forget .form-forget form .input-login label {
+  color: #fff;
+}
+
+.forget .form-forget form .input-login input, .forget .form-forget form .input-login select {
+  background: #292323;
+  color: #c6c4c4;
+  border: unset;
+  height: 3rem;
+  padding-left: 2%;
+}
+
+.forget .form-forget form .input-login .view {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: #c6c4c4;
+  cursor: pointer;
+}
+
+.forget .form-forget .login-button {
+  text-align: center;
+  margin: 2% 0;
+}
+
+.forget .form-forget .login-button button {
+  border: unset;
+  border-radius: 20px;
+  color: #fff;
+  background: #c20000;
+  width: 20%;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.dialog-forget {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.dialog-forget .newpass-form .box .head-text {
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#c20000), to(#000));
+  background-image: linear-gradient(to right, #c20000, #000);
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+}
+
+.dialog-forget .newpass-form .box .new-pass {
+  padding: 2% 3%;
+  background: #2d2d2d;
+  color: #fff;
+}
+
+.dialog-forget .newpass-form .box .new-pass .input-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dialog-forget .newpass-form .box .new-pass .input-form input {
+  background: #292323;
+  color: #fff;
+  border: unset;
+  height: 2rem;
+  padding-left: 3%;
+}
+
+.dialog-forget .newpass-form .box .new-pass .button {
+  text-align: center;
+  margin: 2% 0;
+}
+
+.dialog-forget .newpass-form .box .new-pass .button button {
+  background: #c20000;
+  color: #fff;
+  width: 40%;
+  height: 2rem;
+  border-radius: 20px;
+  border: unset;
+  cursor: pointer;
+}
+
+.bg-dialog {
+  display: none;
+  background: #fff;
+  opacity: 0.6;
+  z-index: 9;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=member.css.map */
