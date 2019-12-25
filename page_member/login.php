@@ -27,13 +27,12 @@
             </div>
 
             <div class="register">
-                <a href="">สมัครสมาชิก</a>
+                <a href="register">สมัครสมาชิก</a>
             </div>
         </div>
 
         <div class="login-button">
             <button>เข้าสู่ระบบ</button>
         </div>
-        
     </div>
 </div>

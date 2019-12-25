@@ -61,6 +61,10 @@
                         case 'login':
                             @include "page_member/login.php";
                             break;
+
+                        case 'register':
+                            @include "page_member/register.php";
+                            break;
                     }
                 ?>
 

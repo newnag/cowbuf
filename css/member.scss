@@ -4,7 +4,8 @@ $text-color:#000;
 $price-color:#c20000;
 $left-menu-color: #c6c4c4;
 
-.login{
+// ฟังก์ชั่นเรียกใช้บ่อย
+@mixin head_text {
     .head-text{
         background-image: linear-gradient(to right, $price-color , $text-color);
         border-radius: 15px;
@@ -24,46 +25,54 @@ $left-menu-color: #c6c4c4;
             }
         }
     }
+}
+
+@mixin form_member {
+    h2{
+        color: $head-color;
+        background: #515151;
+        font-weight: normal;
+        border-radius: 10px 10px 0 0;
+        padding: 1% 1%;
+    }
+
+    form{
+        padding: 3% 2%;
+        background: #342b2c;
+
+        .input-login{
+            display: grid;
+            position: relative;
+            margin: 2% 0;
+
+            label{
+                color: $head-color;
+            }
+            input,select{
+                background: #292323;
+                color: $left-menu-color;
+                border: unset;
+                height: 3rem;
+                padding-left: 2%;
+            }
+            .view{
+                position: absolute;
+                top: 50%;
+                right: 0;
+                color: $left-menu-color;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.login{
+    @include head_text();
 
     .form-login{
         margin-top: 10%;
 
-        h2{
-            color: $head-color;
-            background: #515151;
-            font-weight: normal;
-            border-radius: 10px 10px 0 0;
-            padding: 1% 1%;
-        }
-
-        form{
-            padding: 3% 2%;
-            background: #342b2c;
-
-            .input-login{
-                display: grid;
-                position: relative;
-
-                label{
-                    color: $head-color;
-                }
-                input{
-                    background: $head-back;
-                    color: $left-menu-color;
-                    border: unset;
-                    height: 3rem;
-                    padding-left: 2%;
-                }
-                .view{
-                    position: absolute;
-                    top: 50%;
-                    right: 0;
-                    color: $left-menu-color;
-                    cursor: pointer;
-                }
- 
-            }
-        }
+        @include form_member();
 
         .forget-register{
             display: flex;
@@ -81,6 +90,40 @@ $left-menu-color: #c6c4c4;
                     color: #8db2df;
                     font-size: 1vw;
                 }
+            }
+        }
+
+        .login-button{
+            text-align: center;
+
+            button{
+                border: unset;
+                border-radius: 20px;
+                color: $head-color;
+                background: $price-color;
+                width: 20%;
+                height: 2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.register-page{
+    @include head_text();
+
+    .form-register{
+        margin-top: 3%;
+
+        @include form_member();
+
+        .login-page{
+            text-align: end;
+            margin: 2% 0;
+
+            a{
+                color: #8db2df;
+                font-size: 1vw;
             }
         }
 

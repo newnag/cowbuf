@@ -47,14 +47,15 @@
   display: -ms-grid;
   display: grid;
   position: relative;
+  margin: 2% 0;
 }
 
 .login .form-login form .input-login label {
   color: #fff;
 }
 
-.login .form-login form .input-login input {
-  background: #2d2d2d;
+.login .form-login form .input-login input, .login .form-login form .input-login select {
+  background: #292323;
   color: #c6c4c4;
   border: unset;
   height: 3rem;
@@ -94,6 +95,102 @@
 }
 
 .login .form-login .login-button button {
+  border: unset;
+  border-radius: 20px;
+  color: #fff;
+  background: #c20000;
+  width: 20%;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.register-page .head-text {
+  background-image: -webkit-gradient(linear, left top, right top, from(#c20000), to(#000));
+  background-image: linear-gradient(to right, #c20000, #000);
+  border-radius: 15px;
+}
+
+.register-page .head-text .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 2%;
+}
+
+.register-page .head-text .text h1, .register-page .head-text .text span {
+  color: #fff;
+  font-weight: 100;
+}
+
+.register-page .head-text .text h1 {
+  font-size: 22px;
+}
+
+.register-page .form-register {
+  margin-top: 3%;
+}
+
+.register-page .form-register h2 {
+  color: #fff;
+  background: #515151;
+  font-weight: normal;
+  border-radius: 10px 10px 0 0;
+  padding: 1% 1%;
+}
+
+.register-page .form-register form {
+  padding: 3% 2%;
+  background: #342b2c;
+}
+
+.register-page .form-register form .input-login {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  margin: 2% 0;
+}
+
+.register-page .form-register form .input-login label {
+  color: #fff;
+}
+
+.register-page .form-register form .input-login input, .register-page .form-register form .input-login select {
+  background: #292323;
+  color: #c6c4c4;
+  border: unset;
+  height: 3rem;
+  padding-left: 2%;
+}
+
+.register-page .form-register form .input-login .view {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: #c6c4c4;
+  cursor: pointer;
+}
+
+.register-page .form-register .login-page {
+  text-align: end;
+  margin: 2% 0;
+}
+
+.register-page .form-register .login-page a {
+  color: #8db2df;
+  font-size: 1vw;
+}
+
+.register-page .form-register .login-button {
+  text-align: center;
+}
+
+.register-page .form-register .login-button button {
   border: unset;
   border-radius: 20px;
   color: #fff;
