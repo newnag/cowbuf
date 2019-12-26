@@ -32,6 +32,14 @@
                     </a>
                 </div>
 
+                <?php //เมื่อเข้าสู่ระบบแล้วจะเปลี่ยนไปใช้ element นี้ ?>
+                <div class="member-login">
+                    <div class="user-login">
+                        <i class="fas fa-user"></i>
+                        <span>User0001</span>
+                    </div>
+                </div>
+
                 <!-- ไอค่อนที่หัวเว็บ -->
                 <div class="icon-head">
                     <i class="fas fa-search"></i>
@@ -42,6 +50,17 @@
             </div>
         </div>
     </header>
+
+    <!-- เมนูสมาชิก -->
+    <div class="member-menu">
+        <ul>
+            <li><a href="">บัญชีของฉัน</a></li>
+            <li><a href="">ร้านค้าของฉัน</a></li>
+            <li><a href="">การซื้อของฉัน</a></li>
+            <li><a href="">การเติมเงิน</a></li>
+            <li><a href="<?php $_SERVER['SERVER_NAME'] ?>">ออกจากระบบ</a></li>
+        </ul>
+    </div>
 
     <!-- เมนูบน -->
     <nav>

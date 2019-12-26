@@ -98,3 +98,14 @@ $('.slider-for').slick({
     $('.dialog-forget').fadeOut();
     $('.bg-dialog').hide();
   });
+
+  // สลับเมนูหัวบนเมื่อเข้าสู่ระบบ
+  $('.form-login .login-button').click(function(){
+    $('.member-head').hide();
+    $('.member-login').show();
+  });
+
+  // เปิดปิดเมนูสมาชิก
+  $('.user-login').click(function(){
+    $('.member-menu').slideToggle();
+  });

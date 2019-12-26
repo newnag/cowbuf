@@ -109,6 +109,21 @@ header{
                 
                 }
             }
+
+            .member-login{
+                display: none;
+
+                .user-login{
+                    color: $head-color;
+                    margin-bottom: 10%;
+                    cursor: pointer;
+
+                    i{
+                        font-size: 1vw;
+                    }
+                }
+            }
+
             .icon-head{
                 color: $head-color;
                 width: 100%;
@@ -120,6 +135,29 @@ header{
                     font-size: 20px;
                     margin-left: 18%;
                 }
+            }
+        }
+    }
+}
+
+// เมนูสมาชิก
+.member-menu{
+    display: none;
+    position: absolute;
+    right: 10%;
+    z-index: 2;
+
+    ul{
+        background: $head-back;
+        width: 150px;
+        padding: 5%;
+
+        li{
+            margin: 10% 0;
+
+            a{
+                color: $head-color;
+                font-weight: 100;
             }
         }
     }

@@ -69,6 +69,20 @@ header .main-head .right-head .member-head a .login-regis {
   font-weight: 300;
 }
 
+header .main-head .right-head .member-login {
+  display: none;
+}
+
+header .main-head .right-head .member-login .user-login {
+  color: #fff;
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+
+header .main-head .right-head .member-login .user-login i {
+  font-size: 1vw;
+}
+
 header .main-head .right-head .icon-head {
   color: #fff;
   width: 100%;
@@ -84,6 +98,28 @@ header .main-head .right-head .icon-head {
 header .main-head .right-head .icon-head i {
   font-size: 20px;
   margin-left: 18%;
+}
+
+.member-menu {
+  display: none;
+  position: absolute;
+  right: 10%;
+  z-index: 2;
+}
+
+.member-menu ul {
+  background: #2d2d2d;
+  width: 150px;
+  padding: 5%;
+}
+
+.member-menu ul li {
+  margin: 10% 0;
+}
+
+.member-menu ul li a {
+  color: #fff;
+  font-weight: 100;
 }
 
 nav {
