@@ -78,6 +78,7 @@ $left-menu-color: #c6c4c4;
             width: 20%;
             height: 2rem;
             cursor: pointer;
+            font-size: 1vw;
         }
     }
 }
@@ -211,4 +212,32 @@ $left-menu-color: #c6c4c4;
     height: 100%;
     top: 0;
     left: 0;
+}
+
+.account{
+    @include head_text();
+
+    .edit-button{
+        text-align: end;
+        margin: 2% 0;
+
+        button{
+            border: unset;
+            border-radius: 20px;
+            color: $head-color;
+            background: #ffb200;
+            width: 10%;
+            height: 2rem;
+            font-size: 1vw;
+            cursor: pointer;
+        }
+    }
+
+    @include form_member();
+
+    @include form_button();
+
+    .form-login:last-child{
+        margin-top: 5%;
+    }
 }

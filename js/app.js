@@ -109,3 +109,15 @@ $('.slider-for').slick({
   $('.user-login').click(function(){
     $('.member-menu').slideToggle();
   });
+
+  // เปิดกล่องยืนยันการแก้ไขข้อมูลสมาชิก
+  $('.edit-button button').click(function(){
+    $('.dialog-forget').fadeIn();
+    $('.bg-dialog').show();
+  });
+  // ปิดกล่องเพื่อแก้ไขข้อมูลสมาชิก
+  $('.new-pass .button #id-number').click(function(){
+    $('.account .form-login .input-login input').prop('readonly', false);
+    $('.dialog-forget').fadeOut();
+    $('.bg-dialog').hide();
+  });

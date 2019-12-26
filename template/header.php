@@ -54,7 +54,7 @@
     <!-- เมนูสมาชิก -->
     <div class="member-menu">
         <ul>
-            <li><a href="">บัญชีของฉัน</a></li>
+            <li><a href="account">บัญชีของฉัน</a></li>
             <li><a href="">ร้านค้าของฉัน</a></li>
             <li><a href="">การซื้อของฉัน</a></li>
             <li><a href="">การเติมเงิน</a></li>

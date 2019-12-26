@@ -103,6 +103,7 @@
   width: 20%;
   height: 2rem;
   cursor: pointer;
+  font-size: 1vw;
 }
 
 .register-page .head-text {
@@ -200,6 +201,7 @@
   width: 20%;
   height: 2rem;
   cursor: pointer;
+  font-size: 1vw;
 }
 
 .forget .head-text {
@@ -287,6 +289,7 @@
   width: 20%;
   height: 2rem;
   cursor: pointer;
+  font-size: 1vw;
 }
 
 .dialog-forget {
@@ -356,5 +359,109 @@
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.account .head-text {
+  background-image: -webkit-gradient(linear, left top, right top, from(#c20000), to(#000));
+  background-image: linear-gradient(to right, #c20000, #000);
+  border-radius: 15px;
+}
+
+.account .head-text .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 2%;
+}
+
+.account .head-text .text h1, .account .head-text .text span {
+  color: #fff;
+  font-weight: 100;
+}
+
+.account .head-text .text h1 {
+  font-size: 22px;
+}
+
+.account .edit-button {
+  text-align: end;
+  margin: 2% 0;
+}
+
+.account .edit-button button {
+  border: unset;
+  border-radius: 20px;
+  color: #fff;
+  background: #ffb200;
+  width: 10%;
+  height: 2rem;
+  font-size: 1vw;
+  cursor: pointer;
+}
+
+.account h2 {
+  color: #fff;
+  background: #515151;
+  font-weight: normal;
+  border-radius: 10px 10px 0 0;
+  padding: 1% 1%;
+}
+
+.account form {
+  padding: 3% 2%;
+  background: #342b2c;
+}
+
+.account form .input-login {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  margin: 2% 0;
+}
+
+.account form .input-login label {
+  color: #fff;
+}
+
+.account form .input-login input, .account form .input-login select {
+  background: #292323;
+  color: #c6c4c4;
+  border: unset;
+  height: 3rem;
+  padding-left: 2%;
+}
+
+.account form .input-login .view {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: #c6c4c4;
+  cursor: pointer;
+}
+
+.account .login-button {
+  text-align: center;
+  margin: 2% 0;
+}
+
+.account .login-button button {
+  border: unset;
+  border-radius: 20px;
+  color: #fff;
+  background: #c20000;
+  width: 20%;
+  height: 2rem;
+  cursor: pointer;
+  font-size: 1vw;
+}
+
+.account .form-login:last-child {
+  margin-top: 5%;
 }
 /*# sourceMappingURL=member.css.map */
