@@ -121,3 +121,58 @@ $('.slider-for').slick({
     $('.dialog-forget').fadeOut();
     $('.bg-dialog').hide();
   });
+
+  // ปุ่มลบสินค้าในหน้าร้านค้า
+  $('.storePage-all .grid-store .box .delete-button').click(function(){
+    $(this).parent().fadeOut(function(){
+      $(this).remove();
+    });
+  });
+
+  // เลือกสถานะสินค้า
+  $('.right-select select').change(function(){
+    var text = 'storePage-' + $(this).val();
+
+    $('.storePage-all').hide();
+    $('.storePage-notbuy').hide();
+    $('.storePage-buynow').hide();
+    $('.storePage-success').hide();
+    $('.storePage-timeout').hide();
+    $('.storePage-now').hide();
+    $('.'+text).fadeIn();
+  });
+
+
+  // เปลี่ยนปุ่ม active
+  $('.menu-store .leaf-menu .button-menu button#store-page').click(function(){
+      $(this).addClass('active');
+      $('.menu-store .leaf-menu .button-menu button#store-sale').removeClass('active');
+  });
+  $('.menu-store .leaf-menu .button-menu button#store-sale').click(function(){
+    $(this).addClass('active');
+    $('.menu-store .leaf-menu .button-menu button#store-page').removeClass('active');
+  });
+
+
+  // เปลี่ยนหน้าร้านค้า
+  $('.storePage .menu-store .leaf-menu #store-page').click(function(){
+    $('.menu-store .right-select').show();
+
+    $.ajax({
+      url:"template/store-page.php",
+      success:function(data){
+        $('.page-store').html(data);
+      },
+    });
+  });
+  // เปลี่ยนหน้าลงสินค้า
+  $('.storePage .menu-store .leaf-menu #store-sale').click(function(){
+    $('.menu-store .right-select').hide();
+
+    $.ajax({
+      url:"template/sale.php",
+      success:function(data){
+        $('.page-store').html(data);
+      },
+    });
+  });

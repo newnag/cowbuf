@@ -8,8 +8,8 @@
     <!-- เมนูเลือกหน้าร้าน -->
     <div class="menu-store">
         <div class="leaf-menu">
-            <div class="button-menu"><button class="active">ร้านค้า</button></div>
-            <div class="button-menu"><button>ลงสินค้า</button></div>
+            <div class="button-menu"><button id="store-page" class="active">ร้านค้า</button></div>
+            <div class="button-menu"><button id="store-sale">ลงสินค้า</button></div>
             <div class="button-menu"><button>ร้านค้าที่คุณติดตาม</button></div>
         </div>
 
@@ -17,7 +17,8 @@
             <span>เลือกสถานะ</span>
             <select name="" id="">
                 <option value="all">ทั้งหมด</option>
-                <option value="notbuy">ยังไม่ขายซื้อทันที</option>
+                <option value="notbuy">ยังไม่ขาย</option>
+                <option value="buynow">ซื้อทันที</option>
                 <option value="success">ประมูลเสร็จสิ้น</option>
                 <option value="timeout">หมดเวลาขาย</option>
                 <option value="now">กำลังขาย</option>
@@ -25,8 +26,10 @@
         </div>
     </div>
 
-    <?// หน้าร้านทั้งหมด ?>
-    <div class="storePage-all">
+    <div class="page-store">
+
+        <?php include('template/store-page.php') ?>
 
     </div>
+
 </div>

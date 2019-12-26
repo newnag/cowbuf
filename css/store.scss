@@ -27,5 +27,126 @@
                 }
             } 
         }
+
+        .right-select{
+            margin: 2% 0;
+
+            select{
+                border: unset;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .storePage-all{
+        @include grid_store;
+    }
+
+    .storePage-notbuy{
+        display: none;
+
+        @include grid_store;
+    }
+
+    .storePage-buynow{
+        display: none;
+
+        @include grid_store;
+    }
+
+    .storePage-success{
+        display: none;
+
+        @include grid_store;
+    }
+
+    .storePage-timeout{
+        display: none;
+
+        @include grid_store;
+    }
+
+    .storePage-now{
+        display: none;
+
+        @include grid_store;
+    }
+}
+
+.form-sale{
+    @include form_sale;
+
+    .upload-img{
+        .button-upload{
+            margin: 3% 0;
+
+            button{
+                background: $price-color;
+                color: $head-color;
+                border: unset;
+                border-radius: 20px;
+                width: 13%;
+                height: 2rem;
+                cursor: pointer;
+                font-size: 1vw;
+            }
+        }
+
+        .pre-img{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-gap: 1%;
+
+            figure{
+                position: relative;
+
+                img{
+                    width: 100%;
+                    filter: brightness(0.8);
+                }
+
+                i{
+                    position: absolute;
+                    top: 3%;
+                    right: 3%;
+                    font-size: 1.3vw;
+                    cursor: pointer;
+                    color: $head-color;
+                }
+            }
+        }
+    }
+
+    .cat{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 2%;
+        margin: 3% 0;
+    }
+
+    .button-post{
+        margin: 5% 0;
+        text-align: center;
+
+        button{
+            margin: 0 2%;
+            border: unset;
+            border-radius: 20px;
+            color: $head-color;
+            width: 20%;
+            height: 2rem;
+            font-size: 1vw;
+            cursor: pointer;
+
+            &:nth-child(1){
+                background: $head-back;
+            }
+            &:nth-child(2){
+                background: #ffb200;
+            }
+            &:nth-child(3){
+                background: $price-color;
+            }
+        }
     }
 }
