@@ -73,6 +73,10 @@
                         case 'account':
                             @include "page_member/account.php";
                             break;
+
+                        case 'store':
+                            @include "template/store.php";
+                            break;
                     }
                 ?>
 

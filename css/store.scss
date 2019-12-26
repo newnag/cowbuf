@@ -1,0 +1,31 @@
+@import 'varible';
+
+.storePage{
+    @include head_text();
+
+    .menu-store{
+        display: flex;
+        justify-content: space-between;
+
+        .leaf-menu{
+            display: flex;
+
+            .button-menu{
+                margin: 5% 2%;
+
+                button{
+                    width: 8rem;
+                    height: 2rem;
+                    border: unset;
+                    border-radius: 20px;
+                    background: $left-menu-color;
+                    color: $head-color;
+                    cursor: pointer;
+                } 
+                .active{
+                    background: #000!important;
+                }
+            } 
+        }
+    }
+}

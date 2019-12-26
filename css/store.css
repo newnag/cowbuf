@@ -1,0 +1,61 @@
+.storePage .head-text {
+  background-image: -webkit-gradient(linear, left top, right top, from(#c20000), to(#000));
+  background-image: linear-gradient(to right, #c20000, #000);
+  border-radius: 15px;
+}
+
+.storePage .head-text .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 2%;
+}
+
+.storePage .head-text .text h1, .storePage .head-text .text span {
+  color: #fff;
+  font-weight: 100;
+}
+
+.storePage .head-text .text h1 {
+  font-size: 22px;
+}
+
+.storePage .menu-store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.storePage .menu-store .leaf-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.storePage .menu-store .leaf-menu .button-menu {
+  margin: 5% 2%;
+}
+
+.storePage .menu-store .leaf-menu .button-menu button {
+  width: 8rem;
+  height: 2rem;
+  border: unset;
+  border-radius: 20px;
+  background: #c6c4c4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.storePage .menu-store .leaf-menu .button-menu .active {
+  background: #000 !important;
+}
+/*# sourceMappingURL=store.css.map */

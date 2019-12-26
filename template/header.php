@@ -55,7 +55,7 @@
     <div class="member-menu">
         <ul>
             <li><a href="account">บัญชีของฉัน</a></li>
-            <li><a href="">ร้านค้าของฉัน</a></li>
+            <li><a href="store">ร้านค้าของฉัน</a></li>
             <li><a href="">การซื้อของฉัน</a></li>
             <li><a href="">การเติมเงิน</a></li>
             <li><a href="<?php $_SERVER['SERVER_NAME'] ?>">ออกจากระบบ</a></li>

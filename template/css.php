@@ -1,7 +1,8 @@
-<link rel="stylesheet" href="css/style.min.css?=<?=date('his'); ?>">
+<link rel="stylesheet" href="css/style.min.css?v=<?=date('his'); ?>">
 <link rel="stylesheet" href="css/page-article.min.css?v=<?=date('his'); ?>">
 <link rel="stylesheet" href="css/detail-product.min.css?v=<?=date('his'); ?>">
 <link rel="stylesheet" href="css/member.min.css?v=<?=date('his'); ?>">
+<link rel="stylesheet" href="css/store.min.css?v=<?=date('his'); ?>">
 <link rel="stylesheet" href="css/slide.css">
 <link href="fontawesome/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
