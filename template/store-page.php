@@ -54,7 +54,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="delete-button"><button>ลบ</button></div>
+                    <div class="delete-button" ><button >ลบ</button></div>
                 </div>
                 
 
@@ -85,7 +85,7 @@
                         </div>
 
                     </a>
-                    <div class="delete-button"><button>ลบ</button></div>
+                    <div class="delete-button"><button >ลบ</button></div>
                 </div>
 
                 <!-- หมดเวลาประมูล -->
@@ -113,7 +113,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="delete-button"><button>ลบ</button></div>
+                    <div class="delete-button"><button >ลบ</button></div>
                 </div>
                 
 
