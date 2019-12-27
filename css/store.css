@@ -68,6 +68,24 @@
   cursor: pointer;
 }
 
+.storePage .menu-store .head-store-follow {
+  display: none;
+  margin: auto 0;
+}
+
+.storePage .menu-store .head-store-follow p {
+  color: #c20000;
+  font-size: 0.7vw;
+}
+
+.storePage .menu-store .head-store-follow p i {
+  color: #ffb200;
+}
+
+.storePage .menu-store .head-store-follow p .red {
+  color: #c20000;
+}
+
 .storePage .storePage-all a {
   color: #000;
 }
@@ -798,5 +816,65 @@
 
 .form-sale .button-post button:nth-child(3) {
   background: #c20000;
+}
+
+.store-follow .shop-box .shop-grid .shop-head {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 12% 13% 15% 20%;
+      grid-template-columns: 40% 12% 13% 15% 20%;
+  padding: 1% 2%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#c20000), to(#000));
+  background-image: linear-gradient(to right, #c20000, #000);
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.store-follow .shop-box .shop-grid .shop-detail {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 12% 13% 15% 20%;
+      grid-template-columns: 40% 12% 13% 15% 20%;
+  padding: 1% 2%;
+  border: 1px solid #c6c4c4;
+}
+
+.store-follow .shop-box .shop-grid .shop-detail span {
+  font-size: 0.7vw;
+}
+
+.store-follow .shop-box .button-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 1% 0;
+}
+
+.store-follow .shop-box .button-shop .view-shop, .store-follow .shop-box .button-shop .delete {
+  width: 10%;
+}
+
+.store-follow .shop-box .button-shop .view-shop button, .store-follow .shop-box .button-shop .delete button {
+  width: 100%;
+  height: 2rem;
+  border: unset;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.store-follow .shop-box .button-shop .view-shop button {
+  background: #c20000;
+}
+
+.store-follow .shop-box .button-shop .delete {
+  margin-left: 1%;
+}
+
+.store-follow .shop-box .button-shop .delete button {
+  background: #ffb200;
 }
 /*# sourceMappingURL=store.css.map */

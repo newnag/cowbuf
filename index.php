@@ -77,6 +77,22 @@
                         case 'store':
                             @include "template/store.php";
                             break;
+
+                        case 'store-follow':
+                            @include "template/store-follow.php";
+                            break;
+
+                        case 'mycart':
+                            @include "template/mycart.php";
+                            break;
+
+                        case 'page-mycart':
+                            @include "template/page-mycart.php";
+                            break;
+
+                        case 'page-myfav':
+                            @include "template/page-myfav.php";
+                            break;
                     }
                 ?>
 

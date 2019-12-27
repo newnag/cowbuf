@@ -87,7 +87,7 @@ $left-menu-color: #c6c4c4;
     a{
         color: $text-color;
     }
-    .grid-store{
+    .grid-store,.grid-myfav{
         display: grid;
         grid-template-columns: repeat(5,1fr);
         grid-gap: 1%;
@@ -205,5 +205,129 @@ $left-menu-color: #c6c4c4;
         }
 
         
+    }
+}
+@mixin follow_store {
+    .shop-box{
+        .shop-grid{
+            
+
+            .shop-head{
+                display: grid;
+                grid-template-columns: 40% 12% 13% 15% 20%;
+                padding: 1% 2%;
+                background-image: linear-gradient(to right, $price-color , $text-color);
+                color: $head-color;
+                border-radius: 10px 10px 0 0;
+            }
+            .shop-detail{
+                display: grid;
+                grid-template-columns: 40% 12% 13% 15% 20%;
+                padding: 1% 2%;
+                border: 1px solid $left-menu-color;
+
+                span{
+                    font-size: 0.7vw;
+                }
+            }
+        }
+
+        .button-shop{
+            display: flex;
+            justify-content: flex-end;
+            margin: 1% 0;
+
+            .view-shop,.delete{
+                width: 10%;
+
+                button{
+                    width: 100%;
+                    height: 2rem;
+                    border: unset;
+                    border-radius: 20px;
+                    color: $head-color;
+                    cursor: pointer;
+                }
+            }
+            .view-shop{
+                button{
+                    background: $price-color;
+                }
+                
+            }
+            .delete{
+                margin-left: 1%;
+
+                button{
+                    background: #ffb200;
+                }
+            }
+        }
+    }
+}
+@mixin mycart_detail {
+    .mydetail{
+        border-bottom: 1px solid $head-back;
+        padding: 2% 0;
+
+        .box{
+            display: grid;
+            grid-template-columns: 10% 89%;
+            grid-gap: 1%;
+
+            .left{
+                figure{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .right{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h3{
+                    font-size: 1.3vw;
+                    font-weight: 100;
+                    overflow: hidden;
+                    height: 4.3rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+
+                .price-button{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .price{
+                        font-size: 1.5vw;
+                        color: $price-color;
+                    }
+
+                    .button{
+                        button{
+                            border: unset;
+                            border-radius: 20px;
+                            color: $head-color;
+                            width: 6rem;
+                            height: 2rem;
+                            cursor: pointer;
+
+                            &:nth-child(1){
+                                background: $price-color;
+                            }
+                            &:nth-child(2){
+                                background: #ffb200;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
     }
 }

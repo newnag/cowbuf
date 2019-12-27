@@ -157,6 +157,7 @@ $('.slider-for').slick({
   // เปลี่ยนหน้าร้านค้า
   $('.storePage .menu-store .leaf-menu #store-page').click(function(){
     $('.menu-store .right-select').show();
+    $('.menu-store .head-store-follow').hide();
 
     $.ajax({
       url:"template/store-page.php",
@@ -168,11 +169,43 @@ $('.slider-for').slick({
   // เปลี่ยนหน้าลงสินค้า
   $('.storePage .menu-store .leaf-menu #store-sale').click(function(){
     $('.menu-store .right-select').hide();
+    $('.menu-store .head-store-follow').hide();
 
     $.ajax({
       url:"template/sale.php",
       success:function(data){
         $('.page-store').html(data);
+      },
+    });
+  });
+  // เปลี่ยนหน้าร้านติดตาม
+  $('.storePage .menu-store .leaf-menu #store-follow').click(function(){
+    $('.menu-store .head-store-follow').show();
+    $('.menu-store .right-select').hide();
+
+    $.ajax({
+      url:"template/store-follow.php",
+      success:function(data){
+        $('.page-store').html(data);
+      },
+    });
+  });
+
+  // เปลี่ยนหน้าสินค้าโปรด
+  $('.mycart .menu-mycart .leaf-menu #my-fav').click(function(){
+    $.ajax({
+      url:"template/page-myfav.php",
+      success:function(data){
+        $('.page-mycart').html(data);
+      },
+    });
+  });
+  // เปลี่ยนหน้ารายการซื้อสินค้าของฉัน
+  $('.mycart .menu-mycart .leaf-menu #my-cart').click(function(){
+    $.ajax({
+      url:"template/page-mycart.php",
+      success:function(data){
+        $('.page-mycart').html(data);
       },
     });
   });

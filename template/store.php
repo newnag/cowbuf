@@ -10,7 +10,7 @@
         <div class="leaf-menu">
             <div class="button-menu"><button id="store-page" class="active">ร้านค้า</button></div>
             <div class="button-menu"><button id="store-sale">ลงสินค้า</button></div>
-            <div class="button-menu"><button>ร้านค้าที่คุณติดตาม</button></div>
+            <div class="button-menu"><button id="store-follow">ร้านค้าที่คุณติดตาม</button></div>
         </div>
 
         <div class="right-select">
@@ -23,6 +23,11 @@
                 <option value="timeout">หมดเวลาขาย</option>
                 <option value="now">กำลังขาย</option>
             </select>
+        </div>
+
+        <div class="head-store-follow">
+            <p>***ควรเลือกผู้ขาย ที่มีตั้งแต่ 100 คะแนนขึ้นไป</p>
+            <p>การซื้อขาย 1,000 บาท = 1<i class="fas fa-star"></i>/<i class="fas fa-star red"></i></p>
         </div>
     </div>
 

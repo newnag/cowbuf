@@ -36,6 +36,23 @@
                 cursor: pointer;
             }
         }
+
+        .head-store-follow{
+            display: none;
+            margin: auto 0;
+
+            p{
+                color: $price-color;
+                font-size: 0.7vw;
+
+                i{
+                    color: #ffb200;
+                }
+                .red{
+                    color: $price-color;
+                }
+            }
+        }
     }
 
     .storePage-all{
@@ -149,4 +166,8 @@
             }
         }
     }
+}
+
+.store-follow{
+    @include follow_store;
 }
