@@ -85,6 +85,10 @@
                         case 'paypaid':
                             @include "template/paypaid.php";
                             break;
+
+                        case 'detail-product-end':
+                            @include "template/detail-product-end.php";
+                            break;
                     }
                 ?>
 

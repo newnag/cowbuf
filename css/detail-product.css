@@ -50,6 +50,7 @@
 .top-zone .detail .detail-bet .day, .top-zone .detail .detail-bet .price, .top-zone .detail .detail-bet .buynow {
   display: -ms-grid;
   display: grid;
+  grid-row-gap: 10%;
 }
 
 .top-zone .detail .detail-bet .day span:first-child, .top-zone .detail .detail-bet .price span:first-child, .top-zone .detail .detail-bet .buynow span:first-child {
@@ -57,7 +58,7 @@
 }
 
 .top-zone .detail .detail-bet .day span:nth-child(2) {
-  font-size: 1.7vw;
+  font-size: 1.5vw;
 }
 
 .top-zone .detail .detail-bet .price, .top-zone .detail .detail-bet .buynow {
@@ -65,7 +66,12 @@
 }
 
 .top-zone .detail .detail-bet .price span:nth-child(2), .top-zone .detail .detail-bet .buynow span:nth-child(2) {
-  font-size: 1.7vw;
+  font-size: 1.5vw;
+}
+
+.top-zone .detail .winner span {
+  color: #c20000;
+  font-size: 1.3vw;
 }
 
 .top-zone .detail .distric {

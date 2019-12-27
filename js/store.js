@@ -11,6 +11,11 @@ $('.right-select select').change(function(){
     $('.'+text).fadeIn();
 });
 
+// ลบร้านค้าโปรด
+$('.shop-box .button-shop .delete button').click(function(){
+    alert('111');
+});
+
 // เปลี่ยนปุ่ม active ร้านค้า
 $('.menu-store .leaf-menu .button-menu button#store-page').click(function(){
     $('.menu-store .leaf-menu .button-menu button').removeClass('active');
@@ -62,7 +67,3 @@ $('.menu-store .leaf-menu .button-menu button#store-follow').click(function(){
     });
   });
 
-// ลบร้านค้าโปรด
-$('.shop-box .button-shop .delete button').click(function(){
-    alert('111');
-});

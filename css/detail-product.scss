@@ -54,6 +54,7 @@
 
             .day,.price,.buynow{
                 display: grid;
+                grid-row-gap: 10%;
 
                 span:first-child{
                     font-size: 1vw;
@@ -62,7 +63,7 @@
 
             .day{
                 span:nth-child(2){
-                    font-size: 1.7vw;
+                    font-size: 1.5vw;
                 }
             }
 
@@ -70,8 +71,15 @@
                 color: $price-color;
 
                 span:nth-child(2){
-                    font-size: 1.7vw;
+                    font-size: 1.5vw;
                 }
+            }
+        }
+
+        .winner{
+            span{
+                color: $price-color;
+                font-size: 1.3vw;
             }
         }
 

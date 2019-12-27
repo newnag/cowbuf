@@ -31,7 +31,7 @@
                 <!-- ซื้อทันที -->
                 
                 <div class="box">
-                    <a href="">
+                    <a href="detail-product-end">
                         <div class="text-head buynow"><h4>ซื้อทันที</h4></div>
                         <figure><img src="/img/ID4fa1e2ab_024a_42ef_bede_658a_l.png" alt=""></figure>
                         <div class="title"><h5>รถเครื่องตัวน้อยๆของเรา ตัวที่1</h5></div>
