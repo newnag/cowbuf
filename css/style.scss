@@ -629,3 +629,49 @@ footer{
         }
     }
 }
+
+.paypaid{
+    @include head_text();
+
+    .menu-mycart{
+
+        .leaf-menu{
+            display: flex;
+            margin: 2% 0;
+
+            .button-menu{
+                margin: 0 1%;
+
+                button{
+                    width: 10rem;
+                    height: 2rem;
+                    border: unset;
+                    border-radius: 20px;
+                    background: $left-menu-color;
+                    color: $head-color;
+                    cursor: pointer;
+                } 
+                .active{
+                    background: #000!important;
+                }
+            } 
+        }
+    }
+}
+
+.paid-page{
+    .content{
+        margin: 8% 0;
+
+        p{
+            i{
+                color: #ffb300;
+            }
+
+            &:nth-child(2){
+                font-size: 0.7vw;
+                line-height: 2;
+            }
+        }
+    }
+}

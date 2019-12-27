@@ -57,7 +57,7 @@
             <li><a href="account">บัญชีของฉัน</a></li>
             <li><a href="store">ร้านค้าของฉัน</a></li>
             <li><a href="mycart">การซื้อของฉัน</a></li>
-            <li><a href="">การเติมเงิน</a></li>
+            <li><a href="paypaid">การเติมเงิน</a></li>
             <li><a href="<?php $_SERVER['SERVER_NAME'] ?>">ออกจากระบบ</a></li>
         </ul>
     </div>

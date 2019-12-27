@@ -675,4 +675,70 @@ footer .footer-section .info .detail {
 .about .text-content .head-grid .right img {
   width: 100%;
 }
+
+.paypaid .head-text {
+  background-image: -webkit-gradient(linear, left top, right top, from(#c20000), to(#000));
+  background-image: linear-gradient(to right, #c20000, #000);
+  border-radius: 15px;
+}
+
+.paypaid .head-text .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 2%;
+}
+
+.paypaid .head-text .text h1, .paypaid .head-text .text span {
+  color: #fff;
+  font-weight: 100;
+}
+
+.paypaid .head-text .text h1 {
+  font-size: 22px;
+}
+
+.paypaid .menu-mycart .leaf-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2% 0;
+}
+
+.paypaid .menu-mycart .leaf-menu .button-menu {
+  margin: 0 1%;
+}
+
+.paypaid .menu-mycart .leaf-menu .button-menu button {
+  width: 10rem;
+  height: 2rem;
+  border: unset;
+  border-radius: 20px;
+  background: #c6c4c4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.paypaid .menu-mycart .leaf-menu .button-menu .active {
+  background: #000 !important;
+}
+
+.paid-page .content {
+  margin: 8% 0;
+}
+
+.paid-page .content p i {
+  color: #ffb300;
+}
+
+.paid-page .content p:nth-child(2) {
+  font-size: 0.7vw;
+  line-height: 2;
+}
 /*# sourceMappingURL=style.css.map */

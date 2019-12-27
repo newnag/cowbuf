@@ -87,7 +87,7 @@ $left-menu-color: #c6c4c4;
     a{
         color: $text-color;
     }
-    .grid-store,.grid-myfav{
+    .grid-store,.grid-myfav,.grid-mybid{
         display: grid;
         grid-template-columns: repeat(5,1fr);
         grid-gap: 1%;

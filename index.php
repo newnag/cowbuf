@@ -78,20 +78,12 @@
                             @include "template/store.php";
                             break;
 
-                        case 'store-follow':
-                            @include "template/store-follow.php";
-                            break;
-
                         case 'mycart':
                             @include "template/mycart.php";
                             break;
 
-                        case 'page-mycart':
-                            @include "template/page-mycart.php";
-                            break;
-
-                        case 'page-myfav':
-                            @include "template/page-myfav.php";
+                        case 'paypaid':
+                            @include "template/paypaid.php";
                             break;
                     }
                 ?>

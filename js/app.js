@@ -209,3 +209,12 @@ $('.slider-for').slick({
       },
     });
   });
+  // เปลี่ยนหน้ารายการซื้อสินค้าของฉัน
+  $('.mycart .menu-mycart .leaf-menu #my-bid').click(function(){
+    $.ajax({
+      url:"template/page-mybid.php",
+      success:function(data){
+        $('.page-mycart').html(data);
+      },
+    });
+  });
