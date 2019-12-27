@@ -741,4 +741,136 @@ footer .footer-section .info .detail {
   font-size: 0.7vw;
   line-height: 2;
 }
+
+.paid-page .bank-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 10%;
+  margin-bottom: 5%;
+}
+
+.paid-page .bank-grid .bank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.paid-page .bank-grid .bank figure img {
+  width: 100%;
+}
+
+.paid-page .bank-grid .bank .bank-account {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 5%;
+}
+
+.paid-page .form-paid h2 {
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#c20000), to(#000));
+  background-image: linear-gradient(to right, #c20000, #000);
+  font-weight: normal;
+  border-radius: 10px 10px 0 0;
+  padding: 1% 1%;
+}
+
+.paid-page .form-paid form .input-form {
+  padding: 2%;
+  background: #342b2c;
+}
+
+.paid-page .form-paid form .input-form label {
+  color: #fff;
+}
+
+.paid-page .form-paid form .input-form input, .paid-page .form-paid form .input-form select, .paid-page .form-paid form .input-form textarea {
+  background: #292323;
+  color: #c6c4c4;
+  border: unset;
+  width: 100%;
+  height: 3rem;
+  padding-left: 2%;
+}
+
+.paid-page .form-paid .button-upload {
+  margin: 3% 0;
+  text-align: center;
+}
+
+.paid-page .form-paid .button-upload button {
+  background: #c20000;
+  color: #fff;
+  border: unset;
+  border-radius: 20px;
+  width: 13%;
+  height: 2rem;
+  cursor: pointer;
+  font-size: 1vw;
+}
+
+.paid-page .form-paid figure {
+  position: relative;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.paid-page .form-paid figure img {
+  width: 100%;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.paid-page .form-paid figure i {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 1.3vw;
+  cursor: pointer;
+  color: #fff;
+}
+
+.paid-page .form-paid .send-button {
+  text-align: center;
+  margin: 3%;
+}
+
+.paid-page .form-paid .send-button button {
+  border: unset;
+  border-radius: 20px;
+  background: #c20000;
+  color: #fff;
+  width: 30%;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.paid-history .history .head {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  background-image: -webkit-gradient(linear, left top, right top, from(#c20000), to(#000));
+  background-image: linear-gradient(to right, #c20000, #000);
+  padding: 1% 2%;
+  border-radius: 10px 10px 0 0;
+}
+
+.paid-history .history .head span {
+  color: #fff;
+}
+
+.paid-history .history .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  padding: 1% 2%;
+  border: 1px solid #c6c4c4;
+  border-top: unset;
+}
 /*# sourceMappingURL=style.css.map */

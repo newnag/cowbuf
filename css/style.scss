@@ -674,4 +674,105 @@ footer{
             }
         }
     }
+
+    .bank-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-row-gap: 10%;
+        margin-bottom: 5%;
+        .bank{
+            display: flex;
+            align-items: center;
+
+            figure{
+                img{
+                    width: 100%;
+                }
+            }
+
+            .bank-account{
+                display: grid;
+                margin-left: 5%;
+            }
+        }
+    }
+
+    .form-paid{
+        @include form_sale;
+
+        .button-upload{
+            margin: 3% 0;
+            text-align: center;
+
+            button{
+                background: $price-color;
+                color: $head-color;
+                border: unset;
+                border-radius: 20px;
+                width: 13%;
+                height: 2rem;
+                cursor: pointer;
+                font-size: 1vw;
+            }
+        }
+
+        figure{
+            position: relative;
+            width: 20%;
+            margin: 0 auto;
+
+            img{
+                width: 100%;
+                filter: brightness(0.8);
+            }
+
+            i{
+                position: absolute;
+                top: 3%;
+                right: 3%;
+                font-size: 1.3vw;
+                cursor: pointer;
+                color: $head-color;
+            }
+        }
+
+        .send-button{
+            text-align: center;
+            margin: 3%;
+
+            button{
+                border: unset;
+                border-radius: 20px;
+                background: $price-color;
+                color: $head-color;
+                width: 30%;
+                height: 2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.paid-history{
+    .history{
+        .head{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            background-image: linear-gradient(to right, $price-color , $text-color);
+            padding: 1% 2%;
+            border-radius: 10px 10px 0 0;
+
+            span{
+                color: $head-color;
+            }
+        }
+
+        .row{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            padding: 1% 2%;
+            border: 1px solid $left-menu-color;
+            border-top: unset;
+        }
+    }
 }

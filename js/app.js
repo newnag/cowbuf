@@ -129,68 +129,6 @@ $('.slider-for').slick({
     });
   });
 
-  // เลือกสถานะสินค้า
-  $('.right-select select').change(function(){
-    var text = 'storePage-' + $(this).val();
-
-    $('.storePage-all').hide();
-    $('.storePage-notbuy').hide();
-    $('.storePage-buynow').hide();
-    $('.storePage-success').hide();
-    $('.storePage-timeout').hide();
-    $('.storePage-now').hide();
-    $('.'+text).fadeIn();
-  });
-
-
-  // เปลี่ยนปุ่ม active
-  $('.menu-store .leaf-menu .button-menu button#store-page').click(function(){
-      $(this).addClass('active');
-      $('.menu-store .leaf-menu .button-menu button#store-sale').removeClass('active');
-  });
-  $('.menu-store .leaf-menu .button-menu button#store-sale').click(function(){
-    $(this).addClass('active');
-    $('.menu-store .leaf-menu .button-menu button#store-page').removeClass('active');
-  });
-
-
-  // เปลี่ยนหน้าร้านค้า
-  $('.storePage .menu-store .leaf-menu #store-page').click(function(){
-    $('.menu-store .right-select').show();
-    $('.menu-store .head-store-follow').hide();
-
-    $.ajax({
-      url:"template/store-page.php",
-      success:function(data){
-        $('.page-store').html(data);
-      },
-    });
-  });
-  // เปลี่ยนหน้าลงสินค้า
-  $('.storePage .menu-store .leaf-menu #store-sale').click(function(){
-    $('.menu-store .right-select').hide();
-    $('.menu-store .head-store-follow').hide();
-
-    $.ajax({
-      url:"template/sale.php",
-      success:function(data){
-        $('.page-store').html(data);
-      },
-    });
-  });
-  // เปลี่ยนหน้าร้านติดตาม
-  $('.storePage .menu-store .leaf-menu #store-follow').click(function(){
-    $('.menu-store .head-store-follow').show();
-    $('.menu-store .right-select').hide();
-
-    $.ajax({
-      url:"template/store-follow.php",
-      success:function(data){
-        $('.page-store').html(data);
-      },
-    });
-  });
-
   // เปลี่ยนหน้าสินค้าโปรด
   $('.mycart .menu-mycart .leaf-menu #my-fav').click(function(){
     $.ajax({
@@ -218,3 +156,32 @@ $('.slider-for').slick({
       },
     });
   });
+
+  // เปลี่ยนหน้าเติมเงิน
+  $('.paypaid .menu-mycart .leaf-menu #paypaid').click(function(){
+    $.ajax({
+      url:"template/paid-page.php",
+      success:function(data){
+        $('.page-paypaid').html(data);
+      },
+    });
+  });
+  // เปลี่ยนหน้าถอนเงิน
+  $('.paypaid .menu-mycart .leaf-menu #withdraw').click(function(){
+    $.ajax({
+      url:"template/paid-withdraw.php",
+      success:function(data){
+        $('.page-paypaid').html(data);
+      },
+    });
+  });
+  // เปลี่ยนหน้าประวัติเติมเงิน
+  $('.paypaid .menu-mycart .leaf-menu #history-paid').click(function(){
+    $.ajax({
+      url:"template/paid-history.php",
+      success:function(data){
+        $('.page-paypaid').html(data);
+      },
+    });
+  });
+
