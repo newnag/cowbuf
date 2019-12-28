@@ -90,7 +90,7 @@
   color: #000;
 }
 
-.storePage .storePage-all .grid-store {
+.storePage .storePage-all .grid-store, .storePage .storePage-all .grid-myfav, .storePage .storePage-all .grid-mybid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -99,67 +99,67 @@
   margin: 5% 0;
 }
 
-.storePage .storePage-all .grid-store .box .text-head {
+.storePage .storePage-all .grid-store .box .text-head, .storePage .storePage-all .grid-myfav .box .text-head, .storePage .storePage-all .grid-mybid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
   text-align: center;
   padding: 5px 0;
 }
 
-.storePage .storePage-all .grid-store .box .notbuy {
+.storePage .storePage-all .grid-store .box .notbuy, .storePage .storePage-all .grid-myfav .box .notbuy, .storePage .storePage-all .grid-mybid .box .notbuy {
   background: #2d2d2d;
 }
 
-.storePage .storePage-all .grid-store .box .buynow {
+.storePage .storePage-all .grid-store .box .buynow, .storePage .storePage-all .grid-myfav .box .buynow, .storePage .storePage-all .grid-mybid .box .buynow {
   background: #c20000;
 }
 
-.storePage .storePage-all .grid-store .box .success {
+.storePage .storePage-all .grid-store .box .success, .storePage .storePage-all .grid-myfav .box .success, .storePage .storePage-all .grid-mybid .box .success {
   background: #0094c2;
 }
 
-.storePage .storePage-all .grid-store .box .timeout {
+.storePage .storePage-all .grid-store .box .timeout, .storePage .storePage-all .grid-myfav .box .timeout, .storePage .storePage-all .grid-mybid .box .timeout {
   background: #c6c4c4;
 }
 
-.storePage .storePage-all .grid-store .box .now {
+.storePage .storePage-all .grid-store .box .now, .storePage .storePage-all .grid-myfav .box .now, .storePage .storePage-all .grid-mybid .box .now {
   background: #ffb200;
 }
 
-.storePage .storePage-all .grid-store .box figure img {
+.storePage .storePage-all .grid-store .box figure img, .storePage .storePage-all .grid-myfav .box figure img, .storePage .storePage-all .grid-mybid .box figure img {
   width: 100%;
 }
 
-.storePage .storePage-all .grid-store .box .title {
+.storePage .storePage-all .grid-store .box .title, .storePage .storePage-all .grid-myfav .box .title, .storePage .storePage-all .grid-mybid .box .title {
   font-size: 1vw;
   font-weight: 100;
   height: 3rem;
   overflow: hidden;
 }
 
-.storePage .storePage-all .grid-store .box .price {
+.storePage .storePage-all .grid-store .box .price, .storePage .storePage-all .grid-myfav .box .price, .storePage .storePage-all .grid-mybid .box .price {
   display: -ms-grid;
   display: grid;
   color: #c20000;
   margin: 5% 0;
 }
 
-.storePage .storePage-all .grid-store .box .price span:nth-child(2) {
+.storePage .storePage-all .grid-store .box .price span:nth-child(2), .storePage .storePage-all .grid-myfav .box .price span:nth-child(2), .storePage .storePage-all .grid-mybid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
 
-.storePage .storePage-all .grid-store .box .date {
+.storePage .storePage-all .grid-store .box .date, .storePage .storePage-all .grid-myfav .box .date, .storePage .storePage-all .grid-mybid .box .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 3% 0;
 }
 
-.storePage .storePage-all .grid-store .box .date i {
+.storePage .storePage-all .grid-store .box .date i, .storePage .storePage-all .grid-myfav .box .date i, .storePage .storePage-all .grid-mybid .box .date i {
   margin-right: 2%;
 }
 
-.storePage .storePage-all .grid-store .box .bet {
+.storePage .storePage-all .grid-store .box .bet, .storePage .storePage-all .grid-myfav .box .bet, .storePage .storePage-all .grid-mybid .box .bet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,16 +168,16 @@
           justify-content: space-between;
 }
 
-.storePage .storePage-all .grid-store .box .bet .star i, .storePage .storePage-all .grid-store .box .bet .credit i {
+.storePage .storePage-all .grid-store .box .bet .star i, .storePage .storePage-all .grid-store .box .bet .credit i, .storePage .storePage-all .grid-myfav .box .bet .star i, .storePage .storePage-all .grid-myfav .box .bet .credit i, .storePage .storePage-all .grid-mybid .box .bet .star i, .storePage .storePage-all .grid-mybid .box .bet .credit i {
   color: #ffb200;
 }
 
-.storePage .storePage-all .grid-store .box .delete-button {
+.storePage .storePage-all .grid-store .box .delete-button, .storePage .storePage-all .grid-myfav .box .delete-button, .storePage .storePage-all .grid-mybid .box .delete-button {
   text-align: end;
   margin-top: 3%;
 }
 
-.storePage .storePage-all .grid-store .box .delete-button button {
+.storePage .storePage-all .grid-store .box .delete-button button, .storePage .storePage-all .grid-myfav .box .delete-button button, .storePage .storePage-all .grid-mybid .box .delete-button button {
   border: unset;
   border-radius: 20px;
   width: 40%;
@@ -195,7 +195,7 @@
   color: #000;
 }
 
-.storePage .storePage-notbuy .grid-store {
+.storePage .storePage-notbuy .grid-store, .storePage .storePage-notbuy .grid-myfav, .storePage .storePage-notbuy .grid-mybid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -204,67 +204,67 @@
   margin: 5% 0;
 }
 
-.storePage .storePage-notbuy .grid-store .box .text-head {
+.storePage .storePage-notbuy .grid-store .box .text-head, .storePage .storePage-notbuy .grid-myfav .box .text-head, .storePage .storePage-notbuy .grid-mybid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
   text-align: center;
   padding: 5px 0;
 }
 
-.storePage .storePage-notbuy .grid-store .box .notbuy {
+.storePage .storePage-notbuy .grid-store .box .notbuy, .storePage .storePage-notbuy .grid-myfav .box .notbuy, .storePage .storePage-notbuy .grid-mybid .box .notbuy {
   background: #2d2d2d;
 }
 
-.storePage .storePage-notbuy .grid-store .box .buynow {
+.storePage .storePage-notbuy .grid-store .box .buynow, .storePage .storePage-notbuy .grid-myfav .box .buynow, .storePage .storePage-notbuy .grid-mybid .box .buynow {
   background: #c20000;
 }
 
-.storePage .storePage-notbuy .grid-store .box .success {
+.storePage .storePage-notbuy .grid-store .box .success, .storePage .storePage-notbuy .grid-myfav .box .success, .storePage .storePage-notbuy .grid-mybid .box .success {
   background: #0094c2;
 }
 
-.storePage .storePage-notbuy .grid-store .box .timeout {
+.storePage .storePage-notbuy .grid-store .box .timeout, .storePage .storePage-notbuy .grid-myfav .box .timeout, .storePage .storePage-notbuy .grid-mybid .box .timeout {
   background: #c6c4c4;
 }
 
-.storePage .storePage-notbuy .grid-store .box .now {
+.storePage .storePage-notbuy .grid-store .box .now, .storePage .storePage-notbuy .grid-myfav .box .now, .storePage .storePage-notbuy .grid-mybid .box .now {
   background: #ffb200;
 }
 
-.storePage .storePage-notbuy .grid-store .box figure img {
+.storePage .storePage-notbuy .grid-store .box figure img, .storePage .storePage-notbuy .grid-myfav .box figure img, .storePage .storePage-notbuy .grid-mybid .box figure img {
   width: 100%;
 }
 
-.storePage .storePage-notbuy .grid-store .box .title {
+.storePage .storePage-notbuy .grid-store .box .title, .storePage .storePage-notbuy .grid-myfav .box .title, .storePage .storePage-notbuy .grid-mybid .box .title {
   font-size: 1vw;
   font-weight: 100;
   height: 3rem;
   overflow: hidden;
 }
 
-.storePage .storePage-notbuy .grid-store .box .price {
+.storePage .storePage-notbuy .grid-store .box .price, .storePage .storePage-notbuy .grid-myfav .box .price, .storePage .storePage-notbuy .grid-mybid .box .price {
   display: -ms-grid;
   display: grid;
   color: #c20000;
   margin: 5% 0;
 }
 
-.storePage .storePage-notbuy .grid-store .box .price span:nth-child(2) {
+.storePage .storePage-notbuy .grid-store .box .price span:nth-child(2), .storePage .storePage-notbuy .grid-myfav .box .price span:nth-child(2), .storePage .storePage-notbuy .grid-mybid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
 
-.storePage .storePage-notbuy .grid-store .box .date {
+.storePage .storePage-notbuy .grid-store .box .date, .storePage .storePage-notbuy .grid-myfav .box .date, .storePage .storePage-notbuy .grid-mybid .box .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 3% 0;
 }
 
-.storePage .storePage-notbuy .grid-store .box .date i {
+.storePage .storePage-notbuy .grid-store .box .date i, .storePage .storePage-notbuy .grid-myfav .box .date i, .storePage .storePage-notbuy .grid-mybid .box .date i {
   margin-right: 2%;
 }
 
-.storePage .storePage-notbuy .grid-store .box .bet {
+.storePage .storePage-notbuy .grid-store .box .bet, .storePage .storePage-notbuy .grid-myfav .box .bet, .storePage .storePage-notbuy .grid-mybid .box .bet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,16 +273,16 @@
           justify-content: space-between;
 }
 
-.storePage .storePage-notbuy .grid-store .box .bet .star i, .storePage .storePage-notbuy .grid-store .box .bet .credit i {
+.storePage .storePage-notbuy .grid-store .box .bet .star i, .storePage .storePage-notbuy .grid-store .box .bet .credit i, .storePage .storePage-notbuy .grid-myfav .box .bet .star i, .storePage .storePage-notbuy .grid-myfav .box .bet .credit i, .storePage .storePage-notbuy .grid-mybid .box .bet .star i, .storePage .storePage-notbuy .grid-mybid .box .bet .credit i {
   color: #ffb200;
 }
 
-.storePage .storePage-notbuy .grid-store .box .delete-button {
+.storePage .storePage-notbuy .grid-store .box .delete-button, .storePage .storePage-notbuy .grid-myfav .box .delete-button, .storePage .storePage-notbuy .grid-mybid .box .delete-button {
   text-align: end;
   margin-top: 3%;
 }
 
-.storePage .storePage-notbuy .grid-store .box .delete-button button {
+.storePage .storePage-notbuy .grid-store .box .delete-button button, .storePage .storePage-notbuy .grid-myfav .box .delete-button button, .storePage .storePage-notbuy .grid-mybid .box .delete-button button {
   border: unset;
   border-radius: 20px;
   width: 40%;
@@ -300,7 +300,7 @@
   color: #000;
 }
 
-.storePage .storePage-buynow .grid-store {
+.storePage .storePage-buynow .grid-store, .storePage .storePage-buynow .grid-myfav, .storePage .storePage-buynow .grid-mybid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -309,67 +309,67 @@
   margin: 5% 0;
 }
 
-.storePage .storePage-buynow .grid-store .box .text-head {
+.storePage .storePage-buynow .grid-store .box .text-head, .storePage .storePage-buynow .grid-myfav .box .text-head, .storePage .storePage-buynow .grid-mybid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
   text-align: center;
   padding: 5px 0;
 }
 
-.storePage .storePage-buynow .grid-store .box .notbuy {
+.storePage .storePage-buynow .grid-store .box .notbuy, .storePage .storePage-buynow .grid-myfav .box .notbuy, .storePage .storePage-buynow .grid-mybid .box .notbuy {
   background: #2d2d2d;
 }
 
-.storePage .storePage-buynow .grid-store .box .buynow {
+.storePage .storePage-buynow .grid-store .box .buynow, .storePage .storePage-buynow .grid-myfav .box .buynow, .storePage .storePage-buynow .grid-mybid .box .buynow {
   background: #c20000;
 }
 
-.storePage .storePage-buynow .grid-store .box .success {
+.storePage .storePage-buynow .grid-store .box .success, .storePage .storePage-buynow .grid-myfav .box .success, .storePage .storePage-buynow .grid-mybid .box .success {
   background: #0094c2;
 }
 
-.storePage .storePage-buynow .grid-store .box .timeout {
+.storePage .storePage-buynow .grid-store .box .timeout, .storePage .storePage-buynow .grid-myfav .box .timeout, .storePage .storePage-buynow .grid-mybid .box .timeout {
   background: #c6c4c4;
 }
 
-.storePage .storePage-buynow .grid-store .box .now {
+.storePage .storePage-buynow .grid-store .box .now, .storePage .storePage-buynow .grid-myfav .box .now, .storePage .storePage-buynow .grid-mybid .box .now {
   background: #ffb200;
 }
 
-.storePage .storePage-buynow .grid-store .box figure img {
+.storePage .storePage-buynow .grid-store .box figure img, .storePage .storePage-buynow .grid-myfav .box figure img, .storePage .storePage-buynow .grid-mybid .box figure img {
   width: 100%;
 }
 
-.storePage .storePage-buynow .grid-store .box .title {
+.storePage .storePage-buynow .grid-store .box .title, .storePage .storePage-buynow .grid-myfav .box .title, .storePage .storePage-buynow .grid-mybid .box .title {
   font-size: 1vw;
   font-weight: 100;
   height: 3rem;
   overflow: hidden;
 }
 
-.storePage .storePage-buynow .grid-store .box .price {
+.storePage .storePage-buynow .grid-store .box .price, .storePage .storePage-buynow .grid-myfav .box .price, .storePage .storePage-buynow .grid-mybid .box .price {
   display: -ms-grid;
   display: grid;
   color: #c20000;
   margin: 5% 0;
 }
 
-.storePage .storePage-buynow .grid-store .box .price span:nth-child(2) {
+.storePage .storePage-buynow .grid-store .box .price span:nth-child(2), .storePage .storePage-buynow .grid-myfav .box .price span:nth-child(2), .storePage .storePage-buynow .grid-mybid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
 
-.storePage .storePage-buynow .grid-store .box .date {
+.storePage .storePage-buynow .grid-store .box .date, .storePage .storePage-buynow .grid-myfav .box .date, .storePage .storePage-buynow .grid-mybid .box .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 3% 0;
 }
 
-.storePage .storePage-buynow .grid-store .box .date i {
+.storePage .storePage-buynow .grid-store .box .date i, .storePage .storePage-buynow .grid-myfav .box .date i, .storePage .storePage-buynow .grid-mybid .box .date i {
   margin-right: 2%;
 }
 
-.storePage .storePage-buynow .grid-store .box .bet {
+.storePage .storePage-buynow .grid-store .box .bet, .storePage .storePage-buynow .grid-myfav .box .bet, .storePage .storePage-buynow .grid-mybid .box .bet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,16 +378,16 @@
           justify-content: space-between;
 }
 
-.storePage .storePage-buynow .grid-store .box .bet .star i, .storePage .storePage-buynow .grid-store .box .bet .credit i {
+.storePage .storePage-buynow .grid-store .box .bet .star i, .storePage .storePage-buynow .grid-store .box .bet .credit i, .storePage .storePage-buynow .grid-myfav .box .bet .star i, .storePage .storePage-buynow .grid-myfav .box .bet .credit i, .storePage .storePage-buynow .grid-mybid .box .bet .star i, .storePage .storePage-buynow .grid-mybid .box .bet .credit i {
   color: #ffb200;
 }
 
-.storePage .storePage-buynow .grid-store .box .delete-button {
+.storePage .storePage-buynow .grid-store .box .delete-button, .storePage .storePage-buynow .grid-myfav .box .delete-button, .storePage .storePage-buynow .grid-mybid .box .delete-button {
   text-align: end;
   margin-top: 3%;
 }
 
-.storePage .storePage-buynow .grid-store .box .delete-button button {
+.storePage .storePage-buynow .grid-store .box .delete-button button, .storePage .storePage-buynow .grid-myfav .box .delete-button button, .storePage .storePage-buynow .grid-mybid .box .delete-button button {
   border: unset;
   border-radius: 20px;
   width: 40%;
@@ -405,7 +405,7 @@
   color: #000;
 }
 
-.storePage .storePage-success .grid-store {
+.storePage .storePage-success .grid-store, .storePage .storePage-success .grid-myfav, .storePage .storePage-success .grid-mybid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -414,67 +414,67 @@
   margin: 5% 0;
 }
 
-.storePage .storePage-success .grid-store .box .text-head {
+.storePage .storePage-success .grid-store .box .text-head, .storePage .storePage-success .grid-myfav .box .text-head, .storePage .storePage-success .grid-mybid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
   text-align: center;
   padding: 5px 0;
 }
 
-.storePage .storePage-success .grid-store .box .notbuy {
+.storePage .storePage-success .grid-store .box .notbuy, .storePage .storePage-success .grid-myfav .box .notbuy, .storePage .storePage-success .grid-mybid .box .notbuy {
   background: #2d2d2d;
 }
 
-.storePage .storePage-success .grid-store .box .buynow {
+.storePage .storePage-success .grid-store .box .buynow, .storePage .storePage-success .grid-myfav .box .buynow, .storePage .storePage-success .grid-mybid .box .buynow {
   background: #c20000;
 }
 
-.storePage .storePage-success .grid-store .box .success {
+.storePage .storePage-success .grid-store .box .success, .storePage .storePage-success .grid-myfav .box .success, .storePage .storePage-success .grid-mybid .box .success {
   background: #0094c2;
 }
 
-.storePage .storePage-success .grid-store .box .timeout {
+.storePage .storePage-success .grid-store .box .timeout, .storePage .storePage-success .grid-myfav .box .timeout, .storePage .storePage-success .grid-mybid .box .timeout {
   background: #c6c4c4;
 }
 
-.storePage .storePage-success .grid-store .box .now {
+.storePage .storePage-success .grid-store .box .now, .storePage .storePage-success .grid-myfav .box .now, .storePage .storePage-success .grid-mybid .box .now {
   background: #ffb200;
 }
 
-.storePage .storePage-success .grid-store .box figure img {
+.storePage .storePage-success .grid-store .box figure img, .storePage .storePage-success .grid-myfav .box figure img, .storePage .storePage-success .grid-mybid .box figure img {
   width: 100%;
 }
 
-.storePage .storePage-success .grid-store .box .title {
+.storePage .storePage-success .grid-store .box .title, .storePage .storePage-success .grid-myfav .box .title, .storePage .storePage-success .grid-mybid .box .title {
   font-size: 1vw;
   font-weight: 100;
   height: 3rem;
   overflow: hidden;
 }
 
-.storePage .storePage-success .grid-store .box .price {
+.storePage .storePage-success .grid-store .box .price, .storePage .storePage-success .grid-myfav .box .price, .storePage .storePage-success .grid-mybid .box .price {
   display: -ms-grid;
   display: grid;
   color: #c20000;
   margin: 5% 0;
 }
 
-.storePage .storePage-success .grid-store .box .price span:nth-child(2) {
+.storePage .storePage-success .grid-store .box .price span:nth-child(2), .storePage .storePage-success .grid-myfav .box .price span:nth-child(2), .storePage .storePage-success .grid-mybid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
 
-.storePage .storePage-success .grid-store .box .date {
+.storePage .storePage-success .grid-store .box .date, .storePage .storePage-success .grid-myfav .box .date, .storePage .storePage-success .grid-mybid .box .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 3% 0;
 }
 
-.storePage .storePage-success .grid-store .box .date i {
+.storePage .storePage-success .grid-store .box .date i, .storePage .storePage-success .grid-myfav .box .date i, .storePage .storePage-success .grid-mybid .box .date i {
   margin-right: 2%;
 }
 
-.storePage .storePage-success .grid-store .box .bet {
+.storePage .storePage-success .grid-store .box .bet, .storePage .storePage-success .grid-myfav .box .bet, .storePage .storePage-success .grid-mybid .box .bet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,16 +483,16 @@
           justify-content: space-between;
 }
 
-.storePage .storePage-success .grid-store .box .bet .star i, .storePage .storePage-success .grid-store .box .bet .credit i {
+.storePage .storePage-success .grid-store .box .bet .star i, .storePage .storePage-success .grid-store .box .bet .credit i, .storePage .storePage-success .grid-myfav .box .bet .star i, .storePage .storePage-success .grid-myfav .box .bet .credit i, .storePage .storePage-success .grid-mybid .box .bet .star i, .storePage .storePage-success .grid-mybid .box .bet .credit i {
   color: #ffb200;
 }
 
-.storePage .storePage-success .grid-store .box .delete-button {
+.storePage .storePage-success .grid-store .box .delete-button, .storePage .storePage-success .grid-myfav .box .delete-button, .storePage .storePage-success .grid-mybid .box .delete-button {
   text-align: end;
   margin-top: 3%;
 }
 
-.storePage .storePage-success .grid-store .box .delete-button button {
+.storePage .storePage-success .grid-store .box .delete-button button, .storePage .storePage-success .grid-myfav .box .delete-button button, .storePage .storePage-success .grid-mybid .box .delete-button button {
   border: unset;
   border-radius: 20px;
   width: 40%;
@@ -510,7 +510,7 @@
   color: #000;
 }
 
-.storePage .storePage-timeout .grid-store {
+.storePage .storePage-timeout .grid-store, .storePage .storePage-timeout .grid-myfav, .storePage .storePage-timeout .grid-mybid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -519,67 +519,67 @@
   margin: 5% 0;
 }
 
-.storePage .storePage-timeout .grid-store .box .text-head {
+.storePage .storePage-timeout .grid-store .box .text-head, .storePage .storePage-timeout .grid-myfav .box .text-head, .storePage .storePage-timeout .grid-mybid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
   text-align: center;
   padding: 5px 0;
 }
 
-.storePage .storePage-timeout .grid-store .box .notbuy {
+.storePage .storePage-timeout .grid-store .box .notbuy, .storePage .storePage-timeout .grid-myfav .box .notbuy, .storePage .storePage-timeout .grid-mybid .box .notbuy {
   background: #2d2d2d;
 }
 
-.storePage .storePage-timeout .grid-store .box .buynow {
+.storePage .storePage-timeout .grid-store .box .buynow, .storePage .storePage-timeout .grid-myfav .box .buynow, .storePage .storePage-timeout .grid-mybid .box .buynow {
   background: #c20000;
 }
 
-.storePage .storePage-timeout .grid-store .box .success {
+.storePage .storePage-timeout .grid-store .box .success, .storePage .storePage-timeout .grid-myfav .box .success, .storePage .storePage-timeout .grid-mybid .box .success {
   background: #0094c2;
 }
 
-.storePage .storePage-timeout .grid-store .box .timeout {
+.storePage .storePage-timeout .grid-store .box .timeout, .storePage .storePage-timeout .grid-myfav .box .timeout, .storePage .storePage-timeout .grid-mybid .box .timeout {
   background: #c6c4c4;
 }
 
-.storePage .storePage-timeout .grid-store .box .now {
+.storePage .storePage-timeout .grid-store .box .now, .storePage .storePage-timeout .grid-myfav .box .now, .storePage .storePage-timeout .grid-mybid .box .now {
   background: #ffb200;
 }
 
-.storePage .storePage-timeout .grid-store .box figure img {
+.storePage .storePage-timeout .grid-store .box figure img, .storePage .storePage-timeout .grid-myfav .box figure img, .storePage .storePage-timeout .grid-mybid .box figure img {
   width: 100%;
 }
 
-.storePage .storePage-timeout .grid-store .box .title {
+.storePage .storePage-timeout .grid-store .box .title, .storePage .storePage-timeout .grid-myfav .box .title, .storePage .storePage-timeout .grid-mybid .box .title {
   font-size: 1vw;
   font-weight: 100;
   height: 3rem;
   overflow: hidden;
 }
 
-.storePage .storePage-timeout .grid-store .box .price {
+.storePage .storePage-timeout .grid-store .box .price, .storePage .storePage-timeout .grid-myfav .box .price, .storePage .storePage-timeout .grid-mybid .box .price {
   display: -ms-grid;
   display: grid;
   color: #c20000;
   margin: 5% 0;
 }
 
-.storePage .storePage-timeout .grid-store .box .price span:nth-child(2) {
+.storePage .storePage-timeout .grid-store .box .price span:nth-child(2), .storePage .storePage-timeout .grid-myfav .box .price span:nth-child(2), .storePage .storePage-timeout .grid-mybid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
 
-.storePage .storePage-timeout .grid-store .box .date {
+.storePage .storePage-timeout .grid-store .box .date, .storePage .storePage-timeout .grid-myfav .box .date, .storePage .storePage-timeout .grid-mybid .box .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 3% 0;
 }
 
-.storePage .storePage-timeout .grid-store .box .date i {
+.storePage .storePage-timeout .grid-store .box .date i, .storePage .storePage-timeout .grid-myfav .box .date i, .storePage .storePage-timeout .grid-mybid .box .date i {
   margin-right: 2%;
 }
 
-.storePage .storePage-timeout .grid-store .box .bet {
+.storePage .storePage-timeout .grid-store .box .bet, .storePage .storePage-timeout .grid-myfav .box .bet, .storePage .storePage-timeout .grid-mybid .box .bet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,16 +588,16 @@
           justify-content: space-between;
 }
 
-.storePage .storePage-timeout .grid-store .box .bet .star i, .storePage .storePage-timeout .grid-store .box .bet .credit i {
+.storePage .storePage-timeout .grid-store .box .bet .star i, .storePage .storePage-timeout .grid-store .box .bet .credit i, .storePage .storePage-timeout .grid-myfav .box .bet .star i, .storePage .storePage-timeout .grid-myfav .box .bet .credit i, .storePage .storePage-timeout .grid-mybid .box .bet .star i, .storePage .storePage-timeout .grid-mybid .box .bet .credit i {
   color: #ffb200;
 }
 
-.storePage .storePage-timeout .grid-store .box .delete-button {
+.storePage .storePage-timeout .grid-store .box .delete-button, .storePage .storePage-timeout .grid-myfav .box .delete-button, .storePage .storePage-timeout .grid-mybid .box .delete-button {
   text-align: end;
   margin-top: 3%;
 }
 
-.storePage .storePage-timeout .grid-store .box .delete-button button {
+.storePage .storePage-timeout .grid-store .box .delete-button button, .storePage .storePage-timeout .grid-myfav .box .delete-button button, .storePage .storePage-timeout .grid-mybid .box .delete-button button {
   border: unset;
   border-radius: 20px;
   width: 40%;
@@ -615,7 +615,7 @@
   color: #000;
 }
 
-.storePage .storePage-now .grid-store {
+.storePage .storePage-now .grid-store, .storePage .storePage-now .grid-myfav, .storePage .storePage-now .grid-mybid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -624,67 +624,67 @@
   margin: 5% 0;
 }
 
-.storePage .storePage-now .grid-store .box .text-head {
+.storePage .storePage-now .grid-store .box .text-head, .storePage .storePage-now .grid-myfav .box .text-head, .storePage .storePage-now .grid-mybid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
   text-align: center;
   padding: 5px 0;
 }
 
-.storePage .storePage-now .grid-store .box .notbuy {
+.storePage .storePage-now .grid-store .box .notbuy, .storePage .storePage-now .grid-myfav .box .notbuy, .storePage .storePage-now .grid-mybid .box .notbuy {
   background: #2d2d2d;
 }
 
-.storePage .storePage-now .grid-store .box .buynow {
+.storePage .storePage-now .grid-store .box .buynow, .storePage .storePage-now .grid-myfav .box .buynow, .storePage .storePage-now .grid-mybid .box .buynow {
   background: #c20000;
 }
 
-.storePage .storePage-now .grid-store .box .success {
+.storePage .storePage-now .grid-store .box .success, .storePage .storePage-now .grid-myfav .box .success, .storePage .storePage-now .grid-mybid .box .success {
   background: #0094c2;
 }
 
-.storePage .storePage-now .grid-store .box .timeout {
+.storePage .storePage-now .grid-store .box .timeout, .storePage .storePage-now .grid-myfav .box .timeout, .storePage .storePage-now .grid-mybid .box .timeout {
   background: #c6c4c4;
 }
 
-.storePage .storePage-now .grid-store .box .now {
+.storePage .storePage-now .grid-store .box .now, .storePage .storePage-now .grid-myfav .box .now, .storePage .storePage-now .grid-mybid .box .now {
   background: #ffb200;
 }
 
-.storePage .storePage-now .grid-store .box figure img {
+.storePage .storePage-now .grid-store .box figure img, .storePage .storePage-now .grid-myfav .box figure img, .storePage .storePage-now .grid-mybid .box figure img {
   width: 100%;
 }
 
-.storePage .storePage-now .grid-store .box .title {
+.storePage .storePage-now .grid-store .box .title, .storePage .storePage-now .grid-myfav .box .title, .storePage .storePage-now .grid-mybid .box .title {
   font-size: 1vw;
   font-weight: 100;
   height: 3rem;
   overflow: hidden;
 }
 
-.storePage .storePage-now .grid-store .box .price {
+.storePage .storePage-now .grid-store .box .price, .storePage .storePage-now .grid-myfav .box .price, .storePage .storePage-now .grid-mybid .box .price {
   display: -ms-grid;
   display: grid;
   color: #c20000;
   margin: 5% 0;
 }
 
-.storePage .storePage-now .grid-store .box .price span:nth-child(2) {
+.storePage .storePage-now .grid-store .box .price span:nth-child(2), .storePage .storePage-now .grid-myfav .box .price span:nth-child(2), .storePage .storePage-now .grid-mybid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
 
-.storePage .storePage-now .grid-store .box .date {
+.storePage .storePage-now .grid-store .box .date, .storePage .storePage-now .grid-myfav .box .date, .storePage .storePage-now .grid-mybid .box .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 3% 0;
 }
 
-.storePage .storePage-now .grid-store .box .date i {
+.storePage .storePage-now .grid-store .box .date i, .storePage .storePage-now .grid-myfav .box .date i, .storePage .storePage-now .grid-mybid .box .date i {
   margin-right: 2%;
 }
 
-.storePage .storePage-now .grid-store .box .bet {
+.storePage .storePage-now .grid-store .box .bet, .storePage .storePage-now .grid-myfav .box .bet, .storePage .storePage-now .grid-mybid .box .bet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,16 +693,16 @@
           justify-content: space-between;
 }
 
-.storePage .storePage-now .grid-store .box .bet .star i, .storePage .storePage-now .grid-store .box .bet .credit i {
+.storePage .storePage-now .grid-store .box .bet .star i, .storePage .storePage-now .grid-store .box .bet .credit i, .storePage .storePage-now .grid-myfav .box .bet .star i, .storePage .storePage-now .grid-myfav .box .bet .credit i, .storePage .storePage-now .grid-mybid .box .bet .star i, .storePage .storePage-now .grid-mybid .box .bet .credit i {
   color: #ffb200;
 }
 
-.storePage .storePage-now .grid-store .box .delete-button {
+.storePage .storePage-now .grid-store .box .delete-button, .storePage .storePage-now .grid-myfav .box .delete-button, .storePage .storePage-now .grid-mybid .box .delete-button {
   text-align: end;
   margin-top: 3%;
 }
 
-.storePage .storePage-now .grid-store .box .delete-button button {
+.storePage .storePage-now .grid-store .box .delete-button button, .storePage .storePage-now .grid-myfav .box .delete-button button, .storePage .storePage-now .grid-mybid .box .delete-button button {
   border: unset;
   border-radius: 20px;
   width: 40%;

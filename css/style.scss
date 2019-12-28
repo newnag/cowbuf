@@ -776,3 +776,7 @@ footer{
         }
     }
 }
+
+.cate-page{
+    @include grid_store;
+}

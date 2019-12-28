@@ -873,4 +873,105 @@ footer .footer-section .info .detail {
   border: 1px solid #c6c4c4;
   border-top: unset;
 }
+
+.cate-page a {
+  color: #000;
+}
+
+.cate-page .grid-store, .cate-page .grid-myfav, .cate-page .grid-mybid, .cate-page .cate-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1%;
+  margin: 5% 0;
+}
+
+.cate-page .grid-store .box .text-head, .cate-page .grid-myfav .box .text-head, .cate-page .grid-mybid .box .text-head, .cate-page .cate-grid .box .text-head {
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.cate-page .grid-store .box .notbuy, .cate-page .grid-myfav .box .notbuy, .cate-page .grid-mybid .box .notbuy, .cate-page .cate-grid .box .notbuy {
+  background: #2d2d2d;
+}
+
+.cate-page .grid-store .box .buynow, .cate-page .grid-myfav .box .buynow, .cate-page .grid-mybid .box .buynow, .cate-page .cate-grid .box .buynow {
+  background: #c20000;
+}
+
+.cate-page .grid-store .box .success, .cate-page .grid-myfav .box .success, .cate-page .grid-mybid .box .success, .cate-page .cate-grid .box .success {
+  background: #0094c2;
+}
+
+.cate-page .grid-store .box .timeout, .cate-page .grid-myfav .box .timeout, .cate-page .grid-mybid .box .timeout, .cate-page .cate-grid .box .timeout {
+  background: #c6c4c4;
+}
+
+.cate-page .grid-store .box .now, .cate-page .grid-myfav .box .now, .cate-page .grid-mybid .box .now, .cate-page .cate-grid .box .now {
+  background: #ffb200;
+}
+
+.cate-page .grid-store .box figure img, .cate-page .grid-myfav .box figure img, .cate-page .grid-mybid .box figure img, .cate-page .cate-grid .box figure img {
+  width: 100%;
+}
+
+.cate-page .grid-store .box .title, .cate-page .grid-myfav .box .title, .cate-page .grid-mybid .box .title, .cate-page .cate-grid .box .title {
+  font-size: 1vw;
+  font-weight: 100;
+  height: 3rem;
+  overflow: hidden;
+}
+
+.cate-page .grid-store .box .price, .cate-page .grid-myfav .box .price, .cate-page .grid-mybid .box .price, .cate-page .cate-grid .box .price {
+  display: -ms-grid;
+  display: grid;
+  color: #c20000;
+  margin: 5% 0;
+}
+
+.cate-page .grid-store .box .price span:nth-child(2), .cate-page .grid-myfav .box .price span:nth-child(2), .cate-page .grid-mybid .box .price span:nth-child(2), .cate-page .cate-grid .box .price span:nth-child(2) {
+  font-size: 1.2vw;
+}
+
+.cate-page .grid-store .box .date, .cate-page .grid-myfav .box .date, .cate-page .grid-mybid .box .date, .cate-page .cate-grid .box .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3% 0;
+}
+
+.cate-page .grid-store .box .date i, .cate-page .grid-myfav .box .date i, .cate-page .grid-mybid .box .date i, .cate-page .cate-grid .box .date i {
+  margin-right: 2%;
+}
+
+.cate-page .grid-store .box .bet, .cate-page .grid-myfav .box .bet, .cate-page .grid-mybid .box .bet, .cate-page .cate-grid .box .bet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cate-page .grid-store .box .bet .star i, .cate-page .grid-store .box .bet .credit i, .cate-page .grid-myfav .box .bet .star i, .cate-page .grid-myfav .box .bet .credit i, .cate-page .grid-mybid .box .bet .star i, .cate-page .grid-mybid .box .bet .credit i, .cate-page .cate-grid .box .bet .star i, .cate-page .cate-grid .box .bet .credit i {
+  color: #ffb200;
+}
+
+.cate-page .grid-store .box .delete-button, .cate-page .grid-myfav .box .delete-button, .cate-page .grid-mybid .box .delete-button, .cate-page .cate-grid .box .delete-button {
+  text-align: end;
+  margin-top: 3%;
+}
+
+.cate-page .grid-store .box .delete-button button, .cate-page .grid-myfav .box .delete-button button, .cate-page .grid-mybid .box .delete-button button, .cate-page .cate-grid .box .delete-button button {
+  border: unset;
+  border-radius: 20px;
+  width: 40%;
+  height: 2rem;
+  background: #ffb200;
+  cursor: pointer;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

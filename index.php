@@ -38,6 +38,10 @@
                             @include "template/contact.php";
                             break;
 
+                        case 'cate':
+                            @include "template/category.php";
+                            break;
+
                         case 'detail-product':
                             @include "template/detail-product.php";
                             break;
