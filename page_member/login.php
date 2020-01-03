@@ -11,12 +11,12 @@
         <form action="">
             <div class="input-login">
                 <label>ชื่อผู้ใช้*</label>
-                <input type="text" placeholder="กรอกชื่อผู้ใช้">
+                <input type="text" placeholder="กรอกชื่อผู้ใช้" required>
             </div>
 
             <div class="input-login">
                 <label>รหัสผ่าน*</label>
-                <input id="pass" type="password" placeholder="กรอกรหัสผ่าน">
+                <input id="pass" type="password" placeholder="กรอกรหัสผ่าน" required>
                 <div class="view" onclick="view_password()"><i class="fas fa-eye"></i></div></input>
             </div>
         </form>
