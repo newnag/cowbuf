@@ -41,11 +41,13 @@
                 <label>เบอร์โทร*</label>
                 <input id="edit-input" type="tel" placeholder="กรอกเบอร์โทรศัพท์" readonly required>
             </div>
+
+            <div class="login-button">
+                <button type="submit" id="edit-data">บันทึก</button>
+            </div>
         </form>
 
-        <div class="login-button">
-            <button id="edit-data">บันทึก</button>
-        </div>
+        
     </div>
 
     <!-- เปลี่ยน password -->
@@ -74,11 +76,13 @@
                 <label>ยืนยันรหัสผ่านใหม่*</label>
                 <input id="edit-input" type="password" readonly placeholder="กรอกรหัสผ่านใหม่">
             </div>
+
+            <div class="login-button">
+                <button type="submit" id="edit-pass">บันทึก</button>
+            </div>
         </form>
 
-        <div class="login-button">
-            <button id="edit-pass">บันทึก</button>
-        </div>
+        
     </div>
 </div>
 
