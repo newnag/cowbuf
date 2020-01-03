@@ -39,8 +39,6 @@
                 <label>จังหวัด*</label>
                 <select name="" id="">
                     <option value="">เลือกจังหวัด</option>
-                    <option value="กรุงเทพ">กรุงเทพ</option>
-                    <option value="ขอนแก่น">ขอนแก่น</option>
                 </select>
             </div>
 
