@@ -30,40 +30,54 @@ $('.menu-store .leaf-menu .button-menu button#store-follow').click(function(){
     $(this).addClass('active');
 });
 
-  // เปลี่ยนหน้าร้านค้า
-  $('.storePage .menu-store .leaf-menu #store-page').click(function(){
-    $('.menu-store .right-select').show();
-    $('.menu-store .head-store-follow').hide();
+// เปลี่ยนปุ่ม active เติมเงิน
+$('.menu-mycart .leaf-menu .button-menu #paypaid').click(function(){
+  $('.menu-mycart .leaf-menu .button-menu button').removeClass('active');
+  $(this).addClass('active');
+});
+$('.menu-mycart .leaf-menu .button-menu #withdraw').click(function(){
+  $('.menu-mycart .leaf-menu .button-menu button').removeClass('active');
+  $(this).addClass('active');
+});
+$('.menu-mycart .leaf-menu .button-menu #history-paid').click(function(){
+  $('.menu-mycart .leaf-menu .button-menu button').removeClass('active');
+  $(this).addClass('active');
+});
 
-    $.ajax({
-      url:"template/store-page.php",
-      success:function(data){
-        $('.page-store').html(data);
-      },
-    });
-  });
-  // เปลี่ยนหน้าลงสินค้า
-  $('.storePage .menu-store .leaf-menu #store-sale').click(function(){
-    $('.menu-store .right-select').hide();
-    $('.menu-store .head-store-follow').hide();
+// เปลี่ยนหน้าร้านค้า
+$('.storePage .menu-store .leaf-menu #store-page').click(function(){
+  $('.menu-store .right-select').show();
+  $('.menu-store .head-store-follow').hide();
 
-    $.ajax({
-      url:"template/sale.php",
-      success:function(data){
-        $('.page-store').html(data);
-      },
-    });
+  $.ajax({
+    url:"template/store-page.php",
+    success:function(data){
+      $('.page-store').html(data);
+    },
   });
-  // เปลี่ยนหน้าร้านติดตาม
-  $('.storePage .menu-store .leaf-menu #store-follow').click(function(){
-    $('.menu-store .head-store-follow').show();
-    $('.menu-store .right-select').hide();
+});
+// เปลี่ยนหน้าลงสินค้า
+$('.storePage .menu-store .leaf-menu #store-sale').click(function(){
+  $('.menu-store .right-select').hide();
+  $('.menu-store .head-store-follow').hide();
 
-    $.ajax({
-      url:"template/store-follow.php",
-      success:function(data){
-        $('.page-store').html(data);
-      },
-    });
+  $.ajax({
+    url:"template/sale.php",
+    success:function(data){
+      $('.page-store').html(data);
+    },
   });
+});
+// เปลี่ยนหน้าร้านติดตาม
+$('.storePage .menu-store .leaf-menu #store-follow').click(function(){
+  $('.menu-store .head-store-follow').show();
+  $('.menu-store .right-select').hide();
+
+  $.ajax({
+    url:"template/store-follow.php",
+    success:function(data){
+      $('.page-store').html(data);
+    },
+  });
+});
 
