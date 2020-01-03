@@ -38,13 +38,12 @@ $left-menu-color: #c6c4c4;
     }
 
     form{
-        padding: 3% 2%;
-        background: #342b2c;
 
         .input-login{
             display: grid;
-            position: relative;
-            margin: 2% 0;
+            position: relative; 
+            padding: 2%;
+            background: #342b2c;
 
             label{
                 color: $head-color;
@@ -59,7 +58,7 @@ $left-menu-color: #c6c4c4;
             .view{
                 position: absolute;
                 top: 50%;
-                right: 0;
+                right: 3%;
                 color: $left-menu-color;
                 cursor: pointer;
             }

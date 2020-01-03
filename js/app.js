@@ -88,23 +88,29 @@ $('.slider-for').slick({
   };
 
   // เปิดกล่องสร้างรหัสผ่านใหม่
-  $('.login-button #forget-button').click(function(){
-    $('.dialog-forget').fadeIn();
-    $('.bg-dialog').show();
-  });
+  function showDialog_forget(){
+    $('.login-button #forget-button').click(function(){
+      $('.dialog-forget').fadeIn();
+      $('.bg-dialog').show();
+    });
+  }
 
   //ปิดกล่องก็อปปี้รหัสผ่านใหม่
   $('.new-pass .button #copy-newpass').click(function(){
+    var copy = $('.new-pass .input-form #newpass');
+    copy.select();
+    document.execCommand("copy");
     $('.dialog-forget').fadeOut();
     $('.bg-dialog').hide();
   });
 
-  // สลับเมนูหัวบนเมื่อเข้าสู่ระบบ
+
+  //สลับเมนูหัวบนเมื่อเข้าสู่ระบบ
   $('.form-login .login-button').click(function(){
     $('.member-head').hide();
     $('.member-login').show();
   });
-
+ 
   // เปิดปิดเมนูสมาชิก
   $('.user-login').click(function(){
     $('.member-menu').slideToggle();
@@ -185,3 +191,130 @@ $('.slider-for').slick({
     });
   });
 
+//----------------ส่วนเช็คแจ้งเตือนฟอร์มสมาชิก------------------//
+
+$('.login .form-login form').submit(function(e){
+  // สมาชิกกรอกข้อมูลว่าง
+  if($('.login .form-login .input-login input[name="user"]').val() == ''){
+    e.preventDefault();
+    swal({
+      text: "กรุณากรอกชื่อผู้ใช้งาน",
+      icon: "warning",
+    });
+    return false;
+  }
+  if($('.login .form-login .input-login input[name="pass"]').val() == ''){
+    swal({
+      text: "กรุณากรอกรหัสผ่าน",
+      icon: "warning",
+    });
+    return false;
+  }
+
+  // สมาชิกกรอกข้อมูลผิด
+  if($('.login .form-login .input-login input[name="user"]').val() != 'admin'){
+    e.preventDefault();
+    swal({
+      text: "กรอกชื่อผู้ใช้ผิด",
+      icon: "error",
+    });
+    return false;
+  }
+  if($('.login .form-login .input-login input[name="pass"]').val() != 'pass'){
+    swal({
+      text: "กรอกรหัสผ่านผิด",
+      icon: "error",
+    });
+    return false;
+  }
+
+  // กรอกถูกต้อง
+  else{
+    return true;
+  } 
+});
+
+// ฟอร์มสมัครสมาชิก
+$('.register-page .form-register form').submit(function(e){
+  $(this).find('.input-login input').each(function(){
+    var pass = $('.register-page .form-register form .input-login #pass').val();
+    var confpass = $('.register-page .form-register form .input-login #confpass').val();
+
+    if(!$(this).val()){
+      e.preventDefault();
+      swal({
+        text: "กรุณากรอกข้อมูลให้ครบถ้วน",
+        icon: "warning",
+      });
+      return false;
+    }
+    // เช็คยืนยันรหัสผ่าน
+    if(pass !== confpass){
+      e.preventDefault();
+      swal({
+        text: "กรุณากรอกรหัสผ่านให้ตรงกัน",
+        icon: "error",
+      });
+      return false;
+    }
+    // เช็คพาส6ตัว
+    if(pass.length < 6){
+      e.preventDefault();
+      swal({
+        text: "กรุณากรอกรหัสผ่าน 6 ตัวขึ้นไป",
+        icon: "warning",
+      });
+      return false;
+    }
+
+    // กรอกข้อมูลถูกต้อง
+    else{
+      return true;
+    }
+  });
+});
+
+// ฟอร์มลืมรหัส
+$('.forget .form-forget form').submit(function(e){
+  $(this).find('.input-login input').each(function(){
+    if(!$(this).val()){
+      e.preventDefault();
+      swal({
+        text: "กรุณากรอกข้อมูลให้ครบถ้วน",
+        icon: "warning",
+      });
+      return false;
+    }
+
+    // เช็คชื่อผู้ใช้
+    var forget_user = $('.forget .form-forget form .input-login #forget-user').val();
+    if(forget_user !== 'admin'){
+      e.preventDefault();
+      swal({
+        text: "ไม่มีชื่อผู้ใช้นี้",
+        icon: "error",
+      });
+      return false;
+    }
+
+    // เช็คเลขบัตร
+    var forget_idnumber = $('.forget .form-forget form .input-login #idnubmer').val();
+    if(forget_idnumber !== '12345678910'){
+      e.preventDefault();
+      swal({
+        text: "ไม่มีเลขบัตรประชาชนนี้",
+        icon: "error",
+      });
+      return false;
+    }
+
+    // กรอกครบถ้วน
+    else{
+      e.preventDefault();
+      showDialog_forget();
+      return false;
+    }
+  });
+});
+
+//----------------จบส่วนเช็คแจ้งเตือนฟอร์มสมาชิก------------------//

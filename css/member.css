@@ -27,7 +27,7 @@
 }
 
 .login .form-login {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .login .form-login h2 {
@@ -38,16 +38,12 @@
   padding: 1% 1%;
 }
 
-.login .form-login form {
-  padding: 3% 2%;
-  background: #342b2c;
-}
-
 .login .form-login form .input-login {
   display: -ms-grid;
   display: grid;
   position: relative;
-  margin: 2% 0;
+  padding: 2%;
+  background: #342b2c;
 }
 
 .login .form-login form .input-login label {
@@ -65,7 +61,7 @@
 .login .form-login form .input-login .view {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 3%;
   color: #c6c4c4;
   cursor: pointer;
 }
@@ -146,16 +142,12 @@
   padding: 1% 1%;
 }
 
-.register-page .form-register form {
-  padding: 3% 2%;
-  background: #342b2c;
-}
-
 .register-page .form-register form .input-login {
   display: -ms-grid;
   display: grid;
   position: relative;
-  margin: 2% 0;
+  padding: 2%;
+  background: #342b2c;
 }
 
 .register-page .form-register form .input-login label {
@@ -173,7 +165,7 @@
 .register-page .form-register form .input-login .view {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 3%;
   color: #c6c4c4;
   cursor: pointer;
 }
@@ -244,16 +236,12 @@
   padding: 1% 1%;
 }
 
-.forget .form-forget form {
-  padding: 3% 2%;
-  background: #342b2c;
-}
-
 .forget .form-forget form .input-login {
   display: -ms-grid;
   display: grid;
   position: relative;
-  margin: 2% 0;
+  padding: 2%;
+  background: #342b2c;
 }
 
 .forget .form-forget form .input-login label {
@@ -271,7 +259,7 @@
 .forget .form-forget form .input-login .view {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 3%;
   color: #c6c4c4;
   cursor: pointer;
 }
@@ -413,16 +401,12 @@
   padding: 1% 1%;
 }
 
-.account form {
-  padding: 3% 2%;
-  background: #342b2c;
-}
-
 .account form .input-login {
   display: -ms-grid;
   display: grid;
   position: relative;
-  margin: 2% 0;
+  padding: 2%;
+  background: #342b2c;
 }
 
 .account form .input-login label {
@@ -440,7 +424,7 @@
 .account form .input-login .view {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 3%;
   color: #c6c4c4;
   cursor: pointer;
 }

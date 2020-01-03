@@ -8,21 +8,22 @@
     <div class="form-forget">
         <h2>กรอกข้อมูลหากลืมรหัสผ่าน</h2>
 
-        <form action="">
+        <form>
             <div class="input-login">
                 <label>ชื่อผู้ใช้*</label>
-                <input type="text" placeholder="กรอกชื่อผู้ใช้">
+                <input name="user-forget" id="forget-user" type="text" placeholder="กรอกชื่อผู้ใช้">
             </div>
 
             <div class="input-login">
                 <label>เลขบัตรประชาชน*</label>
-                <input type="number" placeholder="กรอกเลขบัตรประชาชน">
+                <input id="idnubmer" type="number" placeholder="กรอกเลขบัตรประชาชน">
+            </div>
+
+            <div class="login-button">
+                <button type="submit" id="forget-button">ส่ง</button>
             </div>
         </form>
-
-        <div class="login-button">
-            <button id="forget-button">ส่ง</button>
-        </div>
+ 
     </div>
 </div>
 

@@ -129,7 +129,7 @@
   color: #000;
 }
 
-.my-fav .grid-store, .my-fav .grid-myfav, .my-fav .grid-mybid {
+.my-fav .grid-store, .my-fav .grid-myfav, .my-fav .grid-mybid, .my-fav .cate-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -138,67 +138,67 @@
   margin: 5% 0;
 }
 
-.my-fav .grid-store .box .text-head, .my-fav .grid-myfav .box .text-head, .my-fav .grid-mybid .box .text-head {
+.my-fav .grid-store .box .text-head, .my-fav .grid-myfav .box .text-head, .my-fav .grid-mybid .box .text-head, .my-fav .cate-grid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
   text-align: center;
   padding: 5px 0;
 }
 
-.my-fav .grid-store .box .notbuy, .my-fav .grid-myfav .box .notbuy, .my-fav .grid-mybid .box .notbuy {
+.my-fav .grid-store .box .notbuy, .my-fav .grid-myfav .box .notbuy, .my-fav .grid-mybid .box .notbuy, .my-fav .cate-grid .box .notbuy {
   background: #2d2d2d;
 }
 
-.my-fav .grid-store .box .buynow, .my-fav .grid-myfav .box .buynow, .my-fav .grid-mybid .box .buynow {
+.my-fav .grid-store .box .buynow, .my-fav .grid-myfav .box .buynow, .my-fav .grid-mybid .box .buynow, .my-fav .cate-grid .box .buynow {
   background: #c20000;
 }
 
-.my-fav .grid-store .box .success, .my-fav .grid-myfav .box .success, .my-fav .grid-mybid .box .success {
+.my-fav .grid-store .box .success, .my-fav .grid-myfav .box .success, .my-fav .grid-mybid .box .success, .my-fav .cate-grid .box .success {
   background: #0094c2;
 }
 
-.my-fav .grid-store .box .timeout, .my-fav .grid-myfav .box .timeout, .my-fav .grid-mybid .box .timeout {
+.my-fav .grid-store .box .timeout, .my-fav .grid-myfav .box .timeout, .my-fav .grid-mybid .box .timeout, .my-fav .cate-grid .box .timeout {
   background: #c6c4c4;
 }
 
-.my-fav .grid-store .box .now, .my-fav .grid-myfav .box .now, .my-fav .grid-mybid .box .now {
+.my-fav .grid-store .box .now, .my-fav .grid-myfav .box .now, .my-fav .grid-mybid .box .now, .my-fav .cate-grid .box .now {
   background: #ffb200;
 }
 
-.my-fav .grid-store .box figure img, .my-fav .grid-myfav .box figure img, .my-fav .grid-mybid .box figure img {
+.my-fav .grid-store .box figure img, .my-fav .grid-myfav .box figure img, .my-fav .grid-mybid .box figure img, .my-fav .cate-grid .box figure img {
   width: 100%;
 }
 
-.my-fav .grid-store .box .title, .my-fav .grid-myfav .box .title, .my-fav .grid-mybid .box .title {
+.my-fav .grid-store .box .title, .my-fav .grid-myfav .box .title, .my-fav .grid-mybid .box .title, .my-fav .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
   height: 3rem;
   overflow: hidden;
 }
 
-.my-fav .grid-store .box .price, .my-fav .grid-myfav .box .price, .my-fav .grid-mybid .box .price {
+.my-fav .grid-store .box .price, .my-fav .grid-myfav .box .price, .my-fav .grid-mybid .box .price, .my-fav .cate-grid .box .price {
   display: -ms-grid;
   display: grid;
   color: #c20000;
   margin: 5% 0;
 }
 
-.my-fav .grid-store .box .price span:nth-child(2), .my-fav .grid-myfav .box .price span:nth-child(2), .my-fav .grid-mybid .box .price span:nth-child(2) {
+.my-fav .grid-store .box .price span:nth-child(2), .my-fav .grid-myfav .box .price span:nth-child(2), .my-fav .grid-mybid .box .price span:nth-child(2), .my-fav .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
 
-.my-fav .grid-store .box .date, .my-fav .grid-myfav .box .date, .my-fav .grid-mybid .box .date {
+.my-fav .grid-store .box .date, .my-fav .grid-myfav .box .date, .my-fav .grid-mybid .box .date, .my-fav .cate-grid .box .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 3% 0;
 }
 
-.my-fav .grid-store .box .date i, .my-fav .grid-myfav .box .date i, .my-fav .grid-mybid .box .date i {
+.my-fav .grid-store .box .date i, .my-fav .grid-myfav .box .date i, .my-fav .grid-mybid .box .date i, .my-fav .cate-grid .box .date i {
   margin-right: 2%;
 }
 
-.my-fav .grid-store .box .bet, .my-fav .grid-myfav .box .bet, .my-fav .grid-mybid .box .bet {
+.my-fav .grid-store .box .bet, .my-fav .grid-myfav .box .bet, .my-fav .grid-mybid .box .bet, .my-fav .cate-grid .box .bet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,16 +207,16 @@
           justify-content: space-between;
 }
 
-.my-fav .grid-store .box .bet .star i, .my-fav .grid-store .box .bet .credit i, .my-fav .grid-myfav .box .bet .star i, .my-fav .grid-myfav .box .bet .credit i, .my-fav .grid-mybid .box .bet .star i, .my-fav .grid-mybid .box .bet .credit i {
+.my-fav .grid-store .box .bet .star i, .my-fav .grid-store .box .bet .credit i, .my-fav .grid-myfav .box .bet .star i, .my-fav .grid-myfav .box .bet .credit i, .my-fav .grid-mybid .box .bet .star i, .my-fav .grid-mybid .box .bet .credit i, .my-fav .cate-grid .box .bet .star i, .my-fav .cate-grid .box .bet .credit i {
   color: #ffb200;
 }
 
-.my-fav .grid-store .box .delete-button, .my-fav .grid-myfav .box .delete-button, .my-fav .grid-mybid .box .delete-button {
+.my-fav .grid-store .box .delete-button, .my-fav .grid-myfav .box .delete-button, .my-fav .grid-mybid .box .delete-button, .my-fav .cate-grid .box .delete-button {
   text-align: end;
   margin-top: 3%;
 }
 
-.my-fav .grid-store .box .delete-button button, .my-fav .grid-myfav .box .delete-button button, .my-fav .grid-mybid .box .delete-button button {
+.my-fav .grid-store .box .delete-button button, .my-fav .grid-myfav .box .delete-button button, .my-fav .grid-mybid .box .delete-button button, .my-fav .cate-grid .box .delete-button button {
   border: unset;
   border-radius: 20px;
   width: 40%;
@@ -230,7 +230,7 @@
   color: #000;
 }
 
-.my-bid .grid-store, .my-bid .grid-myfav, .my-bid .grid-mybid {
+.my-bid .grid-store, .my-bid .grid-myfav, .my-bid .grid-mybid, .my-bid .cate-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -239,67 +239,67 @@
   margin: 5% 0;
 }
 
-.my-bid .grid-store .box .text-head, .my-bid .grid-myfav .box .text-head, .my-bid .grid-mybid .box .text-head {
+.my-bid .grid-store .box .text-head, .my-bid .grid-myfav .box .text-head, .my-bid .grid-mybid .box .text-head, .my-bid .cate-grid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
   text-align: center;
   padding: 5px 0;
 }
 
-.my-bid .grid-store .box .notbuy, .my-bid .grid-myfav .box .notbuy, .my-bid .grid-mybid .box .notbuy {
+.my-bid .grid-store .box .notbuy, .my-bid .grid-myfav .box .notbuy, .my-bid .grid-mybid .box .notbuy, .my-bid .cate-grid .box .notbuy {
   background: #2d2d2d;
 }
 
-.my-bid .grid-store .box .buynow, .my-bid .grid-myfav .box .buynow, .my-bid .grid-mybid .box .buynow {
+.my-bid .grid-store .box .buynow, .my-bid .grid-myfav .box .buynow, .my-bid .grid-mybid .box .buynow, .my-bid .cate-grid .box .buynow {
   background: #c20000;
 }
 
-.my-bid .grid-store .box .success, .my-bid .grid-myfav .box .success, .my-bid .grid-mybid .box .success {
+.my-bid .grid-store .box .success, .my-bid .grid-myfav .box .success, .my-bid .grid-mybid .box .success, .my-bid .cate-grid .box .success {
   background: #0094c2;
 }
 
-.my-bid .grid-store .box .timeout, .my-bid .grid-myfav .box .timeout, .my-bid .grid-mybid .box .timeout {
+.my-bid .grid-store .box .timeout, .my-bid .grid-myfav .box .timeout, .my-bid .grid-mybid .box .timeout, .my-bid .cate-grid .box .timeout {
   background: #c6c4c4;
 }
 
-.my-bid .grid-store .box .now, .my-bid .grid-myfav .box .now, .my-bid .grid-mybid .box .now {
+.my-bid .grid-store .box .now, .my-bid .grid-myfav .box .now, .my-bid .grid-mybid .box .now, .my-bid .cate-grid .box .now {
   background: #ffb200;
 }
 
-.my-bid .grid-store .box figure img, .my-bid .grid-myfav .box figure img, .my-bid .grid-mybid .box figure img {
+.my-bid .grid-store .box figure img, .my-bid .grid-myfav .box figure img, .my-bid .grid-mybid .box figure img, .my-bid .cate-grid .box figure img {
   width: 100%;
 }
 
-.my-bid .grid-store .box .title, .my-bid .grid-myfav .box .title, .my-bid .grid-mybid .box .title {
+.my-bid .grid-store .box .title, .my-bid .grid-myfav .box .title, .my-bid .grid-mybid .box .title, .my-bid .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
   height: 3rem;
   overflow: hidden;
 }
 
-.my-bid .grid-store .box .price, .my-bid .grid-myfav .box .price, .my-bid .grid-mybid .box .price {
+.my-bid .grid-store .box .price, .my-bid .grid-myfav .box .price, .my-bid .grid-mybid .box .price, .my-bid .cate-grid .box .price {
   display: -ms-grid;
   display: grid;
   color: #c20000;
   margin: 5% 0;
 }
 
-.my-bid .grid-store .box .price span:nth-child(2), .my-bid .grid-myfav .box .price span:nth-child(2), .my-bid .grid-mybid .box .price span:nth-child(2) {
+.my-bid .grid-store .box .price span:nth-child(2), .my-bid .grid-myfav .box .price span:nth-child(2), .my-bid .grid-mybid .box .price span:nth-child(2), .my-bid .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
 
-.my-bid .grid-store .box .date, .my-bid .grid-myfav .box .date, .my-bid .grid-mybid .box .date {
+.my-bid .grid-store .box .date, .my-bid .grid-myfav .box .date, .my-bid .grid-mybid .box .date, .my-bid .cate-grid .box .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 3% 0;
 }
 
-.my-bid .grid-store .box .date i, .my-bid .grid-myfav .box .date i, .my-bid .grid-mybid .box .date i {
+.my-bid .grid-store .box .date i, .my-bid .grid-myfav .box .date i, .my-bid .grid-mybid .box .date i, .my-bid .cate-grid .box .date i {
   margin-right: 2%;
 }
 
-.my-bid .grid-store .box .bet, .my-bid .grid-myfav .box .bet, .my-bid .grid-mybid .box .bet {
+.my-bid .grid-store .box .bet, .my-bid .grid-myfav .box .bet, .my-bid .grid-mybid .box .bet, .my-bid .cate-grid .box .bet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,16 +308,16 @@
           justify-content: space-between;
 }
 
-.my-bid .grid-store .box .bet .star i, .my-bid .grid-store .box .bet .credit i, .my-bid .grid-myfav .box .bet .star i, .my-bid .grid-myfav .box .bet .credit i, .my-bid .grid-mybid .box .bet .star i, .my-bid .grid-mybid .box .bet .credit i {
+.my-bid .grid-store .box .bet .star i, .my-bid .grid-store .box .bet .credit i, .my-bid .grid-myfav .box .bet .star i, .my-bid .grid-myfav .box .bet .credit i, .my-bid .grid-mybid .box .bet .star i, .my-bid .grid-mybid .box .bet .credit i, .my-bid .cate-grid .box .bet .star i, .my-bid .cate-grid .box .bet .credit i {
   color: #ffb200;
 }
 
-.my-bid .grid-store .box .delete-button, .my-bid .grid-myfav .box .delete-button, .my-bid .grid-mybid .box .delete-button {
+.my-bid .grid-store .box .delete-button, .my-bid .grid-myfav .box .delete-button, .my-bid .grid-mybid .box .delete-button, .my-bid .cate-grid .box .delete-button {
   text-align: end;
   margin-top: 3%;
 }
 
-.my-bid .grid-store .box .delete-button button, .my-bid .grid-myfav .box .delete-button button, .my-bid .grid-mybid .box .delete-button button {
+.my-bid .grid-store .box .delete-button button, .my-bid .grid-myfav .box .delete-button button, .my-bid .grid-mybid .box .delete-button button, .my-bid .cate-grid .box .delete-button button {
   border: unset;
   border-radius: 20px;
   width: 40%;
