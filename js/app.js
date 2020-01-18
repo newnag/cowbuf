@@ -346,8 +346,10 @@ $('.dialog-privacy .box-privacy .confirm-ok button').click(function(){
 // เปิดปุ่มเมนู header
 $('.main-head .bugger i').click(function(){
   $('.head-menu-mobile').slideDown('slow');
+  $('body').css('position','fixed');
 });
 $('.head-menu-mobile .close-menu-mobile').click(function(){
+  $('body').css('position','unset');
   $('.head-menu-mobile').slideUp('slow');
 });
 

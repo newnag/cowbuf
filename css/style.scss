@@ -599,8 +599,19 @@ nav{
 footer{
     background: $head-back;
 
+    @media screen and (max-width:480px) {
+        padding: 5% 0;
+    }
+
     .footer-section{
         @extend .container;
+
+        @media screen and (max-width:480px) {
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(4,1fr);
+            grid-row-gap: 4%;
+            margin-bottom: 15%;
+        }
 
         display: grid;
         grid-template-columns: 10% 50% 10% 30%;
@@ -666,7 +677,15 @@ footer{
         .info{
             text-align: center;
 
+            @media screen and (max-width:480px){
+                display: flex;
+            }
+
             figure{
+                @media screen and (max-width:480px){
+                    width: 50%;
+                }
+
                 img{
                     width: 60%;
                     height: auto;
@@ -678,6 +697,11 @@ footer{
                 padding-left: 25%;
                 color: $left-menu-color;
                 font-size: 0.7vw;
+
+                @media screen and (max-width:480px){
+                    padding-left: 0;
+                    width: 50%;
+                }
             }
         }
     }
