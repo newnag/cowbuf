@@ -158,3 +158,55 @@
         margin-top: 5%;
     }
 }
+
+.dialog-privacy{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000085;
+    z-index: 20;
+    padding: 10%;
+
+    .box-privacy{
+        background: $head-back;
+        padding: 5%;
+        margin: 0 15%;
+        border-radius: 15px;
+
+        .box-text{
+            padding: 0 5%;
+
+            p{
+                color: $head-color;
+                line-height: 2rem;
+            }
+        }
+    }
+
+    .check-confirm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3% 0;
+
+        span{
+            color: $head-color;
+            margin: 0 2%;
+        }
+    }
+
+    .confirm-ok{
+        text-align: center;
+        padding-top: 5%;
+
+        button{
+            cursor: pointer;
+            border: unset;
+            border-radius: 10px;
+            padding: 2%;
+            font-size: 1vw;
+        }
+    }
+}

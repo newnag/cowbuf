@@ -448,4 +448,62 @@
 .account .form-login:last-child {
   margin-top: 5%;
 }
+
+.dialog-privacy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000085;
+  z-index: 20;
+  padding: 10%;
+}
+
+.dialog-privacy .box-privacy {
+  background: #2d2d2d;
+  padding: 5%;
+  margin: 0 15%;
+  border-radius: 15px;
+}
+
+.dialog-privacy .box-privacy .box-text {
+  padding: 0 5%;
+}
+
+.dialog-privacy .box-privacy .box-text p {
+  color: #fff;
+  line-height: 2rem;
+}
+
+.dialog-privacy .check-confirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3% 0;
+}
+
+.dialog-privacy .check-confirm span {
+  color: #fff;
+  margin: 0 2%;
+}
+
+.dialog-privacy .confirm-ok {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.dialog-privacy .confirm-ok button {
+  cursor: pointer;
+  border: unset;
+  border-radius: 10px;
+  padding: 2%;
+  font-size: 1vw;
+}
 /*# sourceMappingURL=member.css.map */

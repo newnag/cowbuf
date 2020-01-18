@@ -318,3 +318,25 @@ $('.forget .form-forget form').submit(function(e){
 });
 
 //----------------จบส่วนเช็คแจ้งเตือนฟอร์มสมาชิก------------------//
+
+//---------------- ส่วนชี้แจงข้อกำหนดการใช้สมาชิก ----------------//
+
+// ยึดหน้าไว้จนกว่าจะกดปิดกล่อง
+if($('.dialog-privacy').is(':visible')){
+  $('body').css({'position':'fixed','width':'100%'});
+}
+
+// ปิดกล่องคำชี้แจง
+$('.dialog-privacy .box-privacy .confirm-ok button').click(function(){
+  if($('.check-confirm #check-confirm').is(':checked')){
+    $('.dialog-privacy').fadeOut();
+    $('body').css({'position':'unset','width':'unset'});
+  }
+  else{
+    swal({
+      text: "กรุณากดยินยอมเงื่อนไขก่อนกดรับทราบข้อตกลง",
+      icon: "warning",
+    });
+  }
+  
+});
