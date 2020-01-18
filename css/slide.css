@@ -10,6 +10,11 @@
     justify-content: space-between;
     margin-top: 0!important;
 }
+@media screen and (max-width:480px) {
+    .owl-nav{
+        top: 0!important;
+    }
+}
 
 .owl-dots{
     position: absolute;
@@ -23,6 +28,11 @@
     color: #fff!important;
     opacity: 0.4;
     margin: 0 1% 0 1%!important;
+}
+@media screen and (max-width:480px) {
+    .owl-nav .owl-prev,.owl-nav .owl-next{
+        font-size: 4rem!important;
+    }
 }
 
 .owl-nav .owl-prev:hover,.owl-nav .owl-next:hover{
@@ -39,6 +49,14 @@
     position: absolute;
     top: 35%;
     padding: 0 25%;
+}
+@media screen and (max-width:480px) {
+    .owl-carousel .item .detail-post{
+        top: 25%;
+        padding: 0 25%;
+        height: 2.5rem;
+        overflow: hidden;
+    }
 }
 
 .owl-carousel .item .detail-post p{

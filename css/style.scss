@@ -27,6 +27,10 @@ li{
     align-items: center;
     font-size: 1vw;
 
+    @media screen and (max-width:480px) {
+        font-size: 5vw;
+    }
+
     i{
         margin: 0 3%;
     }
@@ -53,6 +57,10 @@ li{
     a,span{
         color: $left-menu-color;
         font-size: 0.8vw;
+
+        @media screen and (max-width:480px) {
+            font-size: 5vw;
+        }
     }
 }
 @mixin menu_footer {
@@ -460,6 +468,10 @@ nav{
                     color: $head-color;
                     //font-size: 26px;
                     font-size: 1.3vw;
+
+                    @media screen and (max-width:480px) {
+                        font-size: 5vw;
+                    }
                 }
                 button{
                     position: absolute;
