@@ -62,6 +62,47 @@
                     <li><a href="contact">ติดต่อเรา</a></li>
                 </ul>
 
+                <div class="line-keed"></div>
+
+                <div class="member-head">
+                    <a href="login">
+                        <div class="login-regis">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span>เข้าสู่ระบบ/สมัครสมาชิก</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="line-keed"></div>
+
+                <!-- ส่วนนี้จะแสดงต่อเมื่อเข้าสู่ระบบ -->
+                <div class="status-credit">
+                    <div class="red-star">
+                        <span>1000K</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="star">
+                        <span>1000K</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="coin">
+                        <span>9999K</span>
+                        <i class="fas fa-coins"></i>
+                    </div>
+                </div>
+
+                <div class="line-keed"></div>
+
+                <!-- ไอค่อนที่หัวเว็บ -->
+                <div class="icon-head">
+                    <i class="fas fa-search"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-line"></i>
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+
                 <div class="close-menu-mobile">
                     <i class="fas fa-times"></i>
                 </div>

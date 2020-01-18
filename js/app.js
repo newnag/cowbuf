@@ -349,4 +349,9 @@ $('.main-head .bugger i').click(function(){
 });
 $('.head-menu-mobile .close-menu-mobile').click(function(){
   $('.head-menu-mobile').slideUp('slow');
-})
+});
+
+// ปุ่มเมนูข้าง
+$('.grid-body .bar-mobile').click(function(){
+  $('.grid-body .left-side').fadeToggle();
+});

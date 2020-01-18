@@ -169,6 +169,65 @@ header .main-head .head-menu-mobile .close-menu-mobile i {
   font-size: 10vw;
 }
 
+header .main-head .head-menu-mobile .line-keed {
+  border-bottom: 1px solid #2d2d2d;
+  margin: 0 5%;
+}
+
+header .main-head .head-menu-mobile .member-head {
+  text-align: center;
+  margin: 5% 0;
+}
+
+header .main-head .head-menu-mobile .member-head a .login-regis {
+  background: #c20000;
+  margin: 0 20%;
+  padding: 3% 0;
+  border-radius: 10px;
+}
+
+header .main-head .head-menu-mobile .member-head a .login-regis i, header .main-head .head-menu-mobile .member-head a .login-regis span {
+  color: #fff;
+}
+
+header .main-head .head-menu-mobile .icon-head {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 40%;
+  text-align: center;
+  margin: 0 10%;
+  margin-top: 10%;
+}
+
+header .main-head .head-menu-mobile .icon-head i {
+  font-size: 10vw;
+  color: #2d2d2d;
+}
+
+header .main-head .head-menu-mobile .status-credit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3% 0;
+}
+
+header .main-head .head-menu-mobile .status-credit .red-star i {
+  color: #c20000;
+}
+
+header .main-head .head-menu-mobile .status-credit .star i, header .main-head .head-menu-mobile .status-credit .coin i {
+  color: #ffb200;
+}
+
+header .main-head .head-menu-mobile .status-credit .red-star, header .main-head .head-menu-mobile .status-credit .star, header .main-head .head-menu-mobile .status-credit .coin {
+  margin: 0 1%;
+}
+
 .member-menu {
   display: none;
   position: absolute;
@@ -257,13 +316,19 @@ nav .status-credit .coin i {
 
 @media screen and (max-width: 480px) {
   .grid-body {
-    display: block !important;
+    display: block;
   }
 }
 
 @media screen and (max-width: 480px) {
   .grid-body .left-side {
-    display: none !important;
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    background: #2d2d2d;
+    z-index: 10;
   }
 }
 
@@ -300,6 +365,12 @@ nav .status-credit .coin i {
   background: #352c2c;
   padding: 0 5%;
   border-radius: 0 0 10px 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .grid-body .left-side .left-menu .menu-left {
+    padding: 0 10%;
+  }
 }
 
 .grid-body .left-side .left-menu .menu-left li {
@@ -379,6 +450,12 @@ nav .status-credit .coin i {
   border-radius: 0 0 10px 10px;
 }
 
+@media screen and (max-width: 480px) {
+  .grid-body .left-side .article-menu ul {
+    padding: 0 10%;
+  }
+}
+
 .grid-body .left-side .article-menu ul li {
   cursor: pointer;
   margin: 5% 0;
@@ -395,6 +472,12 @@ nav .status-credit .coin i {
 
 .grid-body .left-side .left-box-menu {
   margin-top: 20%;
+}
+
+@media screen and (max-width: 480px) {
+  .grid-body .left-side .left-box-menu {
+    padding: 0 10%;
+  }
 }
 
 .grid-body .left-side .left-box-menu .box {
@@ -442,6 +525,28 @@ nav .status-credit .coin i {
   border-radius: 15px;
   cursor: pointer;
   color: #c20000;
+}
+
+.grid-body .bar-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .grid-body .bar-mobile {
+    display: block;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    width: 10%;
+    background: #c20000;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    z-index: 11;
+  }
+}
+
+.grid-body .bar-mobile i {
+  color: #fff;
 }
 
 .grid-body .main-side .marquee {

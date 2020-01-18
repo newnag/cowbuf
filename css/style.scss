@@ -196,6 +196,63 @@ header{
                     font-size: 10vw;
                 }
             }
+
+            .line-keed{
+                border-bottom: 1px solid $head-back;
+                margin: 0 5%;
+            }
+
+            .member-head{
+                text-align: center;
+                margin: 5% 0;
+
+                a{
+                    .login-regis{
+                        background: $price-color;
+                        margin: 0 20%;
+                        padding: 3% 0;
+                        border-radius: 10px;
+
+                        i,span{
+                            color: $head-color;
+                        }
+                    }
+                }
+            }
+
+            .icon-head{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-row-gap: 40%;
+                text-align: center;
+                margin: 0 10%;
+                margin-top: 10%;
+
+                i{
+                    font-size: 10vw;
+                    color: $head-back;
+                }
+            }
+
+            .status-credit{
+                display: flex;
+                justify-content: center;
+                margin: 3% 0;
+
+                .red-star{
+                    i{
+                        color: $price-color;
+                    }
+                }
+                .star,.coin{
+                    i{
+                        color: #ffb200;
+                    }
+                }
+                .red-star,.star,.coin{
+                    margin: 0 1%;
+                }
+            }
         }
     }
 }
@@ -288,13 +345,19 @@ nav{
     grid-gap: 1%;
 
     @media screen and (max-width: 480px) {
-        display: block!important;
+        display: block;
     }
 
     //ส่วนซ้าย
     .left-side{
         @media screen and (max-width: 480px) {
-            display: none!important;
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0;
+            width: 100%;
+            background: $head-back;
+            z-index: 10;
         }
         //เมนูซ้าย
         .left-menu{
@@ -304,6 +367,10 @@ nav{
 
             .menu-left{
                 @include left_menu;
+
+                @media screen and (max-width:480px) {
+                    padding: 0 10%;
+                }
 
                 li{
                     @include li_menu_left();
@@ -333,6 +400,8 @@ nav{
                     }
                 }
             }
+
+            
         }
 
         .article-menu{
@@ -345,6 +414,10 @@ nav{
             ul{
                 @include left_menu();
 
+                @media screen and (max-width:480px) {
+                    padding: 0 10%;
+                }
+
                 li{
                     @include li_menu_left();
                 }
@@ -353,6 +426,10 @@ nav{
 
         .left-box-menu{
             margin-top: 20%;
+
+            @media screen and (max-width:480px) {
+                padding: 0 10%;
+            }
 
             .box{
                 position: relative;
@@ -397,6 +474,27 @@ nav{
                     color: $price-color;
                 }
             }
+        }
+    }
+
+    // สำหรับเมนูซ้ายบนมือถือ
+    .bar-mobile{
+        display: none;
+
+        @media screen and (max-width:480px) {
+            display: block;
+            position: fixed;
+            top: 20%;
+            left: 0;
+            width: 10%;
+            background: $price-color;
+            text-align: center;
+            border-radius: 0 10px 10px 0;
+            z-index: 11;
+        }
+
+        i{
+            color: $head-color;
         }
     }
 

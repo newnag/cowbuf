@@ -230,5 +230,10 @@
                 <h3>คุยกับสัตวแพทย์</h3>
                 <a href="article-page"><button>คลิก</button></a>
             </div>
+
         </div>
+    </div>
+
+    <div class="bar-mobile">
+        <i class="fas fa-align-left"></i>
     </div>
