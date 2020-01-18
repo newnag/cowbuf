@@ -1,7 +1,7 @@
 
 <head>
     <meta charset="UTF-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>วัวงามควายงาม</title>
 
@@ -19,6 +19,10 @@
                     <!-- โลโก้หัวเว็บ -->
                     <a href=""><img src="img/logo_ora.png" alt=""></a>
                 </div>
+            </div>
+
+            <div class="bugger">
+                <i class="fas fa-bars"></i>
             </div>
 
             <div class="right-head">
@@ -46,6 +50,20 @@
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-line"></i>
                     <i class="fas fa-mobile-alt"></i>
+                </div>
+            </div>
+
+            <div class="head-menu-mobile">
+                <ul>
+                    <li><a href="home" class="active">หน้าหลัก</a></li>
+                    <li><a href="registration-job">สมัครงานด่วน</a></li>
+                    <li><a href="article">บทความ</a></li>
+                    <li><a href="about">เกี่ยวกับเรา</a></li>
+                    <li><a href="contact">ติดต่อเรา</a></li>
+                </ul>
+
+                <div class="close-menu-mobile">
+                    <i class="fas fa-times"></i>
                 </div>
             </div>
         </div>

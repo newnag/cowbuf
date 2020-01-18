@@ -44,6 +44,34 @@ header .main-head {
   padding: 10px 0;
 }
 
+header .main-head .left-head .logo-head a img {
+  width: 100%;
+}
+
+header .main-head .bugger {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  header .main-head .bugger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header .main-head .bugger i {
+  color: #fff;
+  font-size: 2rem;
+}
+
 header .main-head .right-head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,6 +86,12 @@ header .main-head .right-head {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media screen and (max-width: 480px) {
+  header .main-head .right-head {
+    display: none;
+  }
 }
 
 header .main-head .right-head .member-head a .login-regis {
@@ -100,6 +134,41 @@ header .main-head .right-head .icon-head i {
   margin-left: 18%;
 }
 
+header .main-head .head-menu-mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #c6c4c4;
+  z-index: 20;
+}
+
+header .main-head .head-menu-mobile ul {
+  text-align: center;
+  margin: 10% 0;
+}
+
+header .main-head .head-menu-mobile ul li {
+  margin: 2% 0;
+}
+
+header .main-head .head-menu-mobile ul li a {
+  color: #2d2d2d;
+  font-size: 5vw;
+}
+
+header .main-head .head-menu-mobile .close-menu-mobile {
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+
+header .main-head .head-menu-mobile .close-menu-mobile i {
+  font-size: 10vw;
+}
+
 .member-menu {
   display: none;
   position: absolute;
@@ -124,6 +193,12 @@ header .main-head .right-head .icon-head i {
 
 nav {
   position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    display: none;
+  }
 }
 
 nav ul {
@@ -178,6 +253,18 @@ nav .status-credit .coin i {
   -ms-grid-columns: 14% 85%;
       grid-template-columns: 14% 85%;
   grid-gap: 1%;
+}
+
+@media screen and (max-width: 480px) {
+  .grid-body {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-body .left-side {
+    display: none !important;
+  }
 }
 
 .grid-body .left-side .left-menu .head-menu {

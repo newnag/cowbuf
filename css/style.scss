@@ -85,11 +85,41 @@ header{
         margin: 0 auto;
         padding: 10px 0;
 
+        .left-head{
+            .logo-head{
+                a{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .bugger{
+            display: none;
+
+            @media screen and (max-width:480px) {
+                display: flex;
+                width: 40%;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            i{
+                color: $head-color;
+                font-size: 2rem;
+            }
+        }
+
         .right-head{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
+
+            @media screen and (max-width:480px) {
+                display: none;
+            }
 
             .member-head{
 
@@ -133,6 +163,40 @@ header{
                 }
             }
         }
+
+        .head-menu-mobile{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $left-menu-color;
+            z-index: 20;
+
+            ul{
+                text-align: center;
+                margin: 10% 0;
+
+                li{
+                    margin: 2% 0;
+                    a{
+                        color: $head-back;
+                        font-size: 5vw;
+                    }
+                }
+            }
+
+            .close-menu-mobile{
+                position: absolute;
+                top: 0;
+                right: 5%;
+
+                i{
+                    font-size: 10vw;
+                }
+            }
+        }
     }
 }
 
@@ -163,6 +227,10 @@ header{
 nav{
     @extend .container;
     position: relative;
+
+    @media screen and (max-width:480px) {
+        display: none;
+    }
 
     ul{
         display: flex;
@@ -219,8 +287,15 @@ nav{
     grid-template-columns: 14% 85%;
     grid-gap: 1%;
 
+    @media screen and (max-width: 480px) {
+        display: block!important;
+    }
+
     //ส่วนซ้าย
     .left-side{
+        @media screen and (max-width: 480px) {
+            display: none!important;
+        }
         //เมนูซ้าย
         .left-menu{
             .head-menu{

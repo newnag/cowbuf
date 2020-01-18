@@ -340,3 +340,13 @@ $('.dialog-privacy .box-privacy .confirm-ok button').click(function(){
   }
   
 });
+
+//---------------- จบส่วนชี้แจงข้อกำหนดการใช้สมาชิก ----------------//
+
+// เปิดปุ่มเมนู header
+$('.main-head .bugger i').click(function(){
+  $('.head-menu-mobile').slideDown('slow');
+});
+$('.head-menu-mobile .close-menu-mobile').click(function(){
+  $('.head-menu-mobile').slideUp('slow');
+})
