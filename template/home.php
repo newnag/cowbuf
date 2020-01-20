@@ -1,5 +1,5 @@
     <!-- สไลด์รูป -->
-    <div class="owl-carousel owl-theme">
+    <div class="slide-head owl-carousel owl-theme">
         <div class="item">
             <img src="img/hidcote_manor_1254X700_Hidcote.png" alt="">
             <div class="detail-post">
@@ -48,7 +48,7 @@
                 <a href="detail-product">
                     <div class="box">
                         <figure><img src="img/ID00004_26.png" alt=""></figure>
-                        <div class="title"><h2>วันตัวสวยๆตัวที่ 1</h2></div>
+                        <div class="title"><h2>วัวตัวสวยๆตัวที่ 1</h2></div>
                         <div class="price">
                             <span>ราคาปัจจุบัน</span>
                             <span>3200 ฿</span>
@@ -75,7 +75,37 @@
         </div>
 
         <!-- ส่วนมือถือ -->
-        
+        <div class="mobile-gridbox">
+            <div class="slide-article owl-carousel owl-theme">
+                <?php for($i=0; $i<=9; $i++): ?>
+                    <a href="detail-product">
+                        <div class="box">
+                            <figure><img src="img/ID00004_26.png" alt=""></figure>
+                            <div class="title"><h2>วันตัวสวยๆตัวที่ 1</h2></div>
+                            <div class="price">
+                                <span>ราคาปัจจุบัน</span>
+                                <span>3200 ฿</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>วันประมูลคงเหลือ 2 วัน</span>
+                            </div>
+                            <!-- ส่วนแสดงเครดิตการกดประมูล -->
+                            <div class="bet">
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <span>10K</span>
+                                </div>
+                                <div class="credit">
+                                    <i class="fas fa-coins"></i>
+                                    <span>500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                <?php endfor; ?>
+            </div>
+        </div>
     </article>
 
     <!-- ควายงาม -->
@@ -348,6 +378,39 @@
                     </div>
                 </div>
             </a>
+        </div>
+
+        <!-- ส่วนมือถือ -->
+        <div class="mobile-gridbox">
+            <div class="slide-article owl-carousel owl-theme">
+                <?php for($i=0;$i<=9;$i++): ?>
+                    <a href="">
+                        <div class="box">
+                            <figure><img src="img/ID4fa1e2ab_024a_42ef_bede_658a_in.png" alt=""></figure>
+                            <div class="title"><h2>ควายตัวสวยๆตัวที่ 1</h2></div>
+                            <div class="price">
+                                <span>ราคาปัจจุบัน</span>
+                                <span>3200 ฿</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>วันประมูลคงเหลือ 2 วัน</span>
+                            </div>
+                            <!-- ส่วนแสดงเครดิตการกดประมูล -->
+                            <div class="bet">
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <span>10K</span>
+                                </div>
+                                <div class="credit">
+                                    <i class="fas fa-coins"></i>
+                                    <span>500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                <?php endfor; ?>
+            </div>
         </div>
     </article>
 
@@ -622,5 +685,38 @@
                 </div>
             </a>
 
+        </div>
+
+        <!-- ส่วนมือถือ -->
+        <div class="mobile-gridbox">
+            <div class="slide-article owl-carousel owl-theme">
+                <?php for($i=0; $i<=9; $i++): ?>
+                    <a href="">
+                        <div class="box">
+                            <figure><img src="img/ID4fa1e2ab_024a_42ef_bede_658a_l.png" alt=""></figure>
+                            <div class="title"><h2>รถไถสวยๆตัวที่ 1</h2></div>
+                            <div class="price">
+                                <span>ราคาปัจจุบัน</span>
+                                <span>3200 ฿</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>วันประมูลคงเหลือ 2 วัน</span>
+                            </div>
+                            <!-- ส่วนแสดงเครดิตการกดประมูล -->
+                            <div class="bet">
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <span>10K</span>
+                                </div>
+                                <div class="credit">
+                                    <i class="fas fa-coins"></i>
+                                    <span>500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                <?php endfor; ?>
+            </div>
         </div>
     </article>

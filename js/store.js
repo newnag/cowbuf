@@ -11,11 +11,6 @@ $('.right-select select').change(function(){
     $('.'+text).fadeIn();
 });
 
-// ลบร้านค้าโปรด
-$('.shop-box .button-shop .delete button').click(function(){
-    alert('111');
-});
-
 // เปลี่ยนปุ่ม active ร้านค้า
 $('.menu-store .leaf-menu .button-menu button#store-page').click(function(){
     $('.menu-store .leaf-menu .button-menu button').removeClass('active');
@@ -81,3 +76,27 @@ $('.storePage .menu-store .leaf-menu #store-follow').click(function(){
   });
 });
 
+//------------------- ส่วนลบกล่องฝั่ง store ---------------------//
+
+// ลบกล่องหน้า mycart
+$('body').on('click','.mycart-page .mydetail .box .right .price-button .button button',function(){
+  $(this).closest('.box').fadeOut(function(){
+    $(this).closest('.box').remove();
+  });
+});
+
+// ลบกล่องหน้า myfav
+$('body').on('click','.page-mycart .my-fav .grid-myfav .box .delete-button button',function(){
+  $(this).closest('.box').fadeOut(function(){
+    $(this).closest('.box').remove();
+  });
+});
+
+// ลบร้านค้าโปรด
+$('body').on('click','.shop-box .button-shop .delete button',function(){
+  alert('111');
+});
+
+
+
+//------------------- จบส่วนลบกล่องฝั่ง store ---------------------//

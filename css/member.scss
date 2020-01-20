@@ -147,6 +147,10 @@
             height: 2rem;
             font-size: 1vw;
             cursor: pointer;
+
+            @media screen and (max-width:480px) {
+                width:20%;
+            }
         }
     }
 
@@ -175,12 +179,21 @@
         margin: 0 15%;
         border-radius: 15px;
 
+        @media screen and (max-width:480px) {
+            margin: 0;
+        }
+
         .box-text{
             padding: 0 5%;
 
             p{
                 color: $head-color;
                 line-height: 2rem;
+
+                @media screen and (max-width:480px) {
+                    line-height: unset;
+                    font-size: .8rem;
+                }
             }
         }
     }

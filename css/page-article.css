@@ -35,6 +35,15 @@
   margin: 2% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .article .grid-box {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[9];
+        grid-template-rows: repeat(9, 1fr);
+  }
+}
+
 .article .grid-box a {
   color: #000;
 }

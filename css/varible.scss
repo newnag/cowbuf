@@ -92,6 +92,11 @@ $left-menu-color: #c6c4c4;
         grid-gap: 1%;
         margin: 5% 0;
 
+        @media screen and (max-width:480px) {
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(11,1fr);
+        }
+
         .box{
             .text-head{
                 color: $head-color;
@@ -126,6 +131,10 @@ $left-menu-color: #c6c4c4;
                 font-weight: 100;
                 height: 3rem;
                 overflow: hidden;
+
+                @media screen and (max-width:480px) {
+                    font-size: 1.5rem;
+                }
             }
 
             .price{
@@ -133,14 +142,28 @@ $left-menu-color: #c6c4c4;
                 color: $price-color;
                 margin: 5% 0;
 
+                span:nth-child(1){
+                    @media screen and (max-width:480px) {
+                        font-size: .75rem;
+                    }
+                }
+
                 span:nth-child(2){
                     font-size: 1.2vw;
+
+                    @media screen and (max-width:480px) {
+                        font-size: 1rem;
+                    }
                 }
             }
 
             .date{
                 display: flex;
                 margin: 3% 0;
+
+                @media screen and (max-width:480px) {
+                    font-size: .75rem;
+                }
 
                 i{
                     margin-right: 2%;
@@ -150,6 +173,10 @@ $left-menu-color: #c6c4c4;
             .bet{
                 display: flex;
                 justify-content: space-between;
+
+                @media screen and (max-width:480px) {
+                    font-size: .75rem;
+                }
 
                 .star,.credit{
                     i{
@@ -274,6 +301,10 @@ $left-menu-color: #c6c4c4;
             grid-template-columns: 10% 89%;
             grid-gap: 1%;
 
+            @media screen and (max-width:480px) {
+                grid-template-columns: 29% 70%;
+            }
+
             .left{
                 figure{
                     img{
@@ -308,6 +339,10 @@ $left-menu-color: #c6c4c4;
                     }
 
                     .button{
+                        @media screen and (max-width:480px) {
+                            display: flex;
+                        }
+
                         button{
                             border: unset;
                             border-radius: 20px;

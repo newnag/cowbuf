@@ -393,6 +393,12 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 480px) {
+  .account .edit-button button {
+    width: 20%;
+  }
+}
+
 .account h2 {
   color: #fff;
   background: #515151;
@@ -467,6 +473,12 @@
   border-radius: 15px;
 }
 
+@media screen and (max-width: 480px) {
+  .dialog-privacy .box-privacy {
+    margin: 0;
+  }
+}
+
 .dialog-privacy .box-privacy .box-text {
   padding: 0 5%;
 }
@@ -474,6 +486,13 @@
 .dialog-privacy .box-privacy .box-text p {
   color: #fff;
   line-height: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .dialog-privacy .box-privacy .box-text p {
+    line-height: unset;
+    font-size: .8rem;
+  }
 }
 
 .dialog-privacy .check-confirm {

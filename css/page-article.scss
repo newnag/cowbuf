@@ -27,6 +27,11 @@
         grid-gap: 1%;
         margin: 2% 0;
 
+        @media screen and (max-width:480px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(9,1fr);
+        }
+
         a{
             color: $text-color;
         

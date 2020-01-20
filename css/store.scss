@@ -7,11 +7,19 @@
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width:480px) {
+            flex-direction: column;
+        }
+
         .leaf-menu{
             display: flex;
 
             .button-menu{
                 margin: 5% 2%;
+
+                @media screen and (max-width:480px) {
+                    margin: 5% 1%;
+                }
 
                 button{
                     width: 8rem;
@@ -21,6 +29,10 @@
                     background: $left-menu-color;
                     color: $head-color;
                     cursor: pointer;
+
+                    @media screen and (max-width:480px) {
+                        width: 7rem;
+                    }
                 } 
                 .active{
                     background: #000!important;

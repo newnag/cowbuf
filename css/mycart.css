@@ -47,6 +47,12 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 480px) {
+  .mycart .menu-mycart .leaf-menu .button-menu button {
+    width: 7rem;
+  }
+}
+
 .mycart .menu-mycart .leaf-menu .button-menu .active {
   background: #000 !important;
 }
@@ -62,6 +68,13 @@
   -ms-grid-columns: 10% 89%;
       grid-template-columns: 10% 89%;
   grid-gap: 1%;
+}
+
+@media screen and (max-width: 480px) {
+  .mycart-page .mydetail .box {
+    -ms-grid-columns: 29% 70%;
+        grid-template-columns: 29% 70%;
+  }
 }
 
 .mycart-page .mydetail .box .left figure img {
@@ -108,6 +121,14 @@
   color: #c20000;
 }
 
+@media screen and (max-width: 480px) {
+  .mycart-page .mydetail .box .right .price-button .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .mycart-page .mydetail .box .right .price-button .button button {
   border: unset;
   border-radius: 20px;
@@ -136,6 +157,15 @@
       grid-template-columns: repeat(5, 1fr);
   grid-gap: 1%;
   margin: 5% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .my-fav .grid-store, .my-fav .grid-myfav, .my-fav .grid-mybid, .my-fav .cate-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[11];
+        grid-template-rows: repeat(11, 1fr);
+  }
 }
 
 .my-fav .grid-store .box .text-head, .my-fav .grid-myfav .box .text-head, .my-fav .grid-mybid .box .text-head, .my-fav .cate-grid .box .text-head {
@@ -176,6 +206,12 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 480px) {
+  .my-fav .grid-store .box .title, .my-fav .grid-myfav .box .title, .my-fav .grid-mybid .box .title, .my-fav .cate-grid .box .title {
+    font-size: 1.5rem;
+  }
+}
+
 .my-fav .grid-store .box .price, .my-fav .grid-myfav .box .price, .my-fav .grid-mybid .box .price, .my-fav .cate-grid .box .price {
   display: -ms-grid;
   display: grid;
@@ -183,8 +219,20 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .my-fav .grid-store .box .price span:nth-child(1), .my-fav .grid-myfav .box .price span:nth-child(1), .my-fav .grid-mybid .box .price span:nth-child(1), .my-fav .cate-grid .box .price span:nth-child(1) {
+    font-size: .75rem;
+  }
+}
+
 .my-fav .grid-store .box .price span:nth-child(2), .my-fav .grid-myfav .box .price span:nth-child(2), .my-fav .grid-mybid .box .price span:nth-child(2), .my-fav .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
+}
+
+@media screen and (max-width: 480px) {
+  .my-fav .grid-store .box .price span:nth-child(2), .my-fav .grid-myfav .box .price span:nth-child(2), .my-fav .grid-mybid .box .price span:nth-child(2), .my-fav .cate-grid .box .price span:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 
 .my-fav .grid-store .box .date, .my-fav .grid-myfav .box .date, .my-fav .grid-mybid .box .date, .my-fav .cate-grid .box .date {
@@ -192,6 +240,12 @@
   display: -ms-flexbox;
   display: flex;
   margin: 3% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .my-fav .grid-store .box .date, .my-fav .grid-myfav .box .date, .my-fav .grid-mybid .box .date, .my-fav .cate-grid .box .date {
+    font-size: .75rem;
+  }
 }
 
 .my-fav .grid-store .box .date i, .my-fav .grid-myfav .box .date i, .my-fav .grid-mybid .box .date i, .my-fav .cate-grid .box .date i {
@@ -205,6 +259,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .my-fav .grid-store .box .bet, .my-fav .grid-myfav .box .bet, .my-fav .grid-mybid .box .bet, .my-fav .cate-grid .box .bet {
+    font-size: .75rem;
+  }
 }
 
 .my-fav .grid-store .box .bet .star i, .my-fav .grid-store .box .bet .credit i, .my-fav .grid-myfav .box .bet .star i, .my-fav .grid-myfav .box .bet .credit i, .my-fav .grid-mybid .box .bet .star i, .my-fav .grid-mybid .box .bet .credit i, .my-fav .cate-grid .box .bet .star i, .my-fav .cate-grid .box .bet .credit i {
@@ -237,6 +297,15 @@
       grid-template-columns: repeat(5, 1fr);
   grid-gap: 1%;
   margin: 5% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .my-bid .grid-store, .my-bid .grid-myfav, .my-bid .grid-mybid, .my-bid .cate-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[11];
+        grid-template-rows: repeat(11, 1fr);
+  }
 }
 
 .my-bid .grid-store .box .text-head, .my-bid .grid-myfav .box .text-head, .my-bid .grid-mybid .box .text-head, .my-bid .cate-grid .box .text-head {
@@ -277,6 +346,12 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 480px) {
+  .my-bid .grid-store .box .title, .my-bid .grid-myfav .box .title, .my-bid .grid-mybid .box .title, .my-bid .cate-grid .box .title {
+    font-size: 1.5rem;
+  }
+}
+
 .my-bid .grid-store .box .price, .my-bid .grid-myfav .box .price, .my-bid .grid-mybid .box .price, .my-bid .cate-grid .box .price {
   display: -ms-grid;
   display: grid;
@@ -284,8 +359,20 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .my-bid .grid-store .box .price span:nth-child(1), .my-bid .grid-myfav .box .price span:nth-child(1), .my-bid .grid-mybid .box .price span:nth-child(1), .my-bid .cate-grid .box .price span:nth-child(1) {
+    font-size: .75rem;
+  }
+}
+
 .my-bid .grid-store .box .price span:nth-child(2), .my-bid .grid-myfav .box .price span:nth-child(2), .my-bid .grid-mybid .box .price span:nth-child(2), .my-bid .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
+}
+
+@media screen and (max-width: 480px) {
+  .my-bid .grid-store .box .price span:nth-child(2), .my-bid .grid-myfav .box .price span:nth-child(2), .my-bid .grid-mybid .box .price span:nth-child(2), .my-bid .cate-grid .box .price span:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 
 .my-bid .grid-store .box .date, .my-bid .grid-myfav .box .date, .my-bid .grid-mybid .box .date, .my-bid .cate-grid .box .date {
@@ -293,6 +380,12 @@
   display: -ms-flexbox;
   display: flex;
   margin: 3% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .my-bid .grid-store .box .date, .my-bid .grid-myfav .box .date, .my-bid .grid-mybid .box .date, .my-bid .cate-grid .box .date {
+    font-size: .75rem;
+  }
 }
 
 .my-bid .grid-store .box .date i, .my-bid .grid-myfav .box .date i, .my-bid .grid-mybid .box .date i, .my-bid .cate-grid .box .date i {
@@ -306,6 +399,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .my-bid .grid-store .box .bet, .my-bid .grid-myfav .box .bet, .my-bid .grid-mybid .box .bet, .my-bid .cate-grid .box .bet {
+    font-size: .75rem;
+  }
 }
 
 .my-bid .grid-store .box .bet .star i, .my-bid .grid-store .box .bet .credit i, .my-bid .grid-myfav .box .bet .star i, .my-bid .grid-myfav .box .bet .credit i, .my-bid .grid-mybid .box .bet .star i, .my-bid .grid-mybid .box .bet .credit i, .my-bid .cate-grid .box .bet .star i, .my-bid .cate-grid .box .bet .credit i {

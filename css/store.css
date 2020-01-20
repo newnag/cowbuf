@@ -35,6 +35,15 @@
           justify-content: space-between;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .menu-store {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .storePage .menu-store .leaf-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,6 +54,12 @@
   margin: 5% 2%;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .menu-store .leaf-menu .button-menu {
+    margin: 5% 1%;
+  }
+}
+
 .storePage .menu-store .leaf-menu .button-menu button {
   width: 8rem;
   height: 2rem;
@@ -53,6 +68,12 @@
   background: #c6c4c4;
   color: #fff;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .menu-store .leaf-menu .button-menu button {
+    width: 7rem;
+  }
 }
 
 .storePage .menu-store .leaf-menu .button-menu .active {
@@ -99,6 +120,15 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-all .grid-store, .storePage .storePage-all .grid-myfav, .storePage .storePage-all .grid-mybid, .storePage .storePage-all .cate-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[11];
+        grid-template-rows: repeat(11, 1fr);
+  }
+}
+
 .storePage .storePage-all .grid-store .box .text-head, .storePage .storePage-all .grid-myfav .box .text-head, .storePage .storePage-all .grid-mybid .box .text-head, .storePage .storePage-all .cate-grid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
@@ -137,6 +167,12 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-all .grid-store .box .title, .storePage .storePage-all .grid-myfav .box .title, .storePage .storePage-all .grid-mybid .box .title, .storePage .storePage-all .cate-grid .box .title {
+    font-size: 1.5rem;
+  }
+}
+
 .storePage .storePage-all .grid-store .box .price, .storePage .storePage-all .grid-myfav .box .price, .storePage .storePage-all .grid-mybid .box .price, .storePage .storePage-all .cate-grid .box .price {
   display: -ms-grid;
   display: grid;
@@ -146,6 +182,12 @@
 
 .storePage .storePage-all .grid-store .box .price span:nth-child(2), .storePage .storePage-all .grid-myfav .box .price span:nth-child(2), .storePage .storePage-all .grid-mybid .box .price span:nth-child(2), .storePage .storePage-all .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .storePage-all .grid-store .box .price span:nth-child(2), .storePage .storePage-all .grid-myfav .box .price span:nth-child(2), .storePage .storePage-all .grid-mybid .box .price span:nth-child(2), .storePage .storePage-all .cate-grid .box .price span:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 
 .storePage .storePage-all .grid-store .box .date, .storePage .storePage-all .grid-myfav .box .date, .storePage .storePage-all .grid-mybid .box .date, .storePage .storePage-all .cate-grid .box .date {
@@ -204,6 +246,15 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-notbuy .grid-store, .storePage .storePage-notbuy .grid-myfav, .storePage .storePage-notbuy .grid-mybid, .storePage .storePage-notbuy .cate-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[11];
+        grid-template-rows: repeat(11, 1fr);
+  }
+}
+
 .storePage .storePage-notbuy .grid-store .box .text-head, .storePage .storePage-notbuy .grid-myfav .box .text-head, .storePage .storePage-notbuy .grid-mybid .box .text-head, .storePage .storePage-notbuy .cate-grid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
@@ -242,6 +293,12 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-notbuy .grid-store .box .title, .storePage .storePage-notbuy .grid-myfav .box .title, .storePage .storePage-notbuy .grid-mybid .box .title, .storePage .storePage-notbuy .cate-grid .box .title {
+    font-size: 1.5rem;
+  }
+}
+
 .storePage .storePage-notbuy .grid-store .box .price, .storePage .storePage-notbuy .grid-myfav .box .price, .storePage .storePage-notbuy .grid-mybid .box .price, .storePage .storePage-notbuy .cate-grid .box .price {
   display: -ms-grid;
   display: grid;
@@ -251,6 +308,12 @@
 
 .storePage .storePage-notbuy .grid-store .box .price span:nth-child(2), .storePage .storePage-notbuy .grid-myfav .box .price span:nth-child(2), .storePage .storePage-notbuy .grid-mybid .box .price span:nth-child(2), .storePage .storePage-notbuy .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .storePage-notbuy .grid-store .box .price span:nth-child(2), .storePage .storePage-notbuy .grid-myfav .box .price span:nth-child(2), .storePage .storePage-notbuy .grid-mybid .box .price span:nth-child(2), .storePage .storePage-notbuy .cate-grid .box .price span:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 
 .storePage .storePage-notbuy .grid-store .box .date, .storePage .storePage-notbuy .grid-myfav .box .date, .storePage .storePage-notbuy .grid-mybid .box .date, .storePage .storePage-notbuy .cate-grid .box .date {
@@ -309,6 +372,15 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-buynow .grid-store, .storePage .storePage-buynow .grid-myfav, .storePage .storePage-buynow .grid-mybid, .storePage .storePage-buynow .cate-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[11];
+        grid-template-rows: repeat(11, 1fr);
+  }
+}
+
 .storePage .storePage-buynow .grid-store .box .text-head, .storePage .storePage-buynow .grid-myfav .box .text-head, .storePage .storePage-buynow .grid-mybid .box .text-head, .storePage .storePage-buynow .cate-grid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
@@ -347,6 +419,12 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-buynow .grid-store .box .title, .storePage .storePage-buynow .grid-myfav .box .title, .storePage .storePage-buynow .grid-mybid .box .title, .storePage .storePage-buynow .cate-grid .box .title {
+    font-size: 1.5rem;
+  }
+}
+
 .storePage .storePage-buynow .grid-store .box .price, .storePage .storePage-buynow .grid-myfav .box .price, .storePage .storePage-buynow .grid-mybid .box .price, .storePage .storePage-buynow .cate-grid .box .price {
   display: -ms-grid;
   display: grid;
@@ -356,6 +434,12 @@
 
 .storePage .storePage-buynow .grid-store .box .price span:nth-child(2), .storePage .storePage-buynow .grid-myfav .box .price span:nth-child(2), .storePage .storePage-buynow .grid-mybid .box .price span:nth-child(2), .storePage .storePage-buynow .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .storePage-buynow .grid-store .box .price span:nth-child(2), .storePage .storePage-buynow .grid-myfav .box .price span:nth-child(2), .storePage .storePage-buynow .grid-mybid .box .price span:nth-child(2), .storePage .storePage-buynow .cate-grid .box .price span:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 
 .storePage .storePage-buynow .grid-store .box .date, .storePage .storePage-buynow .grid-myfav .box .date, .storePage .storePage-buynow .grid-mybid .box .date, .storePage .storePage-buynow .cate-grid .box .date {
@@ -414,6 +498,15 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-success .grid-store, .storePage .storePage-success .grid-myfav, .storePage .storePage-success .grid-mybid, .storePage .storePage-success .cate-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[11];
+        grid-template-rows: repeat(11, 1fr);
+  }
+}
+
 .storePage .storePage-success .grid-store .box .text-head, .storePage .storePage-success .grid-myfav .box .text-head, .storePage .storePage-success .grid-mybid .box .text-head, .storePage .storePage-success .cate-grid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
@@ -452,6 +545,12 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-success .grid-store .box .title, .storePage .storePage-success .grid-myfav .box .title, .storePage .storePage-success .grid-mybid .box .title, .storePage .storePage-success .cate-grid .box .title {
+    font-size: 1.5rem;
+  }
+}
+
 .storePage .storePage-success .grid-store .box .price, .storePage .storePage-success .grid-myfav .box .price, .storePage .storePage-success .grid-mybid .box .price, .storePage .storePage-success .cate-grid .box .price {
   display: -ms-grid;
   display: grid;
@@ -461,6 +560,12 @@
 
 .storePage .storePage-success .grid-store .box .price span:nth-child(2), .storePage .storePage-success .grid-myfav .box .price span:nth-child(2), .storePage .storePage-success .grid-mybid .box .price span:nth-child(2), .storePage .storePage-success .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .storePage-success .grid-store .box .price span:nth-child(2), .storePage .storePage-success .grid-myfav .box .price span:nth-child(2), .storePage .storePage-success .grid-mybid .box .price span:nth-child(2), .storePage .storePage-success .cate-grid .box .price span:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 
 .storePage .storePage-success .grid-store .box .date, .storePage .storePage-success .grid-myfav .box .date, .storePage .storePage-success .grid-mybid .box .date, .storePage .storePage-success .cate-grid .box .date {
@@ -519,6 +624,15 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-timeout .grid-store, .storePage .storePage-timeout .grid-myfav, .storePage .storePage-timeout .grid-mybid, .storePage .storePage-timeout .cate-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[11];
+        grid-template-rows: repeat(11, 1fr);
+  }
+}
+
 .storePage .storePage-timeout .grid-store .box .text-head, .storePage .storePage-timeout .grid-myfav .box .text-head, .storePage .storePage-timeout .grid-mybid .box .text-head, .storePage .storePage-timeout .cate-grid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
@@ -557,6 +671,12 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-timeout .grid-store .box .title, .storePage .storePage-timeout .grid-myfav .box .title, .storePage .storePage-timeout .grid-mybid .box .title, .storePage .storePage-timeout .cate-grid .box .title {
+    font-size: 1.5rem;
+  }
+}
+
 .storePage .storePage-timeout .grid-store .box .price, .storePage .storePage-timeout .grid-myfav .box .price, .storePage .storePage-timeout .grid-mybid .box .price, .storePage .storePage-timeout .cate-grid .box .price {
   display: -ms-grid;
   display: grid;
@@ -566,6 +686,12 @@
 
 .storePage .storePage-timeout .grid-store .box .price span:nth-child(2), .storePage .storePage-timeout .grid-myfav .box .price span:nth-child(2), .storePage .storePage-timeout .grid-mybid .box .price span:nth-child(2), .storePage .storePage-timeout .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .storePage-timeout .grid-store .box .price span:nth-child(2), .storePage .storePage-timeout .grid-myfav .box .price span:nth-child(2), .storePage .storePage-timeout .grid-mybid .box .price span:nth-child(2), .storePage .storePage-timeout .cate-grid .box .price span:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 
 .storePage .storePage-timeout .grid-store .box .date, .storePage .storePage-timeout .grid-myfav .box .date, .storePage .storePage-timeout .grid-mybid .box .date, .storePage .storePage-timeout .cate-grid .box .date {
@@ -624,6 +750,15 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-now .grid-store, .storePage .storePage-now .grid-myfav, .storePage .storePage-now .grid-mybid, .storePage .storePage-now .cate-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[11];
+        grid-template-rows: repeat(11, 1fr);
+  }
+}
+
 .storePage .storePage-now .grid-store .box .text-head, .storePage .storePage-now .grid-myfav .box .text-head, .storePage .storePage-now .grid-mybid .box .text-head, .storePage .storePage-now .cate-grid .box .text-head {
   color: #fff;
   border-radius: 10px 10px 0 0;
@@ -662,6 +797,12 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-now .grid-store .box .title, .storePage .storePage-now .grid-myfav .box .title, .storePage .storePage-now .grid-mybid .box .title, .storePage .storePage-now .cate-grid .box .title {
+    font-size: 1.5rem;
+  }
+}
+
 .storePage .storePage-now .grid-store .box .price, .storePage .storePage-now .grid-myfav .box .price, .storePage .storePage-now .grid-mybid .box .price, .storePage .storePage-now .cate-grid .box .price {
   display: -ms-grid;
   display: grid;
@@ -671,6 +812,12 @@
 
 .storePage .storePage-now .grid-store .box .price span:nth-child(2), .storePage .storePage-now .grid-myfav .box .price span:nth-child(2), .storePage .storePage-now .grid-mybid .box .price span:nth-child(2), .storePage .storePage-now .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .storePage-now .grid-store .box .price span:nth-child(2), .storePage .storePage-now .grid-myfav .box .price span:nth-child(2), .storePage .storePage-now .grid-mybid .box .price span:nth-child(2), .storePage .storePage-now .cate-grid .box .price span:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 
 .storePage .storePage-now .grid-store .box .date, .storePage .storePage-now .grid-myfav .box .date, .storePage .storePage-now .grid-mybid .box .date, .storePage .storePage-now .cate-grid .box .date {

@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </a>
-            <div class="delete-button" ><button >ลบ</button></div>
+            
         </div>
         <?php endfor ; ?>
     </div>

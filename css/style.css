@@ -23,9 +23,21 @@ li {
   width: 75%;
 }
 
+@media screen and (max-width: 480px) {
+  .container, nav, footer .footer-section {
+    width: 100%;
+  }
+}
+
 .head-foot {
   margin-bottom: 15px;
   font-size: 1vw;
+}
+
+@media screen and (max-width: 480px) {
+  .head-foot {
+    font-size: 1.5rem;
+  }
 }
 
 header {
@@ -625,6 +637,12 @@ nav .status-credit .coin i {
   margin-top: 3%;
 }
 
+@media screen and (max-width: 480px) {
+  .grid-body .main-side article .grid-box {
+    display: none;
+  }
+}
+
 .grid-body .main-side article .grid-box a {
   color: #000;
 }
@@ -685,13 +703,50 @@ nav .status-credit .coin i {
   color: #ffb402;
 }
 
+.grid-body .main-side article .mobile-gridbox {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .grid-body .main-side article .mobile-gridbox {
+    display: block;
+  }
+}
+
+.grid-body .main-side article .mobile-gridbox .slide-article .owl-nav {
+  top: 20% !important;
+}
+
+.grid-body .main-side article .mobile-gridbox .slide-article .owl-nav button span {
+  color: #2d2d2d;
+}
+
+.grid-body .main-side article .mobile-gridbox .slide-article .box {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid-body .main-side article .mobile-gridbox .slide-article .box .title, .grid-body .main-side article .mobile-gridbox .slide-article .box .price, .grid-body .main-side article .mobile-gridbox .slide-article .box .date, .grid-body .main-side article .mobile-gridbox .slide-article .box .star, .grid-body .main-side article .mobile-gridbox .slide-article .box .credit {
+  margin: 3% 0;
+  color: #000;
+}
+
+.grid-body .main-side article .mobile-gridbox .slide-article .box .price {
+  color: #c20000;
+  font-size: 5vw;
+}
+
+.grid-body .main-side article .mobile-gridbox .slide-article .box .star i, .grid-body .main-side article .mobile-gridbox .slide-article .box .credit i {
+  color: #ffb300;
+}
+
 footer {
   background: #2d2d2d;
 }
 
 @media screen and (max-width: 480px) {
   footer {
-    padding: 5% 0;
+    padding: 5%;
   }
 }
 
@@ -707,8 +762,6 @@ footer .footer-section {
   footer .footer-section {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (1fr)[4];
-        grid-template-rows: repeat(4, 1fr);
     grid-row-gap: 4%;
     margin-bottom: 15%;
   }
@@ -723,6 +776,21 @@ footer .footer-section .help-foot .menu li a, footer .footer-section .cate-foot 
   font-size: 0.7vw;
 }
 
+@media screen and (max-width: 480px) {
+  footer .footer-section .help-foot .menu li a, footer .footer-section .cate-foot .menu li a {
+    font-size: .75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer .footer-section .help-foot .menu, footer .footer-section .cate-foot .menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 footer .footer-section .grid-cat-foot {
   display: -ms-grid;
   display: grid;
@@ -731,9 +799,23 @@ footer .footer-section .grid-cat-foot {
   grid-auto-flow: column;
 }
 
+@media screen and (max-width: 480px) {
+  footer .footer-section .grid-cat-foot {
+    grid-auto-flow: unset;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 footer .footer-section .grid-cat-foot li a {
   color: inherit;
   font-size: 0.7vw;
+}
+
+@media screen and (max-width: 480px) {
+  footer .footer-section .grid-cat-foot li a {
+    font-size: .75rem;
+  }
 }
 
 footer .footer-section .social-foot {
@@ -827,6 +909,12 @@ footer .footer-section .info .detail {
   border-radius: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .contact .head-contact {
+    font-size: .75rem;
+  }
+}
+
 .contact .head-contact h1 {
   font-weight: 100;
 }
@@ -839,6 +927,18 @@ footer .footer-section .info .detail {
 
 .contact .contact-button {
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .contact .contact-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .contact .contact-button img {
@@ -858,6 +958,12 @@ footer .footer-section .info .detail {
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  .contact .map img {
+    width: 100%;
+  }
+}
+
 .registraltion-job {
   margin-top: 2%;
 }
@@ -869,6 +975,12 @@ footer .footer-section .info .detail {
 .registraltion-job .text-content {
   width: 60%;
   margin: 5% auto;
+}
+
+@media screen and (max-width: 480px) {
+  .registraltion-job .text-content {
+    width: 85%;
+  }
 }
 
 .registraltion-job .text-content img {
@@ -895,11 +1007,23 @@ footer .footer-section .info .detail {
   margin: 5% auto;
 }
 
+@media screen and (max-width: 480px) {
+  .about .text-content {
+    width: 85%;
+  }
+}
+
 .about .text-content .head-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60% 40%;
       grid-template-columns: 60% 40%;
+}
+
+@media screen and (max-width: 480px) {
+  .about .text-content .head-grid {
+    display: block;
+  }
 }
 
 .about .text-content .head-grid .left {
@@ -930,6 +1054,12 @@ footer .footer-section .info .detail {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin: 5% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .about .text-content .head-grid .left .button a img {
+    width: 90%;
+  }
 }
 
 .about .text-content .head-grid .right img {
@@ -985,8 +1115,21 @@ footer .footer-section .info .detail {
   cursor: pointer;
 }
 
+@media screen and (max-width: 480px) {
+  .paypaid .menu-mycart .leaf-menu .button-menu button {
+    width: 7rem;
+  }
+}
+
 .paypaid .menu-mycart .leaf-menu .button-menu .active {
   background: #000 !important;
+}
+
+@media screen and (max-width: 480px) {
+  .paid-page {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
 
 .paid-page .content {
@@ -1009,6 +1152,15 @@ footer .footer-section .info .detail {
       grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 10%;
   margin-bottom: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  .paid-page .bank-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+  }
 }
 
 .paid-page .bank-grid .bank {
@@ -1073,6 +1225,12 @@ footer .footer-section .info .detail {
   font-size: 1vw;
 }
 
+@media screen and (max-width: 480px) {
+  .paid-page .form-paid .button-upload button {
+    width: 25%;
+  }
+}
+
 .paid-page .form-paid figure {
   position: relative;
   width: 20%;
@@ -1124,6 +1282,12 @@ footer .footer-section .info .detail {
   color: #fff;
 }
 
+@media screen and (max-width: 480px) {
+  .paid-history .history .head span {
+    font-size: .5rem;
+  }
+}
+
 .paid-history .history .row {
   display: -ms-grid;
   display: grid;
@@ -1132,6 +1296,12 @@ footer .footer-section .info .detail {
   padding: 1% 2%;
   border: 1px solid #c6c4c4;
   border-top: unset;
+}
+
+@media screen and (max-width: 480px) {
+  .paid-history .history .row span {
+    font-size: .5rem;
+  }
 }
 
 .cate-page a {
@@ -1145,6 +1315,15 @@ footer .footer-section .info .detail {
       grid-template-columns: repeat(5, 1fr);
   grid-gap: 1%;
   margin: 5% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .cate-page .grid-store, .cate-page .grid-myfav, .cate-page .grid-mybid, .cate-page .cate-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[11];
+        grid-template-rows: repeat(11, 1fr);
+  }
 }
 
 .cate-page .grid-store .box .text-head, .cate-page .grid-myfav .box .text-head, .cate-page .grid-mybid .box .text-head, .cate-page .cate-grid .box .text-head {
@@ -1185,6 +1364,12 @@ footer .footer-section .info .detail {
   overflow: hidden;
 }
 
+@media screen and (max-width: 480px) {
+  .cate-page .grid-store .box .title, .cate-page .grid-myfav .box .title, .cate-page .grid-mybid .box .title, .cate-page .cate-grid .box .title {
+    font-size: 1.5rem;
+  }
+}
+
 .cate-page .grid-store .box .price, .cate-page .grid-myfav .box .price, .cate-page .grid-mybid .box .price, .cate-page .cate-grid .box .price {
   display: -ms-grid;
   display: grid;
@@ -1192,8 +1377,20 @@ footer .footer-section .info .detail {
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .cate-page .grid-store .box .price span:nth-child(1), .cate-page .grid-myfav .box .price span:nth-child(1), .cate-page .grid-mybid .box .price span:nth-child(1), .cate-page .cate-grid .box .price span:nth-child(1) {
+    font-size: .75rem;
+  }
+}
+
 .cate-page .grid-store .box .price span:nth-child(2), .cate-page .grid-myfav .box .price span:nth-child(2), .cate-page .grid-mybid .box .price span:nth-child(2), .cate-page .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
+}
+
+@media screen and (max-width: 480px) {
+  .cate-page .grid-store .box .price span:nth-child(2), .cate-page .grid-myfav .box .price span:nth-child(2), .cate-page .grid-mybid .box .price span:nth-child(2), .cate-page .cate-grid .box .price span:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 
 .cate-page .grid-store .box .date, .cate-page .grid-myfav .box .date, .cate-page .grid-mybid .box .date, .cate-page .cate-grid .box .date {
@@ -1201,6 +1398,12 @@ footer .footer-section .info .detail {
   display: -ms-flexbox;
   display: flex;
   margin: 3% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .cate-page .grid-store .box .date, .cate-page .grid-myfav .box .date, .cate-page .grid-mybid .box .date, .cate-page .cate-grid .box .date {
+    font-size: .75rem;
+  }
 }
 
 .cate-page .grid-store .box .date i, .cate-page .grid-myfav .box .date i, .cate-page .grid-mybid .box .date i, .cate-page .cate-grid .box .date i {
@@ -1214,6 +1417,12 @@ footer .footer-section .info .detail {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .cate-page .grid-store .box .bet, .cate-page .grid-myfav .box .bet, .cate-page .grid-mybid .box .bet, .cate-page .cate-grid .box .bet {
+    font-size: .75rem;
+  }
 }
 
 .cate-page .grid-store .box .bet .star i, .cate-page .grid-store .box .bet .credit i, .cate-page .grid-myfav .box .bet .star i, .cate-page .grid-myfav .box .bet .credit i, .cate-page .grid-mybid .box .bet .star i, .cate-page .grid-mybid .box .bet .credit i, .cate-page .cate-grid .box .bet .star i, .cate-page .cate-grid .box .bet .credit i {

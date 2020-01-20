@@ -20,6 +20,10 @@
                     background: $left-menu-color;
                     color: $head-color;
                     cursor: pointer;
+
+                    @media screen and (max-width:480px) {
+                        width: 7rem;
+                    }
                 } 
                 .active{
                     background: #000!important;

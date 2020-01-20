@@ -17,7 +17,7 @@ $('.menu-left li').click(function(){
 });
 
 // สไลด์รูป
-$('.owl-carousel').owlCarousel({
+$('.slide-head').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -129,7 +129,7 @@ $('.slider-for').slick({
   });
 
   // ปุ่มลบสินค้าในหน้าร้านค้า
-  $('.storePage-all .grid-store .box .delete-button').click(function(){
+  $('body').on('click','.storePage-all .grid-store .box .delete-button',function(){
     $(this).parent().fadeOut(function(){
       $(this).remove();
     });
@@ -357,3 +357,14 @@ $('.head-menu-mobile .close-menu-mobile').click(function(){
 $('.grid-body .bar-mobile').click(function(){
   $('.grid-body .left-side').fadeToggle();
 });
+
+
+//---------------------สไลด์เนื้อหามือถือ------------------------//
+
+$('.slide-article').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  dots:false,
+  items: 1,
+})
