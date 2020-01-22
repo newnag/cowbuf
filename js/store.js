@@ -39,6 +39,20 @@ $('.menu-mycart .leaf-menu .button-menu #history-paid').click(function(){
   $(this).addClass('active');
 });
 
+// เปลี่ยนปุ่ม active ซื้อของฉัน
+$('.menu-mycart .leaf-menu .button-menu #my-bid').click(function(){
+  $('.menu-mycart .leaf-menu .button-menu button').removeClass('active');
+  $(this).addClass('active');
+});
+$('.menu-mycart .leaf-menu .button-menu #my-cart').click(function(){
+  $('.menu-mycart .leaf-menu .button-menu button').removeClass('active');
+  $(this).addClass('active');
+});
+$('.menu-mycart .leaf-menu .button-menu #my-fav').click(function(){
+  $('.menu-mycart .leaf-menu .button-menu button').removeClass('active');
+  $(this).addClass('active');
+});
+
 // เปลี่ยนหน้าร้านค้า
 $('.storePage .menu-store .leaf-menu #store-page').click(function(){
   $('.menu-store .right-select').show();

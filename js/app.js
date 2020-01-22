@@ -361,10 +361,19 @@ $('.grid-body .bar-mobile').click(function(){
 
 //---------------------สไลด์เนื้อหามือถือ------------------------//
 
+// สไลด์หน้าแรก
 $('.slide-article').owlCarousel({
   loop:true,
   margin:10,
   nav:true,
   dots:false,
   items: 1,
+})
+
+// สไลด์หน้ารายละเอียดสินค้า
+$('.slide-mobile-detail').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  dots:false,
 })

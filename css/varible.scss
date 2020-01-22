@@ -79,6 +79,11 @@ $left-menu-color: #c6c4c4;
             height: 2rem;
             cursor: pointer;
             font-size: 1vw;
+
+            @media screen and (max-width:480px) {
+                font-size: .75rem;
+                width: 30%;
+            }
         }
     }
 }
@@ -245,6 +250,13 @@ $left-menu-color: #c6c4c4;
                 background-image: linear-gradient(to right, $price-color , $text-color);
                 color: $head-color;
                 border-radius: 10px 10px 0 0;
+
+                @media screen and (max-width:480px) {
+                    font-size: .75rem;
+                    grid-template-columns: 35% 12% 13% 20% 20%;
+                    text-align: center;
+                }
+                
             }
             .shop-detail{
                 display: grid;
@@ -252,8 +264,17 @@ $left-menu-color: #c6c4c4;
                 padding: 1% 2%;
                 border: 1px solid $left-menu-color;
 
+                @media screen and (max-width:480px) {
+                    grid-template-columns: 35% 12% 13% 20% 20%;
+                    text-align: center;
+                }
+
                 span{
                     font-size: 0.7vw;
+
+                    @media screen and (max-width:480px) {
+                        font-size: .75rem;
+                    }
                 }
             }
         }
@@ -265,6 +286,10 @@ $left-menu-color: #c6c4c4;
 
             .view-shop,.delete{
                 width: 10%;
+
+                @media screen and (max-width:480px) {
+                    width: 15%;
+                }
 
                 button{
                     width: 100%;

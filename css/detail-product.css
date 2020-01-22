@@ -6,6 +6,13 @@
   grid-gap: 1%;
 }
 
+@media screen and (max-width: 480px) {
+  .top-zone {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
 .top-zone .slide-img .show-img figure img {
   width: 100%;
   height: 400px;
@@ -28,6 +35,12 @@
 .top-zone .detail .breadcrum a {
   color: #c20000;
   font-size: 1vw;
+}
+
+@media screen and (max-width: 480px) {
+  .top-zone .detail .breadcrum a {
+    font-size: .5rem;
+  }
 }
 
 .top-zone .detail .title {
@@ -57,8 +70,20 @@
   font-size: 1vw;
 }
 
+@media screen and (max-width: 480px) {
+  .top-zone .detail .detail-bet .day span:first-child, .top-zone .detail .detail-bet .price span:first-child, .top-zone .detail .detail-bet .buynow span:first-child {
+    font-size: .75rem;
+  }
+}
+
 .top-zone .detail .detail-bet .day span:nth-child(2) {
   font-size: 1.5vw;
+}
+
+@media screen and (max-width: 480px) {
+  .top-zone .detail .detail-bet .day span:nth-child(2) {
+    font-size: .75rem;
+  }
 }
 
 .top-zone .detail .detail-bet .price, .top-zone .detail .detail-bet .buynow {
@@ -69,15 +94,33 @@
   font-size: 1.5vw;
 }
 
+@media screen and (max-width: 480px) {
+  .top-zone .detail .detail-bet .price span:nth-child(2), .top-zone .detail .detail-bet .buynow span:nth-child(2) {
+    font-size: 1rem;
+  }
+}
+
 .top-zone .detail .winner span {
   color: #c20000;
   font-size: 1.3vw;
+}
+
+@media screen and (max-width: 480px) {
+  .top-zone .detail .winner span {
+    font-size: .75rem;
+  }
 }
 
 .top-zone .detail .distric {
   font-size: 0.7vw;
   color: #ffb200;
   margin-top: 10%;
+}
+
+@media screen and (max-width: 480px) {
+  .top-zone .detail .distric {
+    font-size: .75rem;
+  }
 }
 
 .top-zone .detail .share {
@@ -102,6 +145,12 @@
   font-size: 0.7vw;
 }
 
+@media screen and (max-width: 480px) {
+  .top-zone .detail .share .button-share span, .top-zone .detail .share .favorites span {
+    font-size: .75rem;
+  }
+}
+
 .top-zone .detail .share .button-share img, .top-zone .detail .share .favorites img {
   width: 100%;
 }
@@ -117,6 +166,12 @@
 .top-zone .detail .requirement span, .top-zone .detail .rate span {
   margin-right: 1%;
   font-size: 0.7vw;
+}
+
+@media screen and (max-width: 480px) {
+  .top-zone .detail .requirement span, .top-zone .detail .rate span {
+    font-size: .75rem;
+  }
 }
 
 .top-zone .detail .requirement i, .top-zone .detail .rate i {
@@ -148,6 +203,12 @@
   width: 80%;
 }
 
+@media screen and (max-width: 480px) {
+  .top-zone .detail .place-coin .button .number .input-number {
+    height: 30px;
+  }
+}
+
 .top-zone .detail .place-coin .button .number .input-number button {
   border: unset;
   background: unset;
@@ -155,10 +216,22 @@
   font-size: 1vw;
 }
 
+@media screen and (max-width: 480px) {
+  .top-zone .detail .place-coin .button .number .input-number button {
+    font-size: .75rem;
+  }
+}
+
 .top-zone .detail .place-coin .button .number .input-number input {
   width: 10%;
   border: unset;
   font-size: 1vw;
+}
+
+@media screen and (max-width: 480px) {
+  .top-zone .detail .place-coin .button .number .input-number input {
+    font-size: .75rem;
+  }
 }
 
 .top-zone .detail .place-coin .button .number .input-number input::-webkit-outer-spin-button,
@@ -178,6 +251,13 @@
   font-size: 1.3vw;
 }
 
+@media screen and (max-width: 480px) {
+  .top-zone .detail .place-coin .button .bid button, .top-zone .detail .place-coin .button .buy button {
+    height: 30px;
+    font-size: .75rem;
+  }
+}
+
 .detail-user-bid {
   margin: 2% 0;
 }
@@ -186,12 +266,25 @@
   color: #c20000;
 }
 
+@media screen and (max-width: 480px) {
+  .detail-user-bid .total-user {
+    margin: 4% 0 2% 0;
+  }
+}
+
 .detail-user-bid .table-bid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 48% 48%;
       grid-template-columns: 48% 48%;
   grid-gap: 2%;
+}
+
+@media screen and (max-width: 480px) {
+  .detail-user-bid .table-bid {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
 }
 
 .detail-user-bid .table-bid .last-bid .table, .detail-user-bid .table-bid .shop-detail .table {
@@ -218,6 +311,12 @@
   font-size: 1vw;
 }
 
+@media screen and (max-width: 480px) {
+  .detail-user-bid .table-bid .last-bid .table .head-table span, .detail-user-bid .table-bid .shop-detail .table .head-table span {
+    font-size: .75rem;
+  }
+}
+
 .detail-user-bid .table-bid .last-bid .table .row, .detail-user-bid .table-bid .shop-detail .table .row {
   display: -ms-grid;
   display: grid;
@@ -232,6 +331,12 @@
 
 .detail-user-bid .table-bid .last-bid .table .row span, .detail-user-bid .table-bid .shop-detail .table .row span {
   font-size: 0.7vw;
+}
+
+@media screen and (max-width: 480px) {
+  .detail-user-bid .table-bid .last-bid .table .row span, .detail-user-bid .table-bid .shop-detail .table .row span {
+    font-size: .75rem;
+  }
 }
 
 .detail-user-bid .table-bid .last-bid .table .row span i, .detail-user-bid .table-bid .shop-detail .table .row span i {
@@ -266,6 +371,12 @@
 .detail-user-bid .table-bid .shop-detail .warning-follow .warning p {
   color: #c20000;
   font-size: 0.6vw;
+}
+
+@media screen and (max-width: 480px) {
+  .detail-user-bid .table-bid .shop-detail .warning-follow .warning p {
+    font-size: .5rem;
+  }
 }
 
 .detail-user-bid .table-bid .shop-detail .warning-follow .warning p i {
@@ -358,6 +469,12 @@
   margin: 3% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .other-product .grid-box {
+    display: none;
+  }
+}
+
 .other-product .grid-box a {
   color: #000;
 }
@@ -416,5 +533,35 @@
 
 .other-product .grid-box a .box .bet .star i, .other-product .grid-box a .box .bet .credit i {
   color: #ffb402;
+}
+
+.other-product .slide-mobile-detail {
+  display: none !important;
+}
+
+@media screen and (max-width: 480px) {
+  .other-product .slide-mobile-detail {
+    display: block !important;
+    margin: 2% 0;
+  }
+  .other-product .slide-mobile-detail a {
+    color: #000;
+  }
+  .other-product .slide-mobile-detail a .box .date, .other-product .slide-mobile-detail a .box .bet, .other-product .slide-mobile-detail a .box .credit {
+    font-size: .75rem;
+  }
+  .other-product .slide-mobile-detail a .box .price {
+    color: #c20000;
+  }
+  .other-product .slide-mobile-detail a .box .title {
+    height: 6rem;
+    overflow: hidden;
+  }
+  .other-product .slide-mobile-detail .owl-nav {
+    top: 35% !important;
+  }
+  .other-product .slide-mobile-detail .owl-nav button {
+    color: #c20000 !important;
+  }
 }
 /*# sourceMappingURL=detail-product.css.map */

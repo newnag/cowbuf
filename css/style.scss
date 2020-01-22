@@ -990,6 +990,10 @@ footer{
             &:nth-child(2){
                 font-size: 0.7vw;
                 line-height: 2;
+
+                @media screen and (max-width:480px) {
+                    font-size: .5rem;
+                }
             }
         }
     }
@@ -1040,7 +1044,8 @@ footer{
                 font-size: 1vw;
 
                 @media screen and (max-width:480px) {
-                    width: 25%;
+                    width: 30%;
+                    font-size: .75rem;
                 }
             }
         }

@@ -1,6 +1,10 @@
 @import 'varible';
 
 .article{
+    @media screen and (max-width:480px) {
+        padding: 0 1%;
+    }
+
     .head-text{
         background-image: linear-gradient(to right, $price-color , $text-color);
         border-radius: 15px;

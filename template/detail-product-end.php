@@ -353,5 +353,36 @@
                 </div>
             </a>
         </div>
+
+        <div class="slide-mobile-detail owl-carousel owl-theme">
+            <?php for($i=0;$i<=4;$i++): ?>
+                <a href="template/detail-product.html">
+                    <div class="box">
+                        <figure><img src="/img/ID00004_26.png" alt=""></figure>
+                        <div class="title"><h2>วันตัวสวยๆตัวที่ 1</h2></div>
+                        <div class="price">
+                            <span>ราคาปัจจุบัน</span>
+                            <span>3200 ฿</span>
+                        </div>
+                        <div class="date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>วันประมูลคงเหลือ 2 วัน</span>
+                        </div>
+                        <!-- ส่วนแสดงเครดิตการกดประมูล -->
+                        <div class="bet">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <span>10K</span>
+                            </div>
+                            <div class="credit">
+                                <i class="fas fa-coins"></i>
+                                <span>500</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            <?php endfor; ?>
+        </div>
+
     </div>
 

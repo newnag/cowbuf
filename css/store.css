@@ -99,6 +99,12 @@
   font-size: 0.7vw;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .menu-store .head-store-follow p {
+    font-size: .75rem;
+  }
+}
+
 .storePage .menu-store .head-store-follow p i {
   color: #ffb200;
 }
@@ -180,6 +186,12 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-all .grid-store .box .price span:nth-child(1), .storePage .storePage-all .grid-myfav .box .price span:nth-child(1), .storePage .storePage-all .grid-mybid .box .price span:nth-child(1), .storePage .storePage-all .cate-grid .box .price span:nth-child(1) {
+    font-size: .75rem;
+  }
+}
+
 .storePage .storePage-all .grid-store .box .price span:nth-child(2), .storePage .storePage-all .grid-myfav .box .price span:nth-child(2), .storePage .storePage-all .grid-mybid .box .price span:nth-child(2), .storePage .storePage-all .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
@@ -197,6 +209,12 @@
   margin: 3% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-all .grid-store .box .date, .storePage .storePage-all .grid-myfav .box .date, .storePage .storePage-all .grid-mybid .box .date, .storePage .storePage-all .cate-grid .box .date {
+    font-size: .75rem;
+  }
+}
+
 .storePage .storePage-all .grid-store .box .date i, .storePage .storePage-all .grid-myfav .box .date i, .storePage .storePage-all .grid-mybid .box .date i, .storePage .storePage-all .cate-grid .box .date i {
   margin-right: 2%;
 }
@@ -208,6 +226,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .storePage-all .grid-store .box .bet, .storePage .storePage-all .grid-myfav .box .bet, .storePage .storePage-all .grid-mybid .box .bet, .storePage .storePage-all .cate-grid .box .bet {
+    font-size: .75rem;
+  }
 }
 
 .storePage .storePage-all .grid-store .box .bet .star i, .storePage .storePage-all .grid-store .box .bet .credit i, .storePage .storePage-all .grid-myfav .box .bet .star i, .storePage .storePage-all .grid-myfav .box .bet .credit i, .storePage .storePage-all .grid-mybid .box .bet .star i, .storePage .storePage-all .grid-mybid .box .bet .credit i, .storePage .storePage-all .cate-grid .box .bet .star i, .storePage .storePage-all .cate-grid .box .bet .credit i {
@@ -306,6 +330,12 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-notbuy .grid-store .box .price span:nth-child(1), .storePage .storePage-notbuy .grid-myfav .box .price span:nth-child(1), .storePage .storePage-notbuy .grid-mybid .box .price span:nth-child(1), .storePage .storePage-notbuy .cate-grid .box .price span:nth-child(1) {
+    font-size: .75rem;
+  }
+}
+
 .storePage .storePage-notbuy .grid-store .box .price span:nth-child(2), .storePage .storePage-notbuy .grid-myfav .box .price span:nth-child(2), .storePage .storePage-notbuy .grid-mybid .box .price span:nth-child(2), .storePage .storePage-notbuy .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
@@ -323,6 +353,12 @@
   margin: 3% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-notbuy .grid-store .box .date, .storePage .storePage-notbuy .grid-myfav .box .date, .storePage .storePage-notbuy .grid-mybid .box .date, .storePage .storePage-notbuy .cate-grid .box .date {
+    font-size: .75rem;
+  }
+}
+
 .storePage .storePage-notbuy .grid-store .box .date i, .storePage .storePage-notbuy .grid-myfav .box .date i, .storePage .storePage-notbuy .grid-mybid .box .date i, .storePage .storePage-notbuy .cate-grid .box .date i {
   margin-right: 2%;
 }
@@ -334,6 +370,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .storePage-notbuy .grid-store .box .bet, .storePage .storePage-notbuy .grid-myfav .box .bet, .storePage .storePage-notbuy .grid-mybid .box .bet, .storePage .storePage-notbuy .cate-grid .box .bet {
+    font-size: .75rem;
+  }
 }
 
 .storePage .storePage-notbuy .grid-store .box .bet .star i, .storePage .storePage-notbuy .grid-store .box .bet .credit i, .storePage .storePage-notbuy .grid-myfav .box .bet .star i, .storePage .storePage-notbuy .grid-myfav .box .bet .credit i, .storePage .storePage-notbuy .grid-mybid .box .bet .star i, .storePage .storePage-notbuy .grid-mybid .box .bet .credit i, .storePage .storePage-notbuy .cate-grid .box .bet .star i, .storePage .storePage-notbuy .cate-grid .box .bet .credit i {
@@ -432,6 +474,12 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-buynow .grid-store .box .price span:nth-child(1), .storePage .storePage-buynow .grid-myfav .box .price span:nth-child(1), .storePage .storePage-buynow .grid-mybid .box .price span:nth-child(1), .storePage .storePage-buynow .cate-grid .box .price span:nth-child(1) {
+    font-size: .75rem;
+  }
+}
+
 .storePage .storePage-buynow .grid-store .box .price span:nth-child(2), .storePage .storePage-buynow .grid-myfav .box .price span:nth-child(2), .storePage .storePage-buynow .grid-mybid .box .price span:nth-child(2), .storePage .storePage-buynow .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
@@ -449,6 +497,12 @@
   margin: 3% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-buynow .grid-store .box .date, .storePage .storePage-buynow .grid-myfav .box .date, .storePage .storePage-buynow .grid-mybid .box .date, .storePage .storePage-buynow .cate-grid .box .date {
+    font-size: .75rem;
+  }
+}
+
 .storePage .storePage-buynow .grid-store .box .date i, .storePage .storePage-buynow .grid-myfav .box .date i, .storePage .storePage-buynow .grid-mybid .box .date i, .storePage .storePage-buynow .cate-grid .box .date i {
   margin-right: 2%;
 }
@@ -460,6 +514,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .storePage-buynow .grid-store .box .bet, .storePage .storePage-buynow .grid-myfav .box .bet, .storePage .storePage-buynow .grid-mybid .box .bet, .storePage .storePage-buynow .cate-grid .box .bet {
+    font-size: .75rem;
+  }
 }
 
 .storePage .storePage-buynow .grid-store .box .bet .star i, .storePage .storePage-buynow .grid-store .box .bet .credit i, .storePage .storePage-buynow .grid-myfav .box .bet .star i, .storePage .storePage-buynow .grid-myfav .box .bet .credit i, .storePage .storePage-buynow .grid-mybid .box .bet .star i, .storePage .storePage-buynow .grid-mybid .box .bet .credit i, .storePage .storePage-buynow .cate-grid .box .bet .star i, .storePage .storePage-buynow .cate-grid .box .bet .credit i {
@@ -558,6 +618,12 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-success .grid-store .box .price span:nth-child(1), .storePage .storePage-success .grid-myfav .box .price span:nth-child(1), .storePage .storePage-success .grid-mybid .box .price span:nth-child(1), .storePage .storePage-success .cate-grid .box .price span:nth-child(1) {
+    font-size: .75rem;
+  }
+}
+
 .storePage .storePage-success .grid-store .box .price span:nth-child(2), .storePage .storePage-success .grid-myfav .box .price span:nth-child(2), .storePage .storePage-success .grid-mybid .box .price span:nth-child(2), .storePage .storePage-success .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
@@ -575,6 +641,12 @@
   margin: 3% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-success .grid-store .box .date, .storePage .storePage-success .grid-myfav .box .date, .storePage .storePage-success .grid-mybid .box .date, .storePage .storePage-success .cate-grid .box .date {
+    font-size: .75rem;
+  }
+}
+
 .storePage .storePage-success .grid-store .box .date i, .storePage .storePage-success .grid-myfav .box .date i, .storePage .storePage-success .grid-mybid .box .date i, .storePage .storePage-success .cate-grid .box .date i {
   margin-right: 2%;
 }
@@ -586,6 +658,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .storePage-success .grid-store .box .bet, .storePage .storePage-success .grid-myfav .box .bet, .storePage .storePage-success .grid-mybid .box .bet, .storePage .storePage-success .cate-grid .box .bet {
+    font-size: .75rem;
+  }
 }
 
 .storePage .storePage-success .grid-store .box .bet .star i, .storePage .storePage-success .grid-store .box .bet .credit i, .storePage .storePage-success .grid-myfav .box .bet .star i, .storePage .storePage-success .grid-myfav .box .bet .credit i, .storePage .storePage-success .grid-mybid .box .bet .star i, .storePage .storePage-success .grid-mybid .box .bet .credit i, .storePage .storePage-success .cate-grid .box .bet .star i, .storePage .storePage-success .cate-grid .box .bet .credit i {
@@ -684,6 +762,12 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-timeout .grid-store .box .price span:nth-child(1), .storePage .storePage-timeout .grid-myfav .box .price span:nth-child(1), .storePage .storePage-timeout .grid-mybid .box .price span:nth-child(1), .storePage .storePage-timeout .cate-grid .box .price span:nth-child(1) {
+    font-size: .75rem;
+  }
+}
+
 .storePage .storePage-timeout .grid-store .box .price span:nth-child(2), .storePage .storePage-timeout .grid-myfav .box .price span:nth-child(2), .storePage .storePage-timeout .grid-mybid .box .price span:nth-child(2), .storePage .storePage-timeout .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
@@ -701,6 +785,12 @@
   margin: 3% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-timeout .grid-store .box .date, .storePage .storePage-timeout .grid-myfav .box .date, .storePage .storePage-timeout .grid-mybid .box .date, .storePage .storePage-timeout .cate-grid .box .date {
+    font-size: .75rem;
+  }
+}
+
 .storePage .storePage-timeout .grid-store .box .date i, .storePage .storePage-timeout .grid-myfav .box .date i, .storePage .storePage-timeout .grid-mybid .box .date i, .storePage .storePage-timeout .cate-grid .box .date i {
   margin-right: 2%;
 }
@@ -712,6 +802,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .storePage-timeout .grid-store .box .bet, .storePage .storePage-timeout .grid-myfav .box .bet, .storePage .storePage-timeout .grid-mybid .box .bet, .storePage .storePage-timeout .cate-grid .box .bet {
+    font-size: .75rem;
+  }
 }
 
 .storePage .storePage-timeout .grid-store .box .bet .star i, .storePage .storePage-timeout .grid-store .box .bet .credit i, .storePage .storePage-timeout .grid-myfav .box .bet .star i, .storePage .storePage-timeout .grid-myfav .box .bet .credit i, .storePage .storePage-timeout .grid-mybid .box .bet .star i, .storePage .storePage-timeout .grid-mybid .box .bet .credit i, .storePage .storePage-timeout .cate-grid .box .bet .star i, .storePage .storePage-timeout .cate-grid .box .bet .credit i {
@@ -810,6 +906,12 @@
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-now .grid-store .box .price span:nth-child(1), .storePage .storePage-now .grid-myfav .box .price span:nth-child(1), .storePage .storePage-now .grid-mybid .box .price span:nth-child(1), .storePage .storePage-now .cate-grid .box .price span:nth-child(1) {
+    font-size: .75rem;
+  }
+}
+
 .storePage .storePage-now .grid-store .box .price span:nth-child(2), .storePage .storePage-now .grid-myfav .box .price span:nth-child(2), .storePage .storePage-now .grid-mybid .box .price span:nth-child(2), .storePage .storePage-now .cate-grid .box .price span:nth-child(2) {
   font-size: 1.2vw;
 }
@@ -827,6 +929,12 @@
   margin: 3% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .storePage .storePage-now .grid-store .box .date, .storePage .storePage-now .grid-myfav .box .date, .storePage .storePage-now .grid-mybid .box .date, .storePage .storePage-now .cate-grid .box .date {
+    font-size: .75rem;
+  }
+}
+
 .storePage .storePage-now .grid-store .box .date i, .storePage .storePage-now .grid-myfav .box .date i, .storePage .storePage-now .grid-mybid .box .date i, .storePage .storePage-now .cate-grid .box .date i {
   margin-right: 2%;
 }
@@ -838,6 +946,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .storePage .storePage-now .grid-store .box .bet, .storePage .storePage-now .grid-myfav .box .bet, .storePage .storePage-now .grid-mybid .box .bet, .storePage .storePage-now .cate-grid .box .bet {
+    font-size: .75rem;
+  }
 }
 
 .storePage .storePage-now .grid-store .box .bet .star i, .storePage .storePage-now .grid-store .box .bet .credit i, .storePage .storePage-now .grid-myfav .box .bet .star i, .storePage .storePage-now .grid-myfav .box .bet .credit i, .storePage .storePage-now .grid-mybid .box .bet .star i, .storePage .storePage-now .grid-mybid .box .bet .credit i, .storePage .storePage-now .cate-grid .box .bet .star i, .storePage .storePage-now .cate-grid .box .bet .credit i {
@@ -901,6 +1015,13 @@
   font-size: 1vw;
 }
 
+@media screen and (max-width: 480px) {
+  .form-sale .upload-img .button-upload button {
+    width: 20%;
+    font-size: .75rem;
+  }
+}
+
 .form-sale .upload-img .pre-img {
   display: -ms-grid;
   display: grid;
@@ -935,6 +1056,13 @@
       grid-template-columns: 50% 50%;
   grid-gap: 2%;
   margin: 3% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .form-sale .cat {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .form-sale .button-post {
@@ -977,6 +1105,15 @@
   border-radius: 10px 10px 0 0;
 }
 
+@media screen and (max-width: 480px) {
+  .store-follow .shop-box .shop-grid .shop-head {
+    font-size: .75rem;
+    -ms-grid-columns: 35% 12% 13% 20% 20%;
+        grid-template-columns: 35% 12% 13% 20% 20%;
+    text-align: center;
+  }
+}
+
 .store-follow .shop-box .shop-grid .shop-detail {
   display: -ms-grid;
   display: grid;
@@ -986,8 +1123,22 @@
   border: 1px solid #c6c4c4;
 }
 
+@media screen and (max-width: 480px) {
+  .store-follow .shop-box .shop-grid .shop-detail {
+    -ms-grid-columns: 35% 12% 13% 20% 20%;
+        grid-template-columns: 35% 12% 13% 20% 20%;
+    text-align: center;
+  }
+}
+
 .store-follow .shop-box .shop-grid .shop-detail span {
   font-size: 0.7vw;
+}
+
+@media screen and (max-width: 480px) {
+  .store-follow .shop-box .shop-grid .shop-detail span {
+    font-size: .75rem;
+  }
 }
 
 .store-follow .shop-box .button-shop {
@@ -1002,6 +1153,12 @@
 
 .store-follow .shop-box .button-shop .view-shop, .store-follow .shop-box .button-shop .delete {
   width: 10%;
+}
+
+@media screen and (max-width: 480px) {
+  .store-follow .shop-box .button-shop .view-shop, .store-follow .shop-box .button-shop .delete {
+    width: 15%;
+  }
 }
 
 .store-follow .shop-box .button-shop .view-shop button, .store-follow .shop-box .button-shop .delete button {

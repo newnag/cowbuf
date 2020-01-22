@@ -1145,6 +1145,12 @@ footer .footer-section .info .detail {
   line-height: 2;
 }
 
+@media screen and (max-width: 480px) {
+  .paid-page .content p:nth-child(2) {
+    font-size: .5rem;
+  }
+}
+
 .paid-page .bank-grid {
   display: -ms-grid;
   display: grid;
@@ -1227,7 +1233,8 @@ footer .footer-section .info .detail {
 
 @media screen and (max-width: 480px) {
   .paid-page .form-paid .button-upload button {
-    width: 25%;
+    width: 30%;
+    font-size: .75rem;
   }
 }
 

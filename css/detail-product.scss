@@ -5,6 +5,10 @@
     grid-template-columns: 55% 44%;
     grid-gap: 1%;
 
+    @media screen and (max-width:480px) {
+        grid-template-columns: 100%;
+    }
+
     .slide-img{
         .show-img{
             figure{
@@ -35,6 +39,10 @@
             a{
                 color: $price-color;
                 font-size: 1vw;
+
+                @media screen and (max-width:480px) {
+                    font-size: .5rem;
+                }
             }
         }
 
@@ -58,12 +66,20 @@
 
                 span:first-child{
                     font-size: 1vw;
+
+                    @media screen and (max-width:480px) {
+                        font-size: .75rem;
+                    }
                 }
             }
 
             .day{
                 span:nth-child(2){
                     font-size: 1.5vw;
+
+                    @media screen and (max-width:480px) {
+                        font-size: .75rem;
+                    }
                 }
             }
 
@@ -72,6 +88,10 @@
 
                 span:nth-child(2){
                     font-size: 1.5vw;
+
+                    @media screen and (max-width:480px) {
+                        font-size: 1rem;
+                    }
                 }
             }
         }
@@ -80,6 +100,10 @@
             span{
                 color: $price-color;
                 font-size: 1.3vw;
+
+                @media screen and (max-width:480px) {
+                    font-size: .75rem;
+                }
             }
         }
 
@@ -87,6 +111,10 @@
             font-size: 0.7vw;
             color: #ffb200;
             margin-top: 10%;
+
+            @media screen and (max-width:480px) {
+                font-size: .75rem;
+            }
         }
 
         .share{
@@ -101,6 +129,10 @@
                 span{
                     width: 50%;
                     font-size: 0.7vw;
+
+                    @media screen and (max-width:480px) {
+                        font-size: .75rem;
+                    }
                 }
 
                 img{
@@ -117,6 +149,10 @@
             span{
                 margin-right: 1%;
                 font-size: 0.7vw;
+
+                @media screen and (max-width:480px) {
+                    font-size: .75rem;
+                }
             }
             i{
                 color: #ffb200;
@@ -139,18 +175,30 @@
                         padding: 0 5%;
                         height: 50px;
                         width: 80%;
+
+                        @media screen and (max-width:480px) {
+                            height: 30px;
+                        }
                     
                         button{
                             border: unset;
                             background: unset;
                             cursor: pointer;
                             font-size: 1vw;
+
+                            @media screen and (max-width:480px) {
+                                font-size: .75rem;
+                            }
                         }
 
                         input{
                             width: 10%;
                             border: unset;
                             font-size: 1vw;
+
+                            @media screen and (max-width:480px) {
+                                font-size: .75rem;
+                            }
                         }
                         input::-webkit-outer-spin-button,
                         input::-webkit-inner-spin-button {
@@ -170,6 +218,11 @@
                         border-radius: 30px;
                         cursor: pointer;
                         font-size: 1.3vw;
+
+                        @media screen and (max-width:480px) {
+                            height: 30px;
+                            font-size: .75rem;
+                        }
                     }
                 }
             }
@@ -182,12 +235,20 @@
 
     .total-user{
         color: $price-color;
+
+        @media screen and (max-width:480px) {
+            margin: 4% 0 2% 0;
+        }
     }
 
     .table-bid{
         display: grid;
         grid-template-columns: 48% 48%;
         grid-gap: 2%;
+
+        @media screen and (max-width:480px) {
+            grid-template-columns: 100%;
+        }
 
         .last-bid,.shop-detail{
             .table{
@@ -205,6 +266,10 @@
                     span{
                         color: $head-color;
                         font-size: 1vw;
+
+                        @media screen and (max-width:480px) {
+                            font-size: .75rem;
+                        }
                     }
                 }
 
@@ -217,6 +282,10 @@
 
                     span{
                         font-size: 0.7vw;
+
+                        @media screen and (max-width:480px) {
+                            font-size: .75rem;
+                        }
 
                         i{
                             color: $price-color;
@@ -251,6 +320,10 @@
                     p{
                         color: $price-color;
                         font-size: 0.6vw;
+
+                        @media screen and (max-width:480px) {
+                            font-size: .5rem;
+                        }
 
                         i{
                             color: #ffb200;
@@ -335,6 +408,10 @@
         grid-gap: 1%;
         margin: 3% 0;
 
+        @media screen and (max-width:480px) {
+            display: none;
+        }
+
         a{
             color: $text-color;
 
@@ -386,6 +463,40 @@
                     .star i,.credit i{
                         color: #ffb402;
                     }
+                }
+            }
+        }
+    }
+
+    .slide-mobile-detail{
+        display: none!important;
+
+        @media screen and (max-width:480px) {
+            display: block!important;
+            margin: 2% 0;
+
+            a{
+                color: $text-color;
+
+                .box{
+                    .date,.bet,.credit{
+                        font-size: .75rem;
+                    }
+                    .price{
+                        color: $price-color;
+                    }
+                    .title{
+                        height: 6rem;
+                        overflow: hidden;
+                    }
+                }
+            }
+
+            .owl-nav{
+                top: 35%!important;
+
+                button{
+                    color: $price-color!important;
                 }
             }
         }

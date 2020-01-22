@@ -1,3 +1,9 @@
+@media screen and (max-width: 480px) {
+  .article {
+    padding: 0 1%;
+  }
+}
+
 .article .head-text {
   background-image: -webkit-gradient(linear, left top, right top, from(#c20000), to(#000));
   background-image: linear-gradient(to right, #c20000, #000);

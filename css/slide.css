@@ -54,7 +54,7 @@
     .owl-carousel .item .detail-post{
         top: 25%;
         padding: 0 25%;
-        height: 2.5rem;
+        height: 53px;
         overflow: hidden;
     }
 }
@@ -77,6 +77,12 @@
     font-size: x-large;
     opacity: 0.8;
 }
+@media screen and (max-width:480px){
+    .owl-carousel .item .detail-post button{
+        font-size: small;
+    }
+}
+
 .owl-carousel .item .detail-post button:focus{
     outline: unset;
 }
