@@ -37,7 +37,7 @@
                 </div>
 
                 <?php //เมื่อเข้าสู่ระบบแล้วจะเปลี่ยนไปใช้ element นี้ ?>
-                <div class="member-login">
+                <div class="member-login" style="display:block">
                     <div class="user-login">
                         <i class="fas fa-user"></i>
                         <span>User0001</span>
@@ -117,7 +117,7 @@
             <li><a href="store">ร้านค้าของฉัน</a></li>
             <li><a href="mycart">การซื้อของฉัน</a></li>
             <li><a href="paypaid">การเติมเงิน</a></li>
-            <li><a href="<?php $_SERVER['SERVER_NAME'] ?>">ออกจากระบบ</a></li>
+            <li><a href="<?php $_SERVER['SERVER_NAME'] ?>" id="logout">ออกจากระบบ</a></li>
         </ul>
     </div>
 

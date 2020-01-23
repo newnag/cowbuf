@@ -234,6 +234,11 @@ $('.login .form-login form').submit(function(e){
   } 
 });
 
+// กดออกจากระบบ
+$('#logout').click(function(){
+  
+});
+
 // ฟอร์มสมัครสมาชิก
 $('.register-page .form-register form').submit(function(e){
   $(this).find('.input-login input').each(function(){
