@@ -36,7 +36,7 @@ li {
 
 @media screen and (max-width: 480px) {
   .head-foot {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -200,6 +200,16 @@ header .main-head .head-menu-mobile .member-head a .login-regis {
 
 header .main-head .head-menu-mobile .member-head a .login-regis i, header .main-head .head-menu-mobile .member-head a .login-regis span {
   color: #fff;
+}
+
+header .main-head .head-menu-mobile .member-menu {
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+header .main-head .head-menu-mobile .member-menu li a {
+  color: #c6c4c4;
 }
 
 header .main-head .head-menu-mobile .icon-head {
@@ -729,11 +739,18 @@ nav .status-credit .coin i {
 .grid-body .main-side article .mobile-gridbox .slide-article .box .title, .grid-body .main-side article .mobile-gridbox .slide-article .box .price, .grid-body .main-side article .mobile-gridbox .slide-article .box .date, .grid-body .main-side article .mobile-gridbox .slide-article .box .star, .grid-body .main-side article .mobile-gridbox .slide-article .box .credit {
   margin: 3% 0;
   color: #000;
+  font-size: .75rem;
+}
+
+.grid-body .main-side article .mobile-gridbox .slide-article .box .title {
+  height: 3rem;
+  overflow: hidden;
+  font-size: .8rem;
 }
 
 .grid-body .main-side article .mobile-gridbox .slide-article .box .price {
   color: #c20000;
-  font-size: 5vw;
+  font-size: .9rem;
 }
 
 .grid-body .main-side article .mobile-gridbox .slide-article .box .star i, .grid-body .main-side article .mobile-gridbox .slide-article .box .credit i {
@@ -831,6 +848,12 @@ footer .footer-section .social-foot .receive-news {
   margin-top: 20%;
 }
 
+@media screen and (max-width: 480px) {
+  footer .footer-section .social-foot .receive-news {
+    margin-top: 10%;
+  }
+}
+
 footer .footer-section .social-foot .receive-news .input {
   position: relative;
 }
@@ -852,6 +875,12 @@ footer .footer-section .social-foot .receive-news .input button {
   background: unset;
   color: #fff;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  footer .footer-section .social-foot .receive-news .input button {
+    top: 20%;
+  }
 }
 
 footer .footer-section .info {

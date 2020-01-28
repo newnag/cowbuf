@@ -17,7 +17,7 @@
             <div class="left-head">
                 <div class="logo-head">
                     <!-- โลโก้หัวเว็บ -->
-                    <a href=""><img src="img/logo_ora.png" alt=""></a>
+                    <a href="<?php echo "http://" . $_SERVER['SERVER_NAME']; ?>"><img src="img/logo_ora.png" alt=""></a>
                 </div>
             </div>
 
@@ -71,6 +71,23 @@
                             <span>เข้าสู่ระบบ/สมัครสมาชิก</span>
                         </div>
                     </a>
+                </div>
+
+                <div class="member-login" style="display:block;text-align:center">
+                    <div class="user-login">
+                        <i class="fas fa-user"></i>
+                        <span>User0001</span>
+                    </div>
+                </div>
+
+                <div class="member-menu">
+                    <ul>
+                        <li><a href="account">บัญชีของฉัน</a></li>
+                        <li><a href="store">ร้านค้าของฉัน</a></li>
+                        <li><a href="mycart">การซื้อของฉัน</a></li>
+                        <li><a href="paypaid">การเติมเงิน</a></li>
+                        <li><a href="<?php $_SERVER['SERVER_NAME'] ?>" id="logout">ออกจากระบบ</a></li>
+                    </ul>
                 </div>
 
                 <div class="line-keed"></div>

@@ -90,7 +90,7 @@ li{
     font-size: 1vw;
 
     @media screen and (max-width:480px) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -236,6 +236,17 @@ header{
                         i,span{
                             color: $head-color;
                         }
+                    }
+                }
+            }
+
+            .member-menu{
+                right: 50%;
+                transform: translateX(50%);
+
+                li{
+                    a{
+                        color: $left-menu-color;
                     }
                 }
             }
@@ -647,10 +658,16 @@ nav{
                         .title,.price,.date,.star,.credit{
                             margin: 3% 0;
                             color: $text-color;
+                            font-size: .75rem;
+                        }
+                        .title{
+                            height: 3rem;
+                            overflow: hidden;
+                            font-size: .8rem;
                         }
                         .price{
                             color: $price-color;
-                            font-size: 5vw;
+                            font-size: .9rem;
                         }
                         .star,.credit{
                             i{
@@ -727,6 +744,10 @@ footer{
             .receive-news{
                 margin-top: 20%;
 
+                @media screen and (max-width:480px) {
+                    margin-top: 10%;
+                }
+
                 .input{
                     position: relative;
 
@@ -747,6 +768,10 @@ footer{
                         background: unset;
                         color: $head-color;
                         cursor: pointer;
+
+                        @media screen and (max-width:480px) {
+                            top: 20%;
+                        }
                     }
                 }
             }

@@ -68,7 +68,7 @@
 
             <div class="input-login">
                 <label>รหัสผ่านใหม่*</label>
-                <input id="edit-input" type="password" readonly placeholder="กรอกรหัสผ่านใหม่">
+                <input id="pass" type="password" readonly placeholder="กรอกรหัสผ่านใหม่">
                 <div class="view" onclick="view_password()"><i class="fas fa-eye"></i></div></input>
             </div>
 

@@ -108,7 +108,9 @@ $('body').on('click','.page-mycart .my-fav .grid-myfav .box .delete-button butto
 
 // ลบร้านค้าโปรด
 $('body').on('click','.shop-box .button-shop .delete button',function(){
-  alert('111');
+  $(this).closest('.shop-box').fadeOut(function(){
+    $(this).closest('.shop-box').remove();
+  });
 });
 
 

@@ -52,10 +52,9 @@
 }
 @media screen and (max-width:480px) {
     .owl-carousel .item .detail-post{
-        top: 25%;
+        top: 15%;
         padding: 0 25%;
-        height: 53px;
-        overflow: hidden;
+        height: 60px;
     }
 }
 
@@ -80,6 +79,15 @@
 @media screen and (max-width:480px){
     .owl-carousel .item .detail-post button{
         font-size: small;
+        height: 40%;
+        top: 65%;
+    }
+
+    .owl-carousel .item .detail-post p{
+        color: black;
+        font-size: .8rem;
+        overflow: hidden;
+        height: 3rem;
     }
 }
 

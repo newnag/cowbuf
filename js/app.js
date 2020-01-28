@@ -348,6 +348,7 @@ $('.dialog-privacy .box-privacy .confirm-ok button').click(function(){
 
 //---------------- จบส่วนชี้แจงข้อกำหนดการใช้สมาชิก ----------------//
 
+
 // เปิดปุ่มเมนู header
 $('.main-head .bugger i').click(function(){
   $('.head-menu-mobile').slideDown('slow');
@@ -372,7 +373,8 @@ $('.slide-article').owlCarousel({
   margin:10,
   nav:true,
   dots:false,
-  items: 1,
+  items: 2,
+  slideBy: 2,
 })
 
 // สไลด์หน้ารายละเอียดสินค้า
