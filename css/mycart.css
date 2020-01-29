@@ -155,7 +155,8 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1%;
+  grid-gap: 10px;
+  grid-row-gap: 25px;
   margin: 5% 0;
 }
 
@@ -163,8 +164,6 @@
   .my-fav .grid-store, .my-fav .grid-myfav, .my-fav .grid-mybid, .my-fav .cate-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[11];
-        grid-template-rows: repeat(11, 1fr);
   }
 }
 
@@ -295,7 +294,8 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1%;
+  grid-gap: 10px;
+  grid-row-gap: 25px;
   margin: 5% 0;
 }
 
@@ -303,8 +303,6 @@
   .my-bid .grid-store, .my-bid .grid-myfav, .my-bid .grid-mybid, .my-bid .cate-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[11];
-        grid-template-rows: repeat(11, 1fr);
   }
 }
 

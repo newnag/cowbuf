@@ -122,7 +122,8 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1%;
+  grid-gap: 10px;
+  grid-row-gap: 25px;
   margin: 5% 0;
 }
 
@@ -130,8 +131,6 @@
   .storePage .storePage-all .grid-store, .storePage .storePage-all .grid-myfav, .storePage .storePage-all .grid-mybid, .storePage .storePage-all .cate-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[11];
-        grid-template-rows: repeat(11, 1fr);
   }
 }
 
@@ -266,7 +265,8 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1%;
+  grid-gap: 10px;
+  grid-row-gap: 25px;
   margin: 5% 0;
 }
 
@@ -274,8 +274,6 @@
   .storePage .storePage-notbuy .grid-store, .storePage .storePage-notbuy .grid-myfav, .storePage .storePage-notbuy .grid-mybid, .storePage .storePage-notbuy .cate-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[11];
-        grid-template-rows: repeat(11, 1fr);
   }
 }
 
@@ -410,7 +408,8 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1%;
+  grid-gap: 10px;
+  grid-row-gap: 25px;
   margin: 5% 0;
 }
 
@@ -418,8 +417,6 @@
   .storePage .storePage-buynow .grid-store, .storePage .storePage-buynow .grid-myfav, .storePage .storePage-buynow .grid-mybid, .storePage .storePage-buynow .cate-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[11];
-        grid-template-rows: repeat(11, 1fr);
   }
 }
 
@@ -554,7 +551,8 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1%;
+  grid-gap: 10px;
+  grid-row-gap: 25px;
   margin: 5% 0;
 }
 
@@ -562,8 +560,6 @@
   .storePage .storePage-success .grid-store, .storePage .storePage-success .grid-myfav, .storePage .storePage-success .grid-mybid, .storePage .storePage-success .cate-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[11];
-        grid-template-rows: repeat(11, 1fr);
   }
 }
 
@@ -698,7 +694,8 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1%;
+  grid-gap: 10px;
+  grid-row-gap: 25px;
   margin: 5% 0;
 }
 
@@ -706,8 +703,6 @@
   .storePage .storePage-timeout .grid-store, .storePage .storePage-timeout .grid-myfav, .storePage .storePage-timeout .grid-mybid, .storePage .storePage-timeout .cate-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[11];
-        grid-template-rows: repeat(11, 1fr);
   }
 }
 
@@ -842,7 +837,8 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1%;
+  grid-gap: 10px;
+  grid-row-gap: 25px;
   margin: 5% 0;
 }
 
@@ -850,8 +846,6 @@
   .storePage .storePage-now .grid-store, .storePage .storePage-now .grid-myfav, .storePage .storePage-now .grid-mybid, .storePage .storePage-now .cate-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[11];
-        grid-template-rows: repeat(11, 1fr);
   }
 }
 

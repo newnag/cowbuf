@@ -94,12 +94,13 @@ $left-menu-color: #c6c4c4;
     .grid-store,.grid-myfav,.grid-mybid,.cate-grid{
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-gap: 1%;
+        grid-gap: 10px;
+        grid-row-gap: 25px;
         margin: 5% 0;
 
         @media screen and (max-width:480px) {
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(11,1fr);
+            //grid-template-rows: repeat(11,1fr);
         }
 
         .box{

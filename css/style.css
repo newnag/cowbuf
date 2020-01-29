@@ -1349,7 +1349,8 @@ footer .footer-section .info .detail {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1%;
+  grid-gap: 10px;
+  grid-row-gap: 25px;
   margin: 5% 0;
 }
 
@@ -1357,8 +1358,6 @@ footer .footer-section .info .detail {
   .cate-page .grid-store, .cate-page .grid-myfav, .cate-page .grid-mybid, .cate-page .cate-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[11];
-        grid-template-rows: repeat(11, 1fr);
   }
 }
 
