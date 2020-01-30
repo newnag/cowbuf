@@ -542,7 +542,7 @@ nav{
 
         // กล่องสินค้าหน้าแรก
         article{
-            margin: 4% 0;
+            
 
             .head-text{
                 background-image: linear-gradient(to right, $price-color , $text-color);
@@ -834,6 +834,7 @@ footer{
 
         h1{
             font-weight: 100;
+            font-size: 22px;
         }
     }
 
