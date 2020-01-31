@@ -28,7 +28,7 @@
     .grid-box{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-gap: 1%;
+        grid-gap: 10px;
         margin: 2% 0;
 
         @media screen and (max-width:480px) {
@@ -78,4 +78,10 @@
             width: 100%;
         }
     }
+}
+
+.pagi-blog {
+    display: block;
+    margin-top:50px;
+    text-align: center;
 }

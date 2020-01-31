@@ -1149,4 +1149,27 @@ footer{
 
 .cate-page{
     @include grid_store;
+
+    .pagination{
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width:480px) {
+            padding: 3% 0;
+        }
+
+        .page{
+            width: 30%;
+            text-align: center;
+
+            @media screen and (max-width:480px) {
+                width: 50%;
+            }
+        }
+        
+        .page a{
+            margin: 0 3%;
+        }
+    }
 }
+

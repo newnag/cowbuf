@@ -28,4 +28,28 @@
         </div>
         <?php endfor ; ?>
     </div>
+
+    <div class="pagination">
+        <div class="pevert">
+            <a href="">
+                <i class="fas fa-angle-left"></i>
+            </a>
+        </div>
+
+        <div class="page">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">...</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+        </div>
+
+        <div class="next">
+            <a href="">
+            <i class="fas fa-angle-right"></i>
+            </a>
+        </div>
+    </div>
 </div>

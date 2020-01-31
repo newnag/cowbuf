@@ -1475,4 +1475,34 @@ footer .footer-section .info .detail {
   cursor: pointer;
   color: #fff;
 }
+
+.cate-page .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .cate-page .pagination {
+    padding: 3% 0;
+  }
+}
+
+.cate-page .pagination .page {
+  width: 30%;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .cate-page .pagination .page {
+    width: 50%;
+  }
+}
+
+.cate-page .pagination .page a {
+  margin: 0 3%;
+}
 /*# sourceMappingURL=style.css.map */

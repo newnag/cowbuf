@@ -37,7 +37,7 @@
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1%;
+  grid-gap: 10px;
   margin: 2% 0;
 }
 
@@ -93,5 +93,11 @@
 
 .article .text-content img {
   width: 100%;
+}
+
+.pagi-blog {
+  display: block;
+  margin-top: 50px;
+  text-align: center;
 }
 /*# sourceMappingURL=page-article.css.map */
