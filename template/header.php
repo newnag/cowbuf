@@ -55,11 +55,11 @@
 
             <div class="head-menu-mobile">
                 <ul>
-                    <li><a href="home" class="active">หน้าหลัก</a></li>
-                    <li><a href="registration-job">สมัครงานด่วน</a></li>
-                    <li><a href="article">บทความ</a></li>
-                    <li><a href="about">เกี่ยวกับเรา</a></li>
-                    <li><a href="contact">ติดต่อเรา</a></li>
+                    <li data-menu-slug="home"><a href="home" class="active">หน้าหลัก</a></li>
+                    <li data-menu-slug="registration-job"><a href="registration-job">สมัครงานด่วน</a></li>
+                    <li data-menu-slug="article"><a href="article">บทความ</a></li>
+                    <li data-menu-slug="about"><a href="about">เกี่ยวกับเรา</a></li>
+                    <li data-menu-slug="contact"><a href="contact">ติดต่อเรา</a></li>
                 </ul>
 
                 <div class="line-keed"></div>
@@ -141,11 +141,11 @@
     <!-- เมนูบน -->
     <nav>
         <ul>
-            <li><a href="home" class="active">หน้าหลัก</a></li>
-            <li><a href="registration-job">สมัครงานด่วน</a></li>
-            <li><a href="article">บทความ</a></li>
-            <li><a href="about">เกี่ยวกับเรา</a></li>
-            <li><a href="contact">ติดต่อเรา</a></li>
+            <li data-menu-slug="home"><a href="home">หน้าหลัก</a></li>
+            <li data-menu-slug="registration-job"><a href="registration-job">สมัครงานด่วน</a></li>
+            <li data-menu-slug="article"><a href="article">บทความ</a></li>
+            <li data-menu-slug="about"><a href="about">เกี่ยวกับเรา</a></li>
+            <li data-menu-slug="contact"><a href="contact">ติดต่อเรา</a></li>
         </ul>
 
         <!-- ส่วนนี้จะแสดงต่อเมื่อเข้าสู่ระบบ -->

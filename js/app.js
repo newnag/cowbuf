@@ -384,3 +384,21 @@ $('.slide-mobile-detail').owlCarousel({
   nav:true,
   dots:false,
 })
+
+//---------------------จบสไลด์เนื้อหามือถือ------------------------//
+
+// active เมนูบน
+$(document).ready(function(){
+  let path = window.location.pathname.split("/").pop();
+  let slug = $('nav ul li[data-menu-slug=home] a');
+
+  if(path == ''){
+      slug = $('nav ul li[data-menu-slug=home] a');
+  }
+
+  slug = $('nav ul li[data-menu-slug='+path+'] a');
+
+  $('nav ul li a').removeClass('active');
+  slug.addClass('active');
+
+});

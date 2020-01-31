@@ -64,6 +64,7 @@
   height: 4rem;
   overflow: hidden;
   font-weight: 400;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -96,8 +97,19 @@
 }
 
 .pagi-blog {
-  display: block;
-  margin-top: 50px;
   text-align: center;
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.pagi-blog .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 /*# sourceMappingURL=page-article.css.map */

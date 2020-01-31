@@ -51,6 +51,7 @@
                     height: 4rem;
                     overflow: hidden;
                     font-weight: 400;
+                    font-size: 1rem;
 
                     @media screen and (max-width:480px) {
                         font-size: 1rem;
@@ -81,7 +82,15 @@
 }
 
 .pagi-blog {
-    display: block;
-    margin-top:50px;
     text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    
+    .pagination{
+        display: flex;
+        background: white;
+        justify-content: space-evenly
+    }
+    
 }
