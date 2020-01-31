@@ -393,12 +393,12 @@ $(document).ready(function(){
   let slug = $('nav ul li[data-menu-slug=home] a');
 
   if(path == ''){
-      slug = $('nav ul li[data-menu-slug=home] a');
+    slug = $('nav ul li[data-menu-slug=home] a');
   }
-
-  slug = $('nav ul li[data-menu-slug='+path+'] a');
+  else{
+    slug = $('nav ul li[data-menu-slug='+path+'] a');
+  }
 
   $('nav ul li a').removeClass('active');
   slug.addClass('active');
-
-});
+}); 
