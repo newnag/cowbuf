@@ -38,6 +38,7 @@
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
+  grid-row-gap: 25px;
   margin: 2% 0;
 }
 

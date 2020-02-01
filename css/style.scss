@@ -25,7 +25,8 @@ li{
     border-radius: 10px 10px 0 0;
     display: flex;
     align-items: center;
-    font-size: 1vw;
+    font-size: 1rem;
+    padding: 3% 0;
 
     @media screen and (max-width:480px) {
         font-size: 5vw;
@@ -574,7 +575,7 @@ nav{
                 display: grid;
                 grid-template-columns: repeat(5,1fr);
                 grid-gap: 1%;
-                grid-row-gap: 10px;
+                grid-row-gap: 15px;
                 margin: 3% 0;
 
                 @media screen and (max-width:480px) {
