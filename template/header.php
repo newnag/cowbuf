@@ -51,6 +51,13 @@
                     <i class="fab fa-line"></i>
                     <i class="fas fa-mobile-alt"></i>
                 </div>
+
+                <div class="box-search">
+                    <div class="box">
+                        <input type="text">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
             </div>
 
             <div class="head-menu-mobile">
@@ -120,11 +127,18 @@
                     <i class="fas fa-mobile-alt"></i>
                 </div>
 
+                <div class="box-search">
+                    <div class="box">
+                        <input type="text">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+
                 <div class="close-menu-mobile">
                     <i class="fas fa-times"></i>
                 </div>
             </div>
-        </div>
+        </div>  
     </header>
 
     <!-- เมนูสมาชิก -->

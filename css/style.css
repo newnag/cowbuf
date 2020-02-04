@@ -29,6 +29,18 @@ li {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .container, nav, footer .footer-section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container, nav, footer .footer-section {
+    width: 90%;
+  }
+}
+
 .head-foot {
   margin-bottom: 15px;
   font-size: 1vw;
@@ -98,6 +110,7 @@ header .main-head .right-head {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
 }
 
 @media screen and (max-width: 480px) {
@@ -144,6 +157,31 @@ header .main-head .right-head .icon-head {
 header .main-head .right-head .icon-head i {
   font-size: 20px;
   margin-left: 18%;
+  cursor: pointer;
+}
+
+header .main-head .right-head .box-search {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: none;
+}
+
+header .main-head .right-head .box-search .box {
+  position: relative;
+}
+
+header .main-head .right-head .box-search .box input {
+  width: 90%;
+}
+
+header .main-head .right-head .box-search .box i {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  color: #fff;
+  cursor: pointer;
 }
 
 header .main-head .head-menu-mobile {
@@ -248,6 +286,36 @@ header .main-head .head-menu-mobile .status-credit .star i, header .main-head .h
 
 header .main-head .head-menu-mobile .status-credit .red-star, header .main-head .head-menu-mobile .status-credit .star, header .main-head .head-menu-mobile .status-credit .coin {
   margin: 0 1%;
+}
+
+header .main-head .head-menu-mobile .box-search {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: none;
+}
+
+header .main-head .head-menu-mobile .box-search .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #c20000;
+  height: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .main-head .head-menu-mobile .box-search .box input {
+  width: 90%;
+  margin-right: 1%;
+}
+
+header .main-head .head-menu-mobile .box-search .box i {
+  color: #c6c4c4;
 }
 
 .member-menu {

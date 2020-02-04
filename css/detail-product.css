@@ -360,6 +360,10 @@
   -webkit-line-clamp: 1;
 }
 
+.detail-user-bid .table-bid .shop-detail .table .row span:first-child i {
+  color: #ffb200;
+}
+
 .detail-user-bid .table-bid .shop-detail .warning-follow {
   display: -ms-grid;
   display: grid;

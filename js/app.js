@@ -402,3 +402,11 @@ $(document).ready(function(){
   $('nav ul li a').removeClass('active');
   slug.addClass('active');
 }); 
+
+// กดเปิดช่องค้นหา
+$('.right-head .icon-head .fa-search').click(function(){
+  $('.box-search').slideToggle('fast');
+});
+$('.head-menu-mobile .icon-head .fa-search').click(function(){
+  $('.head-menu-mobile .box-search').slideToggle('fast');
+});
