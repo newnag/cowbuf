@@ -46,8 +46,6 @@
   .article .grid-box {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[9];
-        grid-template-rows: repeat(9, 1fr);
   }
 }
 
@@ -101,6 +99,21 @@
   text-align: center;
   width: 400px;
   margin: 7% auto;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+}
+
+@media screen and (max-width: 480px) {
+  .pagi-blog {
+    width: unset;
+    background: unset;
+  }
 }
 
 .pagi-blog .pagination {
@@ -111,5 +124,31 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.pagi-blog .pagination li span {
+  cursor: pointer;
+}
+
+.pagi-blog .pagination li .current {
+  cursor: default;
+  color: #c6c4c4;
+}
+
+.pagi-blog .pagination li .pagenumber {
+  font-weight: bolder;
+  color: #000;
+}
+
+.pagi-blog .pagination li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.pagi-blog .pagination li.disabled:hover {
+  -webkit-transform: unset;
+          transform: unset;
 }
 /*# sourceMappingURL=page-article.css.map */

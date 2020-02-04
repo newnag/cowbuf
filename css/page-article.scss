@@ -34,7 +34,6 @@
 
         @media screen and (max-width:480px) {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(9,1fr);
         }
 
         a{
@@ -86,11 +85,47 @@
     text-align: center;
     width: 400px;
     margin: 7% auto;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+
+    @media screen and (max-width:480px) {
+        width: unset;
+        background: unset;
+    }
     
     .pagination{
         display: flex;
         background: white;
-        justify-content: space-evenly
+        justify-content: space-evenly;
+
+
+        li{
+            span{
+                cursor: pointer;
+            }
+            .current{
+                cursor: default;
+                color: $left-menu-color;
+            }
+            .pagenumber{
+                font-weight: bolder;
+                color: $text-color;
+            }
+           
+           
+            &:hover{
+                transform: scale(1.2);
+                transition: all .3s;
+            }
+            
+        }
+        li.disabled{
+            &:hover{
+                transform: unset;
+            }
+        }
     }
     
 }
