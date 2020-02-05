@@ -1,201 +1,201 @@
 // เปิดปิดหมวดหมู่
-$('.head-menu').click(function(){
-    $(this).next().slideToggle();
+$('.head-menu').click(function () {
+  $(this).next().slideToggle();
 })
 
 // เปิดปิดเมนูซ้าย
-$('.menu-left li').click(function(){
-    $(this).find('.sub-menu').slideToggle();
-    if($(this).hasClass('open')){
-        $(this).removeClass('open');
-        $(this).find('i').css('transform','rotate(0deg)')
-    }
-    else{
-        $(this).addClass('open');
-        $(this).find('i').css('transform','rotate(90deg)')
-    }
+$('.menu-left li').click(function () {
+  $(this).find('.sub-menu').slideToggle();
+  if ($(this).hasClass('open')) {
+    $(this).removeClass('open');
+    $(this).find('i').css('transform', 'rotate(0deg)')
+  }
+  else {
+    $(this).addClass('open');
+    $(this).find('i').css('transform', 'rotate(90deg)')
+  }
 });
 
 // สไลด์รูป
 $('.slide-head').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
+  loop: true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 1
     }
+  }
 })
 
 // สไลด์รูปแบบที่ 2
 $('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav'
-  });
-  $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: false,
-    centerMode: true,
-    focusOnSelect: true,
-    arrows:false,
-    autoplay:false
-  });
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
+  arrows: false,
+  autoplay: false
+});
 
-  // บวกลบจำนวนบิด
-  function add_num(){
-    var bid = $('.place-coin .button .number .input-number input').val();
-    num = parseInt(bid)+1;
-    $('.place-coin .button .number .input-number input').val(num);
-    return num;
-  }
-  function minus_num(){
-    var bid = $('.place-coin .button .number .input-number input').val();
-    num = parseInt(bid)-1;
-    $('.place-coin .button .number .input-number input').val(num);
-    return num;
+// บวกลบจำนวนบิด
+function add_num() {
+  var bid = $('.place-coin .button .number .input-number input').val();
+  num = parseInt(bid) + 1;
+  $('.place-coin .button .number .input-number input').val(num);
+  return num;
 }
-  $('.place-coin .button .number .input-number #plus_bid').click(function(){
-    if($('.place-coin .button .number .input-number input').val()<9){
-        add_num();
-    }
-  });
-  $('.place-coin .button .number .input-number #minus_bid').click(function(){
-    if($('.place-coin .button .number .input-number input').val()>1){  
-        minus_num();  
-    }
-  });
-
-  // ดู password
-  function view_password(){
-    var see_pass = document.getElementById("pass");
-    if (see_pass.type === "password") {
-        see_pass.type = "text";
-    } else {
-        see_pass.type = "password";
-    }
-  };
-
-  // เปิดกล่องสร้างรหัสผ่านใหม่
-  function showDialog_forget(){
-    $('.login-button #forget-button').click(function(){
-      $('.dialog-forget').fadeIn();
-      $('.bg-dialog').show();
-    });
+function minus_num() {
+  var bid = $('.place-coin .button .number .input-number input').val();
+  num = parseInt(bid) - 1;
+  $('.place-coin .button .number .input-number input').val(num);
+  return num;
+}
+$('.place-coin .button .number .input-number #plus_bid').click(function () {
+  if ($('.place-coin .button .number .input-number input').val() < 9) {
+    add_num();
   }
+});
+$('.place-coin .button .number .input-number #minus_bid').click(function () {
+  if ($('.place-coin .button .number .input-number input').val() > 1) {
+    minus_num();
+  }
+});
 
-  //ปิดกล่องก็อปปี้รหัสผ่านใหม่
-  $('.new-pass .button #copy-newpass').click(function(){
-    var copy = $('.new-pass .input-form #newpass');
-    copy.select();
-    document.execCommand("copy");
-    $('.dialog-forget').fadeOut();
-    $('.bg-dialog').hide();
-  });
+// ดู password
+function view_password() {
+  var see_pass = document.getElementById("pass");
+  if (see_pass.type === "password") {
+    see_pass.type = "text";
+  } else {
+    see_pass.type = "password";
+  }
+};
 
-
-  //สลับเมนูหัวบนเมื่อเข้าสู่ระบบ
-  $('.form-login .login-button').click(function(){
-    $('.member-head').hide();
-    $('.member-login').show();
-  });
- 
-  // เปิดปิดเมนูสมาชิก
-  $('.user-login').click(function(){
-    $('.member-menu').slideToggle();
-  });
-
-  // เปิดกล่องยืนยันการแก้ไขข้อมูลสมาชิก
-  $('.edit-button button').click(function(){
+// เปิดกล่องสร้างรหัสผ่านใหม่
+function showDialog_forget() {
+  $('.login-button #forget-button').click(function () {
     $('.dialog-forget').fadeIn();
     $('.bg-dialog').show();
   });
-  // ปิดกล่องเพื่อแก้ไขข้อมูลสมาชิก
-  $('.new-pass .button #id-number').click(function(){
-    $('.account .form-login .input-login input').prop('readonly', false);
-    $('.dialog-forget').fadeOut();
-    $('.bg-dialog').hide();
-  });
+}
 
-  // ปุ่มลบสินค้าในหน้าร้านค้า
-  $('body').on('click','.storePage-all .grid-store .box .delete-button',function(){
-    $(this).parent().fadeOut(function(){
-      $(this).remove();
-    });
-  });
+//ปิดกล่องก็อปปี้รหัสผ่านใหม่
+$('.new-pass .button #copy-newpass').click(function () {
+  var copy = $('.new-pass .input-form #newpass');
+  copy.select();
+  document.execCommand("copy");
+  $('.dialog-forget').fadeOut();
+  $('.bg-dialog').hide();
+});
 
-  // เปลี่ยนหน้าสินค้าโปรด
-  $('.mycart .menu-mycart .leaf-menu #my-fav').click(function(){
-    $.ajax({
-      url:"template/page-myfav.php",
-      success:function(data){
-        $('.page-mycart').html(data);
-      },
-    });
-  });
-  // เปลี่ยนหน้ารายการซื้อสินค้าของฉัน
-  $('.mycart .menu-mycart .leaf-menu #my-cart').click(function(){
-    $.ajax({
-      url:"template/page-mycart.php",
-      success:function(data){
-        $('.page-mycart').html(data);
-      },
-    });
-  });
-  // เปลี่ยนหน้ารายการซื้อสินค้าของฉัน
-  $('.mycart .menu-mycart .leaf-menu #my-bid').click(function(){
-    $.ajax({
-      url:"template/page-mybid.php",
-      success:function(data){
-        $('.page-mycart').html(data);
-      },
-    });
-  });
 
-  // เปลี่ยนหน้าเติมเงิน
-  $('.paypaid .menu-mycart .leaf-menu #paypaid').click(function(){
-    $.ajax({
-      url:"template/paid-page.php",
-      success:function(data){
-        $('.page-paypaid').html(data);
-      },
-    });
+//สลับเมนูหัวบนเมื่อเข้าสู่ระบบ
+$('.form-login .login-button').click(function () {
+  $('.member-head').hide();
+  $('.member-login').show();
+});
+
+// เปิดปิดเมนูสมาชิก
+$('.user-login').click(function () {
+  $('.member-menu').slideToggle();
+});
+
+// เปิดกล่องยืนยันการแก้ไขข้อมูลสมาชิก
+$('.edit-button button').click(function () {
+  $('.dialog-forget').fadeIn();
+  $('.bg-dialog').show();
+});
+// ปิดกล่องเพื่อแก้ไขข้อมูลสมาชิก
+$('.new-pass .button #id-number').click(function () {
+  $('.account .form-login .input-login input').prop('readonly', false);
+  $('.dialog-forget').fadeOut();
+  $('.bg-dialog').hide();
+});
+
+// ปุ่มลบสินค้าในหน้าร้านค้า
+$('body').on('click', '.storePage-all .grid-store .box .delete-button', function () {
+  $(this).parent().fadeOut(function () {
+    $(this).remove();
   });
-  // เปลี่ยนหน้าถอนเงิน
-  $('.paypaid .menu-mycart .leaf-menu #withdraw').click(function(){
-    $.ajax({
-      url:"template/paid-withdraw.php",
-      success:function(data){
-        $('.page-paypaid').html(data);
-      },
-    });
+});
+
+// เปลี่ยนหน้าสินค้าโปรด
+$('.mycart .menu-mycart .leaf-menu #my-fav').click(function () {
+  $.ajax({
+    url: "template/page-myfav.php",
+    success: function (data) {
+      $('.page-mycart').html(data);
+    },
   });
-  // เปลี่ยนหน้าประวัติเติมเงิน
-  $('.paypaid .menu-mycart .leaf-menu #history-paid').click(function(){
-    $.ajax({
-      url:"template/paid-history.php",
-      success:function(data){
-        $('.page-paypaid').html(data);
-      },
-    });
+});
+// เปลี่ยนหน้ารายการซื้อสินค้าของฉัน
+$('.mycart .menu-mycart .leaf-menu #my-cart').click(function () {
+  $.ajax({
+    url: "template/page-mycart.php",
+    success: function (data) {
+      $('.page-mycart').html(data);
+    },
   });
+});
+// เปลี่ยนหน้ารายการซื้อสินค้าของฉัน
+$('.mycart .menu-mycart .leaf-menu #my-bid').click(function () {
+  $.ajax({
+    url: "template/page-mybid.php",
+    success: function (data) {
+      $('.page-mycart').html(data);
+    },
+  });
+});
+
+// เปลี่ยนหน้าเติมเงิน
+$('.paypaid .menu-mycart .leaf-menu #paypaid').click(function () {
+  $.ajax({
+    url: "template/paid-page.php",
+    success: function (data) {
+      $('.page-paypaid').html(data);
+    },
+  });
+});
+// เปลี่ยนหน้าถอนเงิน
+$('.paypaid .menu-mycart .leaf-menu #withdraw').click(function () {
+  $.ajax({
+    url: "template/paid-withdraw.php",
+    success: function (data) {
+      $('.page-paypaid').html(data);
+    },
+  });
+});
+// เปลี่ยนหน้าประวัติเติมเงิน
+$('.paypaid .menu-mycart .leaf-menu #history-paid').click(function () {
+  $.ajax({
+    url: "template/paid-history.php",
+    success: function (data) {
+      $('.page-paypaid').html(data);
+    },
+  });
+});
 
 //----------------ส่วนเช็คแจ้งเตือนฟอร์มสมาชิก------------------//
 
-$('.login .form-login form').submit(function(e){
+$('.login .form-login form').submit(function (e) {
   // สมาชิกกรอกข้อมูลว่าง
-  if($('.login .form-login .input-login input[name="user"]').val() == ''){
+  if ($('.login .form-login .input-login input[name="user"]').val() == '') {
     e.preventDefault();
     swal({
       text: "กรุณากรอกชื่อผู้ใช้งาน",
@@ -203,7 +203,7 @@ $('.login .form-login form').submit(function(e){
     });
     return false;
   }
-  if($('.login .form-login .input-login input[name="pass"]').val() == ''){
+  if ($('.login .form-login .input-login input[name="pass"]').val() == '') {
     swal({
       text: "กรุณากรอกรหัสผ่าน",
       icon: "warning",
@@ -212,7 +212,7 @@ $('.login .form-login form').submit(function(e){
   }
 
   // สมาชิกกรอกข้อมูลผิด
-  if($('.login .form-login .input-login input[name="user"]').val() != 'admin'){
+  if ($('.login .form-login .input-login input[name="user"]').val() != 'admin') {
     e.preventDefault();
     swal({
       text: "กรอกชื่อผู้ใช้ผิด",
@@ -220,7 +220,7 @@ $('.login .form-login form').submit(function(e){
     });
     return false;
   }
-  if($('.login .form-login .input-login input[name="pass"]').val() != 'pass'){
+  if ($('.login .form-login .input-login input[name="pass"]').val() != 'pass') {
     swal({
       text: "กรอกรหัสผ่านผิด",
       icon: "error",
@@ -229,23 +229,23 @@ $('.login .form-login form').submit(function(e){
   }
 
   // กรอกถูกต้อง
-  else{
+  else {
     return true;
-  } 
+  }
 });
 
 // กดออกจากระบบ
-$('#logout').click(function(){
-  
+$('#logout').click(function () {
+
 });
 
 // ฟอร์มสมัครสมาชิก
-$('.register-page .form-register form').submit(function(e){
-  $(this).find('.input-login input').each(function(){
+$('.register-page .form-register form').submit(function (e) {
+  $(this).find('.input-login input').each(function () {
     var pass = $('.register-page .form-register form .input-login #pass').val();
     var confpass = $('.register-page .form-register form .input-login #confpass').val();
 
-    if(!$(this).val()){
+    if (!$(this).val()) {
       e.preventDefault();
       swal({
         text: "กรุณากรอกข้อมูลให้ครบถ้วน",
@@ -254,7 +254,7 @@ $('.register-page .form-register form').submit(function(e){
       return false;
     }
     // เช็คยืนยันรหัสผ่าน
-    if(pass !== confpass){
+    if (pass !== confpass) {
       e.preventDefault();
       swal({
         text: "กรุณากรอกรหัสผ่านให้ตรงกัน",
@@ -263,7 +263,7 @@ $('.register-page .form-register form').submit(function(e){
       return false;
     }
     // เช็คพาส6ตัว
-    if(pass.length < 6){
+    if (pass.length < 6) {
       e.preventDefault();
       swal({
         text: "กรุณากรอกรหัสผ่าน 6 ตัวขึ้นไป",
@@ -273,16 +273,16 @@ $('.register-page .form-register form').submit(function(e){
     }
 
     // กรอกข้อมูลถูกต้อง
-    else{
+    else {
       return true;
     }
   });
 });
 
 // ฟอร์มลืมรหัส
-$('.forget .form-forget form').submit(function(e){
-  $(this).find('.input-login input').each(function(){
-    if(!$(this).val()){
+$('.forget .form-forget form').submit(function (e) {
+  $(this).find('.input-login input').each(function () {
+    if (!$(this).val()) {
       e.preventDefault();
       swal({
         text: "กรุณากรอกข้อมูลให้ครบถ้วน",
@@ -293,7 +293,7 @@ $('.forget .form-forget form').submit(function(e){
 
     // เช็คชื่อผู้ใช้
     var forget_user = $('.forget .form-forget form .input-login #forget-user').val();
-    if(forget_user !== 'admin'){
+    if (forget_user !== 'admin') {
       e.preventDefault();
       swal({
         text: "ไม่มีชื่อผู้ใช้นี้",
@@ -304,7 +304,7 @@ $('.forget .form-forget form').submit(function(e){
 
     // เช็คเลขบัตร
     var forget_idnumber = $('.forget .form-forget form .input-login #idnubmer').val();
-    if(forget_idnumber !== '12345678910'){
+    if (forget_idnumber !== '12345678910') {
       e.preventDefault();
       swal({
         text: "ไม่มีเลขบัตรประชาชนนี้",
@@ -314,7 +314,7 @@ $('.forget .form-forget form').submit(function(e){
     }
 
     // กรอกครบถ้วน
-    else{
+    else {
       e.preventDefault();
       showDialog_forget();
       return false;
@@ -327,40 +327,40 @@ $('.forget .form-forget form').submit(function(e){
 //---------------- ส่วนชี้แจงข้อกำหนดการใช้สมาชิก ----------------//
 
 // ยึดหน้าไว้จนกว่าจะกดปิดกล่อง
-if($('.dialog-privacy').is(':visible')){
-  $('body').css({'position':'fixed','width':'100%'});
+if ($('.dialog-privacy').is(':visible')) {
+  $('body').css({ 'position': 'fixed', 'width': '100%' });
 }
 
 // ปิดกล่องคำชี้แจง
-$('.dialog-privacy .box-privacy .confirm-ok button').click(function(){
-  if($('.check-confirm #check-confirm').is(':checked')){
+$('.dialog-privacy .box-privacy .confirm-ok button').click(function () {
+  if ($('.check-confirm #check-confirm').is(':checked')) {
     $('.dialog-privacy').fadeOut();
-    $('body').css({'position':'unset','width':'unset'});
+    $('body').css({ 'position': 'unset', 'width': 'unset' });
   }
-  else{
+  else {
     swal({
       text: "กรุณากดยินยอมเงื่อนไขก่อนกดรับทราบข้อตกลง",
       icon: "warning",
     });
   }
-  
+
 });
 
 //---------------- จบส่วนชี้แจงข้อกำหนดการใช้สมาชิก ----------------//
 
 
 // เปิดปุ่มเมนู header
-$('.main-head .bugger i').click(function(){
+$('.main-head .bugger i').click(function () {
   $('.head-menu-mobile').slideDown('slow');
-  $('body').css('position','fixed');
+  $('body').css('position', 'fixed');
 });
-$('.head-menu-mobile .close-menu-mobile').click(function(){
-  $('body').css('position','unset');
+$('.head-menu-mobile .close-menu-mobile').click(function () {
+  $('body').css('position', 'unset');
   $('.head-menu-mobile').slideUp('slow');
 });
 
 // ปุ่มเมนูข้าง
-$('.grid-body .bar-mobile').click(function(){
+$('.grid-body .bar-mobile').click(function () {
   $('.grid-body .left-side').fadeToggle();
 });
 
@@ -369,44 +369,85 @@ $('.grid-body .bar-mobile').click(function(){
 
 // สไลด์หน้าแรก
 $('.slide-article').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:true,
-  dots:false,
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: false,
   items: 2,
   slideBy: 2,
 })
 
 // สไลด์หน้ารายละเอียดสินค้า
 $('.slide-mobile-detail').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:true,
-  dots:false,
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: false,
 })
 
 //---------------------จบสไลด์เนื้อหามือถือ------------------------//
 
 // active เมนูบน
-$(document).ready(function(){
-  let path = window.location.pathname.split("/").pop();
+$(document).ready(function () {
+  let count = window.location.pathname.split("/").length 
+  let path = window.location.pathname.split("/")[1];
   let slug = $('nav ul li[data-menu-slug=home] a');
 
-  if(path == ''){
+  if (path == '') {
     slug = $('nav ul li[data-menu-slug=home] a');
   }
-  else{
-    slug = $('nav ul li[data-menu-slug='+path+'] a');
+  else {
+    slug = $('nav ul li[data-menu-slug=' + path + '] a');
   }
 
   $('nav ul li a').removeClass('active');
   slug.addClass('active');
-}); 
+});
 
-// กดเปิดช่องค้นหา
-$('.right-head .icon-head .fa-search').click(function(){
-  $('.box-search').slideToggle('fast');
-});
-$('.head-menu-mobile .icon-head .fa-search').click(function(){
-  $('.head-menu-mobile .box-search').slideToggle('fast');
-});
+
+//-------------------------- ปุ่มค้นหา Header ------------------ //
+$('.fa-search').click(function(){
+  $('.box-search').toggleClass('active')
+  console.log($('.box-search'))
+})
+
+// ------------------------ ส่ง Email รับข่าวสาร ----------------- //
+$('#footerEmailSubmit').on('submit', function (e) {
+  e.preventDefault();
+  let email = $('#inputEmailFooter').val().trim();
+  if (email.length < 1) {
+    //ถ้า ไม่มีข้อมูล ใน inputEmail
+    swal({
+      text: "กรุณากรอกอีเมล",
+      icon: "warning",
+    });
+  } else {
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'receivenews' }).then(function (token) {
+        $.ajax({
+          url: "/ajax/ajax.contact.php",
+          type: "POST",
+          dataType: "json",
+          data: { action: "receiveNews", email,gRecaptchaToken:token },
+          success: function (response) {
+            if(response.message == "success"){
+              swal({
+                text: "บันทึกข้อมูลสำเร็จ",
+                icon: "success",
+              }).then(()=>{
+                $('#inputEmailFooter').val('')
+              })
+            }
+          }
+        })
+      });
+    });
+  }
+})
+
+
+// ------------------------ Shared Facebook -------------------------
+function shareSocial(e){
+  e.preventDefault();
+  window.open(e.target.closest('a').href, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=200,left=600,width=560,height=600");
+}

@@ -154,7 +154,8 @@ header .main-head .right-head .icon-head {
   margin-top: 3%;
 }
 
-header .main-head .right-head .icon-head i {
+header .main-head .right-head .icon-head a {
+  color: white;
   font-size: 20px;
   margin-left: 18%;
   cursor: pointer;
@@ -182,6 +183,10 @@ header .main-head .right-head .box-search .box i {
   right: 0;
   color: #fff;
   cursor: pointer;
+}
+
+header .main-head .right-head .box-search.active {
+  display: block !important;
 }
 
 header .main-head .head-menu-mobile {
@@ -261,7 +266,8 @@ header .main-head .head-menu-mobile .icon-head {
   margin-top: 10%;
 }
 
-header .main-head .head-menu-mobile .icon-head i {
+header .main-head .head-menu-mobile .icon-head a {
+  color: white;
   font-size: 10vw;
   color: #2d2d2d;
 }
@@ -316,6 +322,10 @@ header .main-head .head-menu-mobile .box-search .box input {
 
 header .main-head .head-menu-mobile .box-search .box i {
   color: #c6c4c4;
+}
+
+header .main-head .head-menu-mobile .box-search.active {
+  display: block !important;
 }
 
 .member-menu {
@@ -477,6 +487,7 @@ nav .status-credit .coin i {
   padding-left: 3%;
   padding-bottom: 7%;
   position: relative;
+  padding-right: 5%;
 }
 
 .grid-body .left-side .left-menu .menu-left li a, .grid-body .left-side .left-menu .menu-left li span {
@@ -508,10 +519,6 @@ nav .status-credit .coin i {
   position: absolute;
   right: 0;
   top: 0;
-}
-
-.grid-body .left-side .left-menu .menu-left li:nth-child(18) {
-  margin-top: 15%;
 }
 
 .grid-body .left-side .article-menu {
@@ -987,6 +994,7 @@ footer .footer-section .info .detail {
   footer .footer-section .info .detail {
     padding-left: 0;
     width: 50%;
+    font-size: 2vw;
   }
 }
 
@@ -1578,5 +1586,9 @@ footer .footer-section .info .detail {
 
 .cate-page .pagination .page a {
   margin: 0 3%;
+}
+
+.grecaptcha-badge {
+  display: none !important;
 }
 /*# sourceMappingURL=style.css.map */
