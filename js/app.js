@@ -89,10 +89,8 @@ function view_password() {
 
 // เปิดกล่องสร้างรหัสผ่านใหม่
 function showDialog_forget() {
-  $('.login-button #forget-button').click(function () {
-    $('.dialog-forget').fadeIn();
-    $('.bg-dialog').show();
-  });
+  $('.dialog-forget').fadeIn();
+  $('.bg-dialog').show();
 }
 
 //ปิดกล่องก็อปปี้รหัสผ่านใหม่
@@ -102,13 +100,17 @@ $('.new-pass .button #copy-newpass').click(function () {
   document.execCommand("copy");
   $('.dialog-forget').fadeOut();
   $('.bg-dialog').hide();
+
+  $('#newpass').val('')
+  $('#forget-user').val('')
+  $('#idnubmer').val('')
 });
 
 
 //สลับเมนูหัวบนเมื่อเข้าสู่ระบบ
 $('.form-login .login-button').click(function () {
-  $('.member-head').hide();
-  $('.member-login').show();
+  // $('.member-head').hide();
+  // $('.member-login').show();
 });
 
 // เปิดปิดเมนูสมาชิก
@@ -193,7 +195,9 @@ $('.paypaid .menu-mycart .leaf-menu #history-paid').click(function () {
 
 //----------------ส่วนเช็คแจ้งเตือนฟอร์มสมาชิก------------------//
 
+// form-log submit
 $('.login .form-login form').submit(function (e) {
+  e.preventDefault();
   // สมาชิกกรอกข้อมูลว่าง
   if ($('.login .form-login .input-login input[name="user"]').val() == '') {
     e.preventDefault();
@@ -211,36 +215,48 @@ $('.login .form-login form').submit(function (e) {
     return false;
   }
 
-  // สมาชิกกรอกข้อมูลผิด
-  if ($('.login .form-login .input-login input[name="user"]').val() != 'admin') {
-    e.preventDefault();
-    swal({
-      text: "กรอกชื่อผู้ใช้ผิด",
-      icon: "error",
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'login' }).then(function (token) {
+      let data = {
+        gRecaptchaToken: token,
+        action: "login",
+        username: $('.login .form-login .input-login input[name="user"]').val().trim(),
+        password: $('.login .form-login .input-login input[name="pass"]').val().trim()
+      }
+      $.ajax({
+        url: "/ajax/ajax.register.php",
+        type: "POST",
+        dataType: "json",
+        data: data,
+        success: function (response) {
+          if (response.message == "Success") {
+            $('#newpass').val(response.newpass)
+            swal({
+              text: "ยินดีต้อนรับเข้าสู่เว็บไซต์",
+              icon: "success",
+            }).then(() => {
+              window.location = `/${response.url}`
+            });
+          } else if (response.message == "Block") {
+            swal({
+              text: "user นี้ ยังไม่ได้ Activate",
+              icon: "error",
+            });
+          } else {
+            swal({
+              text: "กรอกชื่อผู้ใช้ หรือ กรอกรหัสผ่านผิด",
+              icon: "error",
+            });
+          }
+        }
+      })
     });
-    return false;
-  }
-  if ($('.login .form-login .input-login input[name="pass"]').val() != 'pass') {
-    swal({
-      text: "กรอกรหัสผ่านผิด",
-      icon: "error",
-    });
-    return false;
-  }
-
-  // กรอกถูกต้อง
-  else {
-    return true;
-  }
-});
-
-// กดออกจากระบบ
-$('#logout').click(function () {
-
+  });
 });
 
 // ฟอร์มสมัครสมาชิก
 $('.register-page .form-register form').submit(function (e) {
+  e.preventDefault();
   $(this).find('.input-login input').each(function () {
     var pass = $('.register-page .form-register form .input-login #pass').val();
     var confpass = $('.register-page .form-register form .input-login #confpass').val();
@@ -249,6 +265,15 @@ $('.register-page .form-register form').submit(function (e) {
       e.preventDefault();
       swal({
         text: "กรุณากรอกข้อมูลให้ครบถ้วน",
+        icon: "warning",
+      });
+      return false;
+    }
+    // เช็คพาส6ตัว
+    if (pass.length < 8) {
+      e.preventDefault();
+      swal({
+        text: "กรุณากรอกรหัสผ่าน 8 ตัวขึ้นไป",
         icon: "warning",
       });
       return false;
@@ -262,28 +287,76 @@ $('.register-page .form-register form').submit(function (e) {
       });
       return false;
     }
-    // เช็คพาส6ตัว
-    if (pass.length < 6) {
-      e.preventDefault();
-      swal({
-        text: "กรุณากรอกรหัสผ่าน 6 ตัวขึ้นไป",
-        icon: "warning",
-      });
-      return false;
-    }
 
     // กรอกข้อมูลถูกต้อง
     else {
-      return true;
+      grecaptcha.ready(function () {
+        grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'register' }).then(function (token) {
+          let data = {
+            gRecaptchaToken: token,
+            action: "register",
+            username: $('#register_username').val().trim(),
+            password: $('.register-page .form-register form .input-login #pass').val().trim(),
+            name: $('#register_name').val().trim(),
+            identification: $('#register_identification').val().trim(),
+            province: $('#register_province').val().trim(),
+            phone: $('#register_phone').val().trim(),
+            adviser: $('#register_adviser').val().trim(),
+          }
+
+          $.ajax({
+            url: "/ajax/ajax.register.php",
+            type: "POST",
+            dataType: "json",
+            data: data,
+            success: function (response) {
+              console.log(response)
+              if (response.message == "Success") {
+                swal({
+                  text: "สมัครสมาชิก สำเร็จ",
+                  icon: "success",
+                }).then(()=>{
+                  location.reload()
+                });
+              }else if(response.message == "userNotDupicate"){
+                swal({
+                  text: "ไม่สามารถใช้ชื่อผู้ใช้นี้ได้",
+                  icon: "error",
+                });
+              }else {
+                swal({
+                  text: "ชื่อผู้ใช้ หรือ รหัสผ่าน ไม่ถูกต้อง",
+                  icon: "error",
+                });
+              }
+            }
+          })
+        });
+      });
+      return false;
     }
   });
 });
 
+
+/**---------------- ทดสอบ */
+$('#btn-register_test').click(function(e){
+  e.preventDefault();
+  $('#register_username').val('kotbass23')
+  $('.register-page .form-register form .input-login #pass').val('12345678')
+  $('.register-page .form-register form .input-login #confpass').val('12345678')
+  $('#register_name').val('ประยุท จันอังคารพุธ')
+  $('#register_identification').val('1423325215658')
+  $('#register_province').val('6')
+  $('#register_phone').val('0999251325')
+  $('#register_adviser').val('-')
+})
+
 // ฟอร์มลืมรหัส
 $('.forget .form-forget form').submit(function (e) {
+  e.preventDefault();
   $(this).find('.input-login input').each(function () {
     if (!$(this).val()) {
-      e.preventDefault();
       swal({
         text: "กรุณากรอกข้อมูลให้ครบถ้วน",
         icon: "warning",
@@ -291,34 +364,34 @@ $('.forget .form-forget form').submit(function (e) {
       return false;
     }
 
-    // เช็คชื่อผู้ใช้
-    var forget_user = $('.forget .form-forget form .input-login #forget-user').val();
-    if (forget_user !== 'admin') {
-      e.preventDefault();
-      swal({
-        text: "ไม่มีชื่อผู้ใช้นี้",
-        icon: "error",
-      });
-      return false;
-    }
+  });
 
-    // เช็คเลขบัตร
-    var forget_idnumber = $('.forget .form-forget form .input-login #idnubmer').val();
-    if (forget_idnumber !== '12345678910') {
-      e.preventDefault();
-      swal({
-        text: "ไม่มีเลขบัตรประชาชนนี้",
-        icon: "error",
-      });
-      return false;
-    }
-
-    // กรอกครบถ้วน
-    else {
-      e.preventDefault();
-      showDialog_forget();
-      return false;
-    }
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'forgetpassword' }).then(function (token) {
+      let data = {
+        gRecaptchaToken: token,
+        action: "fotgot_password",
+        username: $('#forget-user').val().trim(),
+        identification: $('#idnubmer').val().trim()
+      }
+      $.ajax({
+        url: "/ajax/ajax.register.php",
+        type: "POST",
+        dataType: "json",
+        data: data,
+        success: function (response) {
+          if (response.message == "Success") {
+            $('#newpass').val(response.newpass)
+            showDialog_forget();
+          } else {
+            swal({
+              text: "ไม่มี ชื่อผู้ใช้ หรือ เลขบัตรประชาชนนี้",
+              icon: "error",
+            });
+          }
+        }
+      })
+    });
   });
 });
 
@@ -389,24 +462,30 @@ $('.slide-mobile-detail').owlCarousel({
 
 // active เมนูบน
 $(document).ready(function () {
-  let count = window.location.pathname.split("/").length 
   let path = window.location.pathname.split("/")[1];
   let slug = $('nav ul li[data-menu-slug=home] a');
 
+  console.log(path)
+
   if (path == '') {
     slug = $('nav ul li[data-menu-slug=home] a');
+    $('nav ul li a').removeClass('active');
+    slug.addClass('active');
   }
   else {
-    slug = $('nav ul li[data-menu-slug=' + path + '] a');
+    try {
+      slug = $('nav ul li[data-menu-slug=' + path + '] a');
+      $('nav ul li a').removeClass('active');
+      slug.addClass('active');
+    } catch (err) {
+      $('nav ul li a').removeClass('active');
+    }
   }
-
-  $('nav ul li a').removeClass('active');
-  slug.addClass('active');
 });
 
 
 //-------------------------- ปุ่มค้นหา Header ------------------ //
-$('.fa-search').click(function(){
+$('.fa-search').click(function () {
   $('.box-search').toggleClass('active')
   console.log($('.box-search'))
 })
@@ -428,13 +507,13 @@ $('#footerEmailSubmit').on('submit', function (e) {
           url: "/ajax/ajax.contact.php",
           type: "POST",
           dataType: "json",
-          data: { action: "receiveNews", email,gRecaptchaToken:token },
+          data: { action: "receiveNews", email, gRecaptchaToken: token },
           success: function (response) {
-            if(response.message == "success"){
+            if (response.message == "success") {
               swal({
                 text: "บันทึกข้อมูลสำเร็จ",
                 icon: "success",
-              }).then(()=>{
+              }).then(() => {
                 $('#inputEmailFooter').val('')
               })
             }
@@ -447,7 +526,43 @@ $('#footerEmailSubmit').on('submit', function (e) {
 
 
 // ------------------------ Shared Facebook -------------------------
-function shareSocial(e){
+function shareSocial(e) {
   e.preventDefault();
   window.open(e.target.closest('a').href, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=200,left=600,width=560,height=600");
 }
+
+
+/*
+ตัวอย่าง gRecaptcha
+grecaptcha.ready(function () {
+  grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'receivenews' }).then(function (token) {
+    let data = {
+      gRecaptchaToken:token,
+      action: "receiveNews"
+    }
+    $.ajax({
+      url: "/ajax/ajax.contact.php",
+      type: "POST",
+      dataType: "json",
+      data: data,
+      success: function (response) {
+        if(response.message == "success"){
+          swal({
+            text: "บันทึกข้อมูลสำเร็จ",
+            icon: "success",
+          }).then(()=>{
+            $('#inputEmailFooter').val('')
+          })
+        }
+      }
+    })
+  });
+});
+*/
+// ------------------------ end Shared Facebook -------------------------
+
+// ปุ่มปิดกล่องแก้ไขข้อมูลสมาชิก
+$('.dialog-forget .newpass-form .box .button-close i').click(function(){
+  $(this).closest('.dialog-forget').fadeOut();
+  $('.bg-dialog').hide();
+});

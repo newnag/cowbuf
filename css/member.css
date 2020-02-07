@@ -329,6 +329,10 @@
   z-index: 10;
 }
 
+.dialog-forget .newpass-form .box {
+  position: relative;
+}
+
 .dialog-forget .newpass-form .box .head-text {
   color: #fff;
   background-image: -webkit-gradient(linear, left top, right top, from(#c20000), to(#000));
@@ -373,6 +377,18 @@
   height: 2rem;
   border-radius: 20px;
   border: unset;
+  cursor: pointer;
+}
+
+.dialog-forget .newpass-form .box .button-close {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+
+.dialog-forget .newpass-form .box .button-close i {
+  color: #fff;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -503,9 +519,11 @@
 }
 
 .dialog-privacy {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background: #00000085;
@@ -520,7 +538,7 @@
   border-radius: 15px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .dialog-privacy .box-privacy {
     margin: 0;
   }
@@ -528,6 +546,12 @@
 
 .dialog-privacy .box-privacy .box-text {
   padding: 0 5%;
+}
+
+@media screen and (max-width: 1330px) {
+  .dialog-privacy .box-privacy .box-text {
+    padding: 0;
+  }
 }
 
 .dialog-privacy .box-privacy .box-text p {

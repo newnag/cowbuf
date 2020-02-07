@@ -68,6 +68,12 @@ header .main-head {
   padding: 10px 0;
 }
 
+@media screen and (max-width: 768px) {
+  header .main-head {
+    width: 85%;
+  }
+}
+
 header .main-head .left-head .logo-head a img {
   width: 100%;
 }
@@ -144,7 +150,7 @@ header .main-head .right-head .member-login .user-login i {
 
 header .main-head .right-head .icon-head {
   color: #fff;
-  width: 100%;
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
