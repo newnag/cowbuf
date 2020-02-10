@@ -194,8 +194,13 @@
   background: #ffb200;
 }
 
+.my-fav .grid-store .box figure, .my-fav .grid-myfav .box figure, .my-fav .grid-mybid .box figure, .my-fav .cate-grid .box figure {
+  height: 10rem;
+}
+
 .my-fav .grid-store .box figure img, .my-fav .grid-myfav .box figure img, .my-fav .grid-mybid .box figure img, .my-fav .cate-grid .box figure img {
   width: 100%;
+  height: 100%;
 }
 
 .my-fav .grid-store .box .title, .my-fav .grid-myfav .box .title, .my-fav .grid-mybid .box .title, .my-fav .cate-grid .box .title {
@@ -333,8 +338,13 @@
   background: #ffb200;
 }
 
+.my-bid .grid-store .box figure, .my-bid .grid-myfav .box figure, .my-bid .grid-mybid .box figure, .my-bid .cate-grid .box figure {
+  height: 10rem;
+}
+
 .my-bid .grid-store .box figure img, .my-bid .grid-myfav .box figure img, .my-bid .grid-mybid .box figure img, .my-bid .cate-grid .box figure img {
   width: 100%;
+  height: 100%;
 }
 
 .my-bid .grid-store .box .title, .my-bid .grid-myfav .box .title, .my-bid .grid-mybid .box .title, .my-bid .cate-grid .box .title {

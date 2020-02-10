@@ -161,8 +161,13 @@
   background: #ffb200;
 }
 
+.storePage .storePage-all .grid-store .box figure, .storePage .storePage-all .grid-myfav .box figure, .storePage .storePage-all .grid-mybid .box figure, .storePage .storePage-all .cate-grid .box figure {
+  height: 10rem;
+}
+
 .storePage .storePage-all .grid-store .box figure img, .storePage .storePage-all .grid-myfav .box figure img, .storePage .storePage-all .grid-mybid .box figure img, .storePage .storePage-all .cate-grid .box figure img {
   width: 100%;
+  height: 100%;
 }
 
 .storePage .storePage-all .grid-store .box .title, .storePage .storePage-all .grid-myfav .box .title, .storePage .storePage-all .grid-mybid .box .title, .storePage .storePage-all .cate-grid .box .title {
@@ -304,8 +309,13 @@
   background: #ffb200;
 }
 
+.storePage .storePage-notbuy .grid-store .box figure, .storePage .storePage-notbuy .grid-myfav .box figure, .storePage .storePage-notbuy .grid-mybid .box figure, .storePage .storePage-notbuy .cate-grid .box figure {
+  height: 10rem;
+}
+
 .storePage .storePage-notbuy .grid-store .box figure img, .storePage .storePage-notbuy .grid-myfav .box figure img, .storePage .storePage-notbuy .grid-mybid .box figure img, .storePage .storePage-notbuy .cate-grid .box figure img {
   width: 100%;
+  height: 100%;
 }
 
 .storePage .storePage-notbuy .grid-store .box .title, .storePage .storePage-notbuy .grid-myfav .box .title, .storePage .storePage-notbuy .grid-mybid .box .title, .storePage .storePage-notbuy .cate-grid .box .title {
@@ -447,8 +457,13 @@
   background: #ffb200;
 }
 
+.storePage .storePage-buynow .grid-store .box figure, .storePage .storePage-buynow .grid-myfav .box figure, .storePage .storePage-buynow .grid-mybid .box figure, .storePage .storePage-buynow .cate-grid .box figure {
+  height: 10rem;
+}
+
 .storePage .storePage-buynow .grid-store .box figure img, .storePage .storePage-buynow .grid-myfav .box figure img, .storePage .storePage-buynow .grid-mybid .box figure img, .storePage .storePage-buynow .cate-grid .box figure img {
   width: 100%;
+  height: 100%;
 }
 
 .storePage .storePage-buynow .grid-store .box .title, .storePage .storePage-buynow .grid-myfav .box .title, .storePage .storePage-buynow .grid-mybid .box .title, .storePage .storePage-buynow .cate-grid .box .title {
@@ -590,8 +605,13 @@
   background: #ffb200;
 }
 
+.storePage .storePage-success .grid-store .box figure, .storePage .storePage-success .grid-myfav .box figure, .storePage .storePage-success .grid-mybid .box figure, .storePage .storePage-success .cate-grid .box figure {
+  height: 10rem;
+}
+
 .storePage .storePage-success .grid-store .box figure img, .storePage .storePage-success .grid-myfav .box figure img, .storePage .storePage-success .grid-mybid .box figure img, .storePage .storePage-success .cate-grid .box figure img {
   width: 100%;
+  height: 100%;
 }
 
 .storePage .storePage-success .grid-store .box .title, .storePage .storePage-success .grid-myfav .box .title, .storePage .storePage-success .grid-mybid .box .title, .storePage .storePage-success .cate-grid .box .title {
@@ -733,8 +753,13 @@
   background: #ffb200;
 }
 
+.storePage .storePage-timeout .grid-store .box figure, .storePage .storePage-timeout .grid-myfav .box figure, .storePage .storePage-timeout .grid-mybid .box figure, .storePage .storePage-timeout .cate-grid .box figure {
+  height: 10rem;
+}
+
 .storePage .storePage-timeout .grid-store .box figure img, .storePage .storePage-timeout .grid-myfav .box figure img, .storePage .storePage-timeout .grid-mybid .box figure img, .storePage .storePage-timeout .cate-grid .box figure img {
   width: 100%;
+  height: 100%;
 }
 
 .storePage .storePage-timeout .grid-store .box .title, .storePage .storePage-timeout .grid-myfav .box .title, .storePage .storePage-timeout .grid-mybid .box .title, .storePage .storePage-timeout .cate-grid .box .title {
@@ -876,8 +901,13 @@
   background: #ffb200;
 }
 
+.storePage .storePage-now .grid-store .box figure, .storePage .storePage-now .grid-myfav .box figure, .storePage .storePage-now .grid-mybid .box figure, .storePage .storePage-now .cate-grid .box figure {
+  height: 10rem;
+}
+
 .storePage .storePage-now .grid-store .box figure img, .storePage .storePage-now .grid-myfav .box figure img, .storePage .storePage-now .grid-mybid .box figure img, .storePage .storePage-now .cate-grid .box figure img {
   width: 100%;
+  height: 100%;
 }
 
 .storePage .storePage-now .grid-store .box .title, .storePage .storePage-now .grid-myfav .box .title, .storePage .storePage-now .grid-mybid .box .title, .storePage .storePage-now .cate-grid .box .title {

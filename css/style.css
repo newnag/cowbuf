@@ -660,6 +660,7 @@ nav .status-credit .coin i {
   border-radius: 15px;
   cursor: pointer;
   color: #c20000;
+  font-size: 1.2rem;
 }
 
 .grid-body .bar-mobile {
@@ -740,6 +741,10 @@ nav .status-credit .coin i {
   color: #000;
 }
 
+.grid-body .main-side article .grid-box a .box figure {
+  height: 15rem;
+}
+
 .grid-body .main-side article .grid-box a .box figure img {
   width: 100%;
   height: 100%;
@@ -817,6 +822,14 @@ nav .status-credit .coin i {
 .grid-body .main-side article .mobile-gridbox .slide-article .box {
   width: 80%;
   margin: 1% auto;
+}
+
+.grid-body .main-side article .mobile-gridbox .slide-article .box figure {
+  height: 8rem;
+}
+
+.grid-body .main-side article .mobile-gridbox .slide-article .box figure img {
+  height: 100%;
 }
 
 .grid-body .main-side article .mobile-gridbox .slide-article .box .title, .grid-body .main-side article .mobile-gridbox .slide-article .box .price, .grid-body .main-side article .mobile-gridbox .slide-article .box .date, .grid-body .main-side article .mobile-gridbox .slide-article .box .star, .grid-body .main-side article .mobile-gridbox .slide-article .box .credit {
@@ -1087,7 +1100,7 @@ footer .footer-section .info .detail {
 }
 
 .registraltion-job .text-content {
-  width: 60%;
+  width: 80%;
   margin: 5% auto;
 }
 
@@ -1117,7 +1130,7 @@ footer .footer-section .info .detail {
 }
 
 .about .text-content {
-  width: 60%;
+  width: 80%;
   margin: 5% auto;
 }
 
@@ -1473,8 +1486,13 @@ footer .footer-section .info .detail {
   background: #ffb200;
 }
 
+.cate-page .grid-store .box figure, .cate-page .grid-myfav .box figure, .cate-page .grid-mybid .box figure, .cate-page .cate-grid .box figure {
+  height: 10rem;
+}
+
 .cate-page .grid-store .box figure img, .cate-page .grid-myfav .box figure img, .cate-page .grid-mybid .box figure img, .cate-page .cate-grid .box figure img {
   width: 100%;
+  height: 100%;
 }
 
 .cate-page .grid-store .box .title, .cate-page .grid-myfav .box .title, .cate-page .grid-mybid .box .title, .cate-page .cate-grid .box .title {
