@@ -35,6 +35,25 @@ $('.slide-head').owlCarousel({
 })
 
 // สไลด์รูปแบบที่ 2
+// $('.slider-for').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   fade: true,
+//   asNavFor: '.slider-nav',
+// });
+// $('.slider-nav').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   asNavFor: '.slider-for',
+//   dots: false,
+//   centerMode: true,
+//   focusOnSelect: true,
+//   arrows: false,
+//   autoplay: false,
+//   loop:true
+// });
+
 $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -46,11 +65,9 @@ $('.slider-nav').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.slider-for',
-  dots: false,
+  dots: true,
   centerMode: true,
-  focusOnSelect: true,
-  arrows: false,
-  autoplay: false
+  focusOnSelect: true
 });
 
 // บวกลบจำนวนบิด
@@ -123,20 +140,70 @@ $('.edit-button button').click(function () {
   $('.dialog-forget').fadeIn();
   $('.bg-dialog').show();
 });
+
+
 // ปิดกล่องเพื่อแก้ไขข้อมูลสมาชิก
 $('.new-pass .button #id-number').click(function () {
-  $('.account .form-login .input-login input').prop('readonly', false);
-  $('.dialog-forget').fadeOut();
-  $('.bg-dialog').hide();
+
+  if ($('#check_identification').val().trim().length != 13) {
+    swal({
+      text: "กรุณากรอกเลขบัตรประชนให้ครบ 13 หลัก",
+      icon: "error",
+    });
+    return false;
+  }
+
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'checkidentification' }).then(function (token) {
+      let data = {
+        gRecaptchaToken: token,
+        action: "checkidentification",
+        identification: $('#check_identification').val().trim()
+      }
+      $.ajax({
+        url: "/ajax/ajax.register.php",
+        type: "POST",
+        dataType: "json",
+        data: data,
+        success: function (response) {
+          if (response.message == "Success") {
+            swal({
+              text: "เลขบัตรประชาชนถูกต้อง",
+              icon: "success",
+            }).then(() => {
+              $('.account .form-login .input-login input').prop('readonly', false);
+              $('.dialog-forget').fadeOut();
+              $('.bg-dialog').hide();
+              $('.acc-edit-identification').val($('#check_identification').val())
+              $('#edit-data').data('active', 'true')
+            });
+          } else {
+            swal({
+              text: "เลขบัตรประชาชนไม่ถูกต้อง",
+              icon: "error",
+            });
+          }
+        }
+      })
+    });
+  });
 });
 
 // ปุ่มลบสินค้าในหน้าร้านค้า
 $('body').on('click', '.storePage-all .grid-store .box .delete-button', function () {
   $(this).parent().fadeOut(function () {
-    $(this).remove();
+    $(this).remove();  
   });
 });
 
+$(function(){
+  $.ajax({
+    url: "template/page-mycart.php",
+    success: function (data) {
+      $('.page-mycart').html(data);
+    },
+  });
+})
 // เปลี่ยนหน้าสินค้าโปรด
 $('.mycart .menu-mycart .leaf-menu #my-fav').click(function () {
   $.ajax({
@@ -164,6 +231,7 @@ $('.mycart .menu-mycart .leaf-menu #my-bid').click(function () {
     },
   });
 });
+
 
 // เปลี่ยนหน้าเติมเงิน
 $('.paypaid .menu-mycart .leaf-menu #paypaid').click(function () {
@@ -258,9 +326,9 @@ $('.login .form-login form').submit(function (e) {
 $('.register-page .form-register form').submit(function (e) {
   e.preventDefault();
   $(this).find('.input-login input').each(function () {
-    var pass = $('.register-page .form-register form .input-login #pass').val();
-    var confpass = $('.register-page .form-register form .input-login #confpass').val();
-
+    let pass = $('.register-page .form-register form .input-login #pass').val().trim();
+    let confpass = $('.register-page .form-register form .input-login #confpass').val().trim();
+    let identification_ = $('#register_identification').val().trim();
     if (!$(this).val()) {
       e.preventDefault();
       swal({
@@ -283,6 +351,15 @@ $('.register-page .form-register form').submit(function (e) {
       e.preventDefault();
       swal({
         text: "กรุณากรอกรหัสผ่านให้ตรงกัน",
+        icon: "error",
+      });
+      return false;
+    }
+    // บัตรประชาชนต้อง 13 หลัก
+    if (identification_.length !== 13) {
+      e.preventDefault();
+      swal({
+        text: "กรุณากรอกเลขบัตรประชนให้ครบ 13 หลัก",
         icon: "error",
       });
       return false;
@@ -315,15 +392,15 @@ $('.register-page .form-register form').submit(function (e) {
                 swal({
                   text: "สมัครสมาชิก สำเร็จ",
                   icon: "success",
-                }).then(()=>{
+                }).then(() => {
                   location.reload()
                 });
-              }else if(response.message == "userNotDupicate"){
+              } else if (response.message == "userNotDupicate") {
                 swal({
                   text: "ไม่สามารถใช้ชื่อผู้ใช้นี้ได้",
                   icon: "error",
                 });
-              }else {
+              } else {
                 swal({
                   text: "ชื่อผู้ใช้ หรือ รหัสผ่าน ไม่ถูกต้อง",
                   icon: "error",
@@ -340,13 +417,13 @@ $('.register-page .form-register form').submit(function (e) {
 
 
 /**---------------- ทดสอบ */
-$('#btn-register_test').click(function(e){
+$('#btn-register_test').click(function (e) {
   e.preventDefault();
   $('#register_username').val('kotbass23')
   $('.register-page .form-register form .input-login #pass').val('12345678')
   $('.register-page .form-register form .input-login #confpass').val('12345678')
   $('#register_name').val('ประยุท จันอังคารพุธ')
-  $('#register_identification').val('1423325215658')
+  $('#register_identification').val('123456789112')
   $('#register_province').val('6')
   $('#register_phone').val('0999251325')
   $('#register_adviser').val('-')
@@ -395,6 +472,114 @@ $('.forget .form-forget form').submit(function (e) {
   });
 });
 
+
+//ฟอร์มแก้ไขข้อมูลส่วนตัว
+$('.account .form-login form').submit(function (e) {
+  e.preventDefault();
+  let data = {
+    username: $('.acc-edit-username').val().trim(),
+    name: $('.acc-edit-name').val().trim(),
+    identification: $('.acc-edit-identification').val().trim(),
+    province: $('.acc-edit-province').val().trim(),
+    phone: $('.acc-edit-phone').val().trim()
+  }
+
+  if ($('#edit-data').data('active') === "true") {
+    // console.log('True')
+    // if(data.username.length < 1){ swal({text: "กรุณากรอกชื่อผู้ใช้",icon: "warning",}); return false;}
+    if (data.name.length < 1) { swal({ text: "กรุณากรอกชื่อนามสกุล", icon: "warning", }); return false; }
+    if (data.identification.length < 1) { swal({ text: "กรุณากรอกเลขบัตรประชาชน", icon: "warning", }); return false; }
+    if (data.identification.length < 13) { swal({ text: "กรุณากรอกเลขบัตรประชาชนให้ครบ 13 หลัก", icon: "warning", }); return false; }
+    if (data.province.length < 1) { swal({ text: "กรุณาเลือกจังหวัด", icon: "warning", }); return false; }
+    if (data.phone.length < 10) { swal({ text: "กรุณากรอกเบอร์โทรศัพท์", icon: "warning", }); return false; }
+
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'updateAccount' }).then(function (token) {
+        data.gRecaptchaToken = token
+        data.action = "updateAccount"
+
+        $.ajax({
+          url: "/ajax/ajax.register.php",
+          type: "POST",
+          dataType: "json",
+          data: data,
+          success: function (response) {
+            if (response.message == "Success") {
+              swal({
+                text: "แก้ไขข้อมูลสำเร็จ",
+                icon: "success",
+              }).then(() => {
+                location.reload()
+              });
+            } else {
+              swal({
+                text: "แก้ไขข้อมูลไม่สำเร็จ",
+                icon: "error",
+              });
+            }
+          }
+        })
+      });
+    });
+  }
+
+})
+
+//ฟอร์มแก้ไขรหัสผ่าน
+
+$('#formChangePassword').submit(function (e) {
+  e.preventDefault();
+  let data = {
+    pass_old: $('#changepass_passOld').val().trim(),
+    pass_new: $('#pass').val().trim(),
+    pass_conf: $('#changepass_passNewConf').val().trim(),
+  }
+
+  if (data.pass_old.length < 1) { swal({ text: "กรุณากรอกรหัสผ่านเดิม", icon: "warning", }); return false; }
+  if (data.pass_new.length < 1) { swal({ text: "กรุณากรอกรหัสผ่านใหม่", icon: "warning", }); return false; }
+  if (data.pass_new.length < 8) { swal({ text: "กรุณากรอกรหัสผ่านอย่างน้อย 8 ตัวอักษร", icon: "warning", }); return false; }
+  if (data.pass_new !== data.pass_conf) { swal({ text: "กรุณากรอกรหัสผ่านไม่ตรงกัน", icon: "warning", }); return false; }
+
+
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'updatePassword' }).then(function (token) {
+      data.gRecaptchaToken = token
+      data.action = "updatePassword"
+
+      $.ajax({
+        url: "/ajax/ajax.register.php",
+        type: "POST",
+        dataType: "json",
+        data: data,
+        success: function (response) {
+          if (response.message == "Success") {
+            swal({
+              text: "แก้ไขรหัสผ่านสำเร็จ",
+              icon: "success",
+            }).then(() => {
+              location.reload()
+            });
+          } else if (response.message == "passwordOld_not_equals") {
+            swal({
+              text: "รหัสผ่านเดิมไม่ถูกต้อง",
+              icon: "error",
+            });
+          } else {
+            swal({
+              text: "แก้ไขรหัสผ่านไม่สำเร็จ",
+              icon: "error",
+            });
+          }
+        }
+      })
+    });
+  });
+
+
+})
+
+
+
 //----------------จบส่วนเช็คแจ้งเตือนฟอร์มสมาชิก------------------//
 
 //---------------- ส่วนชี้แจงข้อกำหนดการใช้สมาชิก ----------------//
@@ -442,7 +627,7 @@ $('.grid-body .bar-mobile').click(function () {
 
 // สไลด์หน้าแรก
 $('.slide-article').owlCarousel({
-  loop: true,
+  loop: false,
   margin: 10,
   nav: true,
   dots: false,
@@ -465,7 +650,7 @@ $(document).ready(function () {
   let path = window.location.pathname.split("/")[1];
   let slug = $('nav ul li[data-menu-slug=home] a');
 
-  console.log(path)
+  // console.log(path)
 
   if (path == '') {
     slug = $('nav ul li[data-menu-slug=home] a');
@@ -531,38 +716,242 @@ function shareSocial(e) {
   window.open(e.target.closest('a').href, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=200,left=600,width=560,height=600");
 }
 
-
-/*
-ตัวอย่าง gRecaptcha
-grecaptcha.ready(function () {
-  grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'receivenews' }).then(function (token) {
-    let data = {
-      gRecaptchaToken:token,
-      action: "receiveNews"
-    }
-    $.ajax({
-      url: "/ajax/ajax.contact.php",
-      type: "POST",
-      dataType: "json",
-      data: data,
-      success: function (response) {
-        if(response.message == "success"){
-          swal({
-            text: "บันทึกข้อมูลสำเร็จ",
-            icon: "success",
-          }).then(()=>{
-            $('#inputEmailFooter').val('')
-          })
-        }
-      }
-    })
-  });
-});
-*/
 // ------------------------ end Shared Facebook -------------------------
 
 // ปุ่มปิดกล่องแก้ไขข้อมูลสมาชิก
-$('.dialog-forget .newpass-form .box .button-close i').click(function(){
+$('.dialog-forget .newpass-form .box .button-close i').click(function () {
   $(this).closest('.dialog-forget').fadeOut();
   $('.bg-dialog').hide();
 });
+
+
+
+// --------------------------- product favorites -------------------------
+$('#add_product_favorites').click(function (e) {
+  e.preventDefault();
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'addProductFavorites' }).then(function (token) {
+      let data = {
+        gRecaptchaToken: token,
+        action: "addProductFavorites",
+        p_id: $('#add_product_favorites').data('product')
+      }
+      $.ajax({
+        url: "/ajax/ajax.bid.php",
+        type: "POST",
+        dataType: "json",
+        data: data,
+        success: function (response) {
+          if (response.message == "Success") {
+            swal({
+              text: "เพิ่มรายการโปรดเรียบร้อย",
+              icon: "success",
+            }).then(() => {
+              location.reload()
+            });
+          } 
+          else if(response.message == "member_null") {
+            swal({
+              text: "ไม่สามารถเพิ่มรายการโปรดได้ ต้องเป็นสมาชิกเว็บเท่านั้น",
+              icon: "warning",
+            });
+          }
+          else {
+            swal({
+              text: "เพิ่มรายการโปรดไม่สำเร็จ",
+              icon: "error",
+            });
+          }
+        }
+      })
+    });
+  });
+})
+
+
+// --------------------------- store follower -------------------------
+$('#store_follower').click(function (e) {
+  e.preventDefault();
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'addStoreFollower' }).then(function (token) {
+      let data = {
+        gRecaptchaToken: token,
+        action: "addStoreFollower",
+        store_id: $('#store_follower').data('store')
+      }
+      $.ajax({
+        url: "/ajax/ajax.bid.php",
+        type: "POST",
+        dataType: "json",
+        data: data,
+        success: function (response) {
+          if (response.message == "Success") {
+            swal({
+              text: "ติดตามร้านค้าเรียบร้อย",
+              icon: "success",
+            }).then(() => {
+              location.reload()
+            });
+          } 
+          else if(response.message == "member_null") {
+            swal({
+              text: "ไม่สามารถติดตามร้านค้าได้ ต้องเป็นสมาชิกเว็บเท่านั้น",
+              icon: "warning",
+            });
+          }
+          else {
+            swal({
+              text: "ติดตามร้านไม่สำเร็จ",
+              icon: "error",
+            });
+          }
+        }
+      })
+    });
+  });
+})
+
+
+// --------------------------- กดประมูล ---------------------------------
+$('#btn-bid-product').click(function (e) {
+  e.preventDefault();
+  // $('#coin-your-bid').val()
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'yourBidProduct' }).then(function (token) {
+      let data = {
+        gRecaptchaToken: token,
+        action: "yourBidProduct",
+        coin_your_bid: $('#coin-your-bid').val(),
+        product_id: $('#btn-bid-product').data('product'),
+      }
+      $.ajax({
+        url: "/ajax/ajax.bid.php",
+        type: "POST",
+        dataType: "json",
+        data: data,
+        success: function (response) {
+          if (response.message == "Success") {
+            swal({
+              text: "ประมูลเรียบร้อย",
+              icon: "success",
+            }).then(()=>{location.reload()});
+          } 
+          else if(response.message == "status_invalid") {
+            swal({
+              text: "ไม่สามารถประมูลรายการนี้ได้ ต้องจ่ายเงินก่อน ทดสอบ",
+              icon: "warning",
+            });
+          }
+          else if(response.message == "member_null") {
+            swal({
+              text: "ไม่สามารถประมูลรายการนี้ได้ ต้องเป็นสมาชิกเว็บเท่านั้น",
+              icon: "warning",
+            });
+          }
+          else if(response.message == "buy") {
+            swal({
+              text: "ไม่สามารถประมูลรายการนี้ได้ รายการนี้ถูกกดซื้อไปแล้ว",
+              icon: "warning",
+            });
+          }
+          else if(response.message == "credit_invalid") {
+            swal({
+              text: "credit ไม่พอสำหรับการประมูลนี้",
+              icon: "warning",
+            });
+          }
+          else if(response.message == "time_out") {
+            swal({
+              text: "หมดเวลาการประมูลแล้ว",
+              icon: "warning",
+            });
+          }
+          else if(response.message == "stauts_not") {
+            swal({
+              text: "ไม่สามารถประมูลรายการนี้ได้",
+              icon: "warning",
+            });
+          }
+          else {
+            swal({
+              text: "เกิดข้อผิดพลาดบางอย่าง ไม่สามารถประมูลรายการนี้ได้",
+              icon: "error",
+            });
+          }
+        }
+      })
+    });
+  });
+})
+
+// --------------------------- กดซื้อทันที ---------------------------------
+$('#btn-buy-product').click(function (e) {
+  e.preventDefault();
+  // $('#coin-your-bid').val()
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'youButProductNow' }).then(function (token) {
+      let data = {
+        gRecaptchaToken: token,
+        action: "youButProductNow",
+        coin_your_bid: $('#coin-your-bid').val(),
+        product_id: $('#btn-buy-product').data('product'),
+      }
+      $.ajax({
+        url: "/ajax/ajax.bid.php",
+        type: "POST",
+        dataType: "json",
+        data: data,
+        success: function (response) {
+          if (response.message == "Success") {
+            swal({
+              text: "ซื้อเรียบร้อย",
+              icon: "success",
+            }).then(()=>{location.reload()});
+          } 
+          else if(response.message == "status_invalid") {
+            swal({
+              text: "ไม่สามารถประมูลรายการนี้ได้ ต้องจ่ายเงินก่อน ทดสอบ",
+              icon: "warning",
+            });
+          }
+          else if(response.message == "member_null") {
+            swal({
+              text: "ไม่สามารถประมูลรายการนี้ได้ ต้องเป็นสมาชิกเว็บเท่านั้น",
+              icon: "warning",
+            });
+          }
+          else if(response.message == "buy") {
+            swal({
+              text: "ไม่สามารถประมูลรายการนี้ได้ รายการนี้ถูกกดซื้อไปแล้ว",
+              icon: "warning",
+            });
+          }
+          else if(response.message == "credit_invalid") {
+            swal({
+              text: "credit ไม่พอสำหรับการซื้อรายการนี้",
+              icon: "warning",
+            });
+          }
+          else if(response.message == "time_out") {
+            swal({
+              text: "หมดเวลาการซื้อแล้ว",
+              icon: "warning",
+            });
+          }
+          else if(response.message == "stauts_not") {
+            swal({
+              text: "ไม่สามารถซื้อรายการนี้ได้",
+              icon: "warning",
+            });
+          }
+          else {
+            swal({
+              text: "เกิดข้อผิดพลาดบางอย่าง ไม่สามารถซื้อรายการนี้ได้",
+              icon: "error",
+            });
+          }
+        }
+      })
+    });
+  });
+})

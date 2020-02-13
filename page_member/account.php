@@ -1,7 +1,7 @@
 <div class="account">
   <div class="head-text">
     <div class="text">
-      <h1>บัญชีของฉัน</h1>
+      <h1><?=$cateName_Acc?></h1>
     </div>
   </div>
   <div class="edit-button">
@@ -12,19 +12,19 @@
     <form action="">
       <div class="input-login">
         <label>ชื่อผู้ใช้*</label>
-        <input id="edit-input" type="text" placeholder="กรอกชื่อผู้ใช้" value="<?=$myAccount->username?>" readonly required>
+        <input  class="acc-edit-username" type="text" placeholder="กรอกชื่อผู้ใช้" value="<?=$myAccount->username?>" disabled>
       </div>
       <div class="input-login">
         <label>ชื่อสกุล*</label>
-        <input id="edit-input" type="text" placeholder="กรอกชื่อ-สกุล" value="<?=$myAccount->name?>" readonly required>
+        <input  class="acc-edit-name" type="text" placeholder="กรอกชื่อ-สกุล" value="<?=$myAccount->name?>" readonly>
       </div>
       <div class="input-login">
         <label>เลขบัตรประชาชน*</label>
-        <input id="edit-input" type="number" max="11" placeholder="กรอกเลขบัตรประชาชน" value="<?=$myAccount->identification?>" readonly required>
+        <input  class="acc-edit-identification" type="text" max="11" placeholder="กรอกเลขบัตรประชาชน" value="<?=$Helper->showIdentification($myAccount->identification)?>" readonly >
       </div>
       <div class="input-login">
         <label>จังหวัด*</label>
-        <select name="" id="" required>
+        <select name="" id="" class="acc-edit-province">
           <option value="">เลือกจังหวัด</option>
           <?php
           foreach ($Helper->getProvince() as $key => $res) {
@@ -35,41 +35,46 @@
       </div>
       <div class="input-login">
         <label>เบอร์โทร*</label>
-        <input id="edit-input" type="tel" placeholder="กรอกเบอร์โทรศัพท์" value="<?=$myAccount->phone?>" readonly required>
+        <input  type="tel" class="acc-edit-phone" placeholder="กรอกเบอร์โทรศัพท์" value="<?=$myAccount->phone?>" readonly >
       </div>
-      <div class="login-button">
+      <div class="login-button" >
         <button type="submit" id="edit-data">บันทึก</button>
       </div>
     </form>
   </div>
+
+
   <!-- เปลี่ยน password -->
   <div class="head-text">
     <div class="text">
-      <h1>เปลี่ยนรหัสผ่าน</h1>
+      <h1><?=$cateName_ChangePass?></h1>
     </div>
   </div>
   <div class="form-login">
     <h2>กรอกข้อมูลหากลืมรหัสผ่าน</h2>
-    <form action="">
+    <form action="" id="formChangePassword">
       <div class="input-login">
         <label>รหัสผ่านเดิม*</label>
-        <input id="edit-input" type="password" readonly placeholder="กรอกรหัสผ่านเดิม">
+        <input  type="password" id="changepass_passOld" placeholder="กรอกรหัสผ่านเดิม">
       </div>
       <div class="input-login">
         <label>รหัสผ่านใหม่*</label>
-        <input id="pass" type="password" readonly placeholder="กรอกรหัสผ่านใหม่">
+        <input id="pass" type="password" placeholder="กรอกรหัสผ่านใหม่">
         <div class="view" onclick="view_password()"><i class="fas fa-eye"></i></div></input>
       </div>
       <div class="input-login">
         <label>ยืนยันรหัสผ่านใหม่*</label>
-        <input id="edit-input" type="password" readonly placeholder="กรอกรหัสผ่านใหม่">
+        <input  type="password" id="changepass_passNewConf" placeholder="กรอกรหัสผ่านใหม่">
       </div>
       <div class="login-button">
         <button type="submit" id="edit-pass">บันทึก</button>
       </div>
     </form>
   </div>
+  
 </div>
+
+
 <div class="dialog-forget">
   <div class="newpass-form">
     <div class="box">
@@ -79,15 +84,15 @@
       <div class="new-pass">
         <div class="input-login">
           <label>เลขบัตรประชาชน*</label>
-          <input type="number" max="11" placeholder="กรอกเลขบัตรประชาชน" readonly required>
+          <input type="number" id="check_identification" placeholder="กรอกเลขบัตรประชาชน" required style="width:100%">
         </div>
         <div class="button">
           <button id="id-number">ตกลง</button>
         </div>
         <div class="alert">
           <p>***กรณีกรอกเลขบัตรประชาชนไม่ถูกต้องให้ติดต่อทางเว็บไซต์ ตามนี้</p>
-          <p>โทร 088-830-2315</p>
-          <p>Line ID: 142351254</p>
+          <p>โทร <?=$myContact->phone?></p>
+          <p>Line ID: <?=$myContact->line?></p>
         </div>
       </div>
       <div class="button-close">

@@ -29,13 +29,12 @@
 }
 
 .top-zone .slide-img .select-img figure {
-  width: 70px !important;
   margin: 0 10px;
 }
 
 .top-zone .slide-img .select-img figure img {
   width: 100%;
-  height: auto;
+  height: 100px;
 }
 
 .top-zone .detail .breadcrum a {
