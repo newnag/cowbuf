@@ -67,7 +67,8 @@ $('.slider-nav').slick({
   asNavFor: '.slider-for',
   dots: true,
   centerMode: true,
-  focusOnSelect: true
+  focusOnSelect: true,
+  arrows: false,
 });
 
 // บวกลบจำนวนบิด
@@ -190,13 +191,45 @@ $('.new-pass .button #id-number').click(function () {
 });
 
 // ปุ่มลบสินค้าในหน้าร้านค้า
-$('body').on('click', '.storePage-all .grid-store .box .delete-button', function () {
-  $(this).parent().fadeOut(function () {
-    $(this).remove();  
-  });
+$('body').on('click', '.storePage-all .grid-store .box .delete-button .btn-del-product', function () {
+  let self = $(this)
+  swal({
+    text: "ต้องการลบสินค้าใช่หรือไม่",
+    icon: "warning",
+    buttons: {
+      cancel: true,
+      confirm: true,
+    },
+  }).then((e) => {
+    if (e) {
+      grecaptcha.ready(function () {
+        grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'remove_my_product' }).then(function (token) {
+          let data = {
+            gRecaptchaToken: token,
+            action: "remove_my_product",
+            product_id: self.data('product') 
+          }
+          $.ajax({
+            url: "/ajax/ajax.bid.php",
+            type: "POST",
+            dataType: "json",
+            data: data,
+            success: function (response) {
+              if (response.message == "success") {
+                self.closest('.box').fadeOut(function () {
+                  console.log('aaaaaa')
+                  self.remove();
+                });
+              }
+            }
+          })
+        });
+      });
+    }
+  })
 });
 
-$(function(){
+$(function () {
   $.ajax({
     url: "template/page-mycart.php",
     success: function (data) {
@@ -303,7 +336,8 @@ $('.login .form-login form').submit(function (e) {
               text: "ยินดีต้อนรับเข้าสู่เว็บไซต์",
               icon: "success",
             }).then(() => {
-              window.location = `/${response.url}`
+              // window.location = `/${response.url}`
+              window.location = `/`
             });
           } else if (response.message == "Block") {
             swal({
@@ -416,18 +450,6 @@ $('.register-page .form-register form').submit(function (e) {
 });
 
 
-/**---------------- ทดสอบ */
-$('#btn-register_test').click(function (e) {
-  e.preventDefault();
-  $('#register_username').val('kotbass23')
-  $('.register-page .form-register form .input-login #pass').val('12345678')
-  $('.register-page .form-register form .input-login #confpass').val('12345678')
-  $('#register_name').val('ประยุท จันอังคารพุธ')
-  $('#register_identification').val('123456789112')
-  $('#register_province').val('6')
-  $('#register_phone').val('0999251325')
-  $('#register_adviser').val('-')
-})
 
 // ฟอร์มลืมรหัส
 $('.forget .form-forget form').submit(function (e) {
@@ -749,8 +771,8 @@ $('#add_product_favorites').click(function (e) {
             }).then(() => {
               location.reload()
             });
-          } 
-          else if(response.message == "member_null") {
+          }
+          else if (response.message == "member_null") {
             swal({
               text: "ไม่สามารถเพิ่มรายการโปรดได้ ต้องเป็นสมาชิกเว็บเท่านั้น",
               icon: "warning",
@@ -792,8 +814,8 @@ $('#store_follower').click(function (e) {
             }).then(() => {
               location.reload()
             });
-          } 
-          else if(response.message == "member_null") {
+          }
+          else if (response.message == "member_null") {
             swal({
               text: "ไม่สามารถติดตามร้านค้าได้ ต้องเป็นสมาชิกเว็บเท่านั้น",
               icon: "warning",
@@ -834,39 +856,39 @@ $('#btn-bid-product').click(function (e) {
             swal({
               text: "ประมูลเรียบร้อย",
               icon: "success",
-            }).then(()=>{location.reload()});
-          } 
-          else if(response.message == "status_invalid") {
+            }).then(() => { location.reload() });
+          }
+          else if (response.message == "status_invalid") {
             swal({
               text: "ไม่สามารถประมูลรายการนี้ได้ ต้องจ่ายเงินก่อน ทดสอบ",
               icon: "warning",
             });
           }
-          else if(response.message == "member_null") {
+          else if (response.message == "member_null") {
             swal({
               text: "ไม่สามารถประมูลรายการนี้ได้ ต้องเป็นสมาชิกเว็บเท่านั้น",
               icon: "warning",
             });
           }
-          else if(response.message == "buy") {
+          else if (response.message == "buy") {
             swal({
               text: "ไม่สามารถประมูลรายการนี้ได้ รายการนี้ถูกกดซื้อไปแล้ว",
               icon: "warning",
             });
           }
-          else if(response.message == "credit_invalid") {
+          else if (response.message == "credit_invalid") {
             swal({
               text: "credit ไม่พอสำหรับการประมูลนี้",
               icon: "warning",
             });
           }
-          else if(response.message == "time_out") {
+          else if (response.message == "time_out") {
             swal({
               text: "หมดเวลาการประมูลแล้ว",
               icon: "warning",
             });
           }
-          else if(response.message == "stauts_not") {
+          else if (response.message == "stauts_not") {
             swal({
               text: "ไม่สามารถประมูลรายการนี้ได้",
               icon: "warning",
@@ -906,39 +928,39 @@ $('#btn-buy-product').click(function (e) {
             swal({
               text: "ซื้อเรียบร้อย",
               icon: "success",
-            }).then(()=>{location.reload()});
-          } 
-          else if(response.message == "status_invalid") {
+            }).then(() => { location.reload() });
+          }
+          else if (response.message == "status_invalid") {
             swal({
               text: "ไม่สามารถประมูลรายการนี้ได้ ต้องจ่ายเงินก่อน ทดสอบ",
               icon: "warning",
             });
           }
-          else if(response.message == "member_null") {
+          else if (response.message == "member_null") {
             swal({
               text: "ไม่สามารถประมูลรายการนี้ได้ ต้องเป็นสมาชิกเว็บเท่านั้น",
               icon: "warning",
             });
           }
-          else if(response.message == "buy") {
+          else if (response.message == "buy") {
             swal({
               text: "ไม่สามารถประมูลรายการนี้ได้ รายการนี้ถูกกดซื้อไปแล้ว",
               icon: "warning",
             });
           }
-          else if(response.message == "credit_invalid") {
+          else if (response.message == "credit_invalid") {
             swal({
               text: "credit ไม่พอสำหรับการซื้อรายการนี้",
               icon: "warning",
             });
           }
-          else if(response.message == "time_out") {
+          else if (response.message == "time_out") {
             swal({
               text: "หมดเวลาการซื้อแล้ว",
               icon: "warning",
             });
           }
-          else if(response.message == "stauts_not") {
+          else if (response.message == "stauts_not") {
             swal({
               text: "ไม่สามารถซื้อรายการนี้ได้",
               icon: "warning",
