@@ -263,6 +263,24 @@
   }
 }
 
+.top-zone .detail .place-coin .confirm-wrapper > .confirm button {
+  background: mediumseagreen;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  border: unset;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.3vw;
+}
+
+@media screen and (max-width: 480px) {
+  .top-zone .detail .place-coin .confirm-wrapper > .confirm button {
+    height: 30px;
+    font-size: .75rem;
+  }
+}
+
 .detail-user-bid {
   margin: 2% 0;
 }
@@ -473,8 +491,8 @@
 .other-product .grid-box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (19%)[5];
+      grid-template-columns: repeat(5, 19%);
   grid-gap: 1%;
   margin: 3% 0;
 }

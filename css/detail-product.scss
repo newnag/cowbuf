@@ -230,6 +230,23 @@
                     }
                 }
             }
+            .confirm-wrapper > .confirm{
+                button{
+                    background: mediumseagreen;
+                    color: $head-color;
+                    width: 100%;
+                    height: 50px;
+                    border: unset;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    font-size: 1.3vw;
+
+                    @media screen and (max-width:480px) {
+                        height: 30px;
+                        font-size: .75rem;
+                    }
+                }
+            }
         }
     }
 }
@@ -413,7 +430,7 @@
 
     .grid-box{
         display: grid;
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: repeat(5,19%);
         grid-gap: 1%;
         margin: 3% 0;
 

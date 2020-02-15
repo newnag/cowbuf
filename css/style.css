@@ -724,8 +724,8 @@ nav .status-credit .coin i {
 .grid-body .main-side article .grid-box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (19%)[5];
+      grid-template-columns: repeat(5, 19%);
   grid-gap: 1%;
   grid-row-gap: 15px;
   margin: 3% 0;

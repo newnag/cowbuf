@@ -120,8 +120,8 @@
 .storePage .storePage-all .grid-store, .storePage .storePage-all .grid-myfav, .storePage .storePage-all .grid-mybid, .storePage .storePage-all .cate-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (19%)[5];
+      grid-template-columns: repeat(5, 19%);
   grid-gap: 10px;
   grid-row-gap: 25px;
   margin: 5% 0;
@@ -173,12 +173,13 @@
 .storePage .storePage-all .grid-store .box .title, .storePage .storePage-all .grid-myfav .box .title, .storePage .storePage-all .grid-mybid .box .title, .storePage .storePage-all .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 3rem;
+  height: 2.5rem;
   overflow: hidden;
 }
 
 @media screen and (max-width: 480px) {
   .storePage .storePage-all .grid-store .box .title, .storePage .storePage-all .grid-myfav .box .title, .storePage .storePage-all .grid-mybid .box .title, .storePage .storePage-all .cate-grid .box .title {
+    height: 3rem;
     font-size: 1.5rem;
   }
 }
@@ -268,8 +269,8 @@
 .storePage .storePage-notbuy .grid-store, .storePage .storePage-notbuy .grid-myfav, .storePage .storePage-notbuy .grid-mybid, .storePage .storePage-notbuy .cate-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (19%)[5];
+      grid-template-columns: repeat(5, 19%);
   grid-gap: 10px;
   grid-row-gap: 25px;
   margin: 5% 0;
@@ -321,12 +322,13 @@
 .storePage .storePage-notbuy .grid-store .box .title, .storePage .storePage-notbuy .grid-myfav .box .title, .storePage .storePage-notbuy .grid-mybid .box .title, .storePage .storePage-notbuy .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 3rem;
+  height: 2.5rem;
   overflow: hidden;
 }
 
 @media screen and (max-width: 480px) {
   .storePage .storePage-notbuy .grid-store .box .title, .storePage .storePage-notbuy .grid-myfav .box .title, .storePage .storePage-notbuy .grid-mybid .box .title, .storePage .storePage-notbuy .cate-grid .box .title {
+    height: 3rem;
     font-size: 1.5rem;
   }
 }
@@ -416,8 +418,8 @@
 .storePage .storePage-buynow .grid-store, .storePage .storePage-buynow .grid-myfav, .storePage .storePage-buynow .grid-mybid, .storePage .storePage-buynow .cate-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (19%)[5];
+      grid-template-columns: repeat(5, 19%);
   grid-gap: 10px;
   grid-row-gap: 25px;
   margin: 5% 0;
@@ -469,12 +471,13 @@
 .storePage .storePage-buynow .grid-store .box .title, .storePage .storePage-buynow .grid-myfav .box .title, .storePage .storePage-buynow .grid-mybid .box .title, .storePage .storePage-buynow .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 3rem;
+  height: 2.5rem;
   overflow: hidden;
 }
 
 @media screen and (max-width: 480px) {
   .storePage .storePage-buynow .grid-store .box .title, .storePage .storePage-buynow .grid-myfav .box .title, .storePage .storePage-buynow .grid-mybid .box .title, .storePage .storePage-buynow .cate-grid .box .title {
+    height: 3rem;
     font-size: 1.5rem;
   }
 }
@@ -564,8 +567,8 @@
 .storePage .storePage-success .grid-store, .storePage .storePage-success .grid-myfav, .storePage .storePage-success .grid-mybid, .storePage .storePage-success .cate-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (19%)[5];
+      grid-template-columns: repeat(5, 19%);
   grid-gap: 10px;
   grid-row-gap: 25px;
   margin: 5% 0;
@@ -617,12 +620,13 @@
 .storePage .storePage-success .grid-store .box .title, .storePage .storePage-success .grid-myfav .box .title, .storePage .storePage-success .grid-mybid .box .title, .storePage .storePage-success .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 3rem;
+  height: 2.5rem;
   overflow: hidden;
 }
 
 @media screen and (max-width: 480px) {
   .storePage .storePage-success .grid-store .box .title, .storePage .storePage-success .grid-myfav .box .title, .storePage .storePage-success .grid-mybid .box .title, .storePage .storePage-success .cate-grid .box .title {
+    height: 3rem;
     font-size: 1.5rem;
   }
 }
@@ -712,8 +716,8 @@
 .storePage .storePage-timeout .grid-store, .storePage .storePage-timeout .grid-myfav, .storePage .storePage-timeout .grid-mybid, .storePage .storePage-timeout .cate-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (19%)[5];
+      grid-template-columns: repeat(5, 19%);
   grid-gap: 10px;
   grid-row-gap: 25px;
   margin: 5% 0;
@@ -765,12 +769,13 @@
 .storePage .storePage-timeout .grid-store .box .title, .storePage .storePage-timeout .grid-myfav .box .title, .storePage .storePage-timeout .grid-mybid .box .title, .storePage .storePage-timeout .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 3rem;
+  height: 2.5rem;
   overflow: hidden;
 }
 
 @media screen and (max-width: 480px) {
   .storePage .storePage-timeout .grid-store .box .title, .storePage .storePage-timeout .grid-myfav .box .title, .storePage .storePage-timeout .grid-mybid .box .title, .storePage .storePage-timeout .cate-grid .box .title {
+    height: 3rem;
     font-size: 1.5rem;
   }
 }
@@ -860,8 +865,8 @@
 .storePage .storePage-now .grid-store, .storePage .storePage-now .grid-myfav, .storePage .storePage-now .grid-mybid, .storePage .storePage-now .cate-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (19%)[5];
+      grid-template-columns: repeat(5, 19%);
   grid-gap: 10px;
   grid-row-gap: 25px;
   margin: 5% 0;
@@ -913,12 +918,13 @@
 .storePage .storePage-now .grid-store .box .title, .storePage .storePage-now .grid-myfav .box .title, .storePage .storePage-now .grid-mybid .box .title, .storePage .storePage-now .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 3rem;
+  height: 2.5rem;
   overflow: hidden;
 }
 
 @media screen and (max-width: 480px) {
   .storePage .storePage-now .grid-store .box .title, .storePage .storePage-now .grid-myfav .box .title, .storePage .storePage-now .grid-mybid .box .title, .storePage .storePage-now .cate-grid .box .title {
+    height: 3rem;
     font-size: 1.5rem;
   }
 }
