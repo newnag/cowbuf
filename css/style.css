@@ -449,7 +449,7 @@ nav .status-credit .coin i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: .8rem;
+  font-size: .8vw;
   padding: 3% 0;
 }
 
@@ -542,7 +542,7 @@ nav .status-credit .coin i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: .8rem;
+  font-size: .8vw;
   padding: 3% 0;
 }
 

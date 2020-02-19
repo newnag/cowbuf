@@ -245,6 +245,10 @@
   margin: 0;
 }
 
+.top-zone .detail .place-coin .button .number .input-number input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .top-zone .detail .place-coin .button .bid button, .top-zone .detail .place-coin .button .buy button {
   background: #c20000;
   color: #fff;
