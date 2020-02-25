@@ -493,6 +493,7 @@ nav .status-credit .coin i {
   padding-left: 3%;
   padding-bottom: 7%;
   position: relative;
+  font-size: 1vw;
   padding-right: 5%;
 }
 
@@ -586,6 +587,7 @@ nav .status-credit .coin i {
   padding-left: 3%;
   padding-bottom: 7%;
   position: relative;
+  font-size: 1vw;
 }
 
 .grid-body .left-side .article-menu ul li a, .grid-body .left-side .article-menu ul li span {
@@ -660,7 +662,7 @@ nav .status-credit .coin i {
   border-radius: 15px;
   cursor: pointer;
   color: #c20000;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
 }
 
 .grid-body .bar-mobile {
@@ -743,6 +745,18 @@ nav .status-credit .coin i {
 
 .grid-body .main-side article .grid-box a .box figure {
   height: 15rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .grid-body .main-side article .grid-box a .box figure {
+    height: 7rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+  .grid-body .main-side article .grid-box a .box figure {
+    height: 10rem;
+  }
 }
 
 .grid-body .main-side article .grid-box a .box figure img {
@@ -961,6 +975,8 @@ footer .footer-section .social-foot .receive-news .input input {
   border-radius: 10px;
   color: #c6c4c4;
   padding: 2%;
+  padding-left: 5%;
+  padding-right: 20%;
 }
 
 footer .footer-section .social-foot .receive-news .input button {

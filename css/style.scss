@@ -54,6 +54,7 @@ li{
     padding-left: 3%;
     padding-bottom: 7%;
     position: relative;
+    font-size: 1vw;
 
     a,span{
         color: $left-menu-color;
@@ -574,7 +575,7 @@ nav{
                     border-radius: 15px;
                     cursor: pointer;
                     color: $price-color;
-                    font-size: 1.2rem;
+                    font-size: 1.2vw;
                 }
             }
         }
@@ -655,6 +656,13 @@ nav{
                     .box{
                         figure{
                             height: 15rem;
+
+                            @media screen and (min-width:481px) and (max-width:768px) {
+                                height: 7rem;
+                            }
+                            @media screen and (min-width:769px) and (max-width:1400px) {
+                                height: 10rem;
+                            }
 
                             img{
                                 width: 100%;
@@ -840,6 +848,8 @@ footer{
                         border-radius: 10px;
                         color: $left-menu-color;
                         padding: 2%;
+                        padding-left: 5%;
+                        padding-right: 20%;                                                                                                                                                                                     
                     }
 
                     button{

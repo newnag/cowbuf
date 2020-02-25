@@ -226,7 +226,7 @@
                     line-height: unset;
                     font-size: .8rem;
                 }
-            }  
+            }
         }
     }
 
@@ -236,9 +236,19 @@
         align-items: center;
         margin: 3% 0;
 
-        span{
+        input{
+            width: 1rem;
+            height: 2rem;
+        }
+
+        label{
             color: $head-color;
             margin: 0 2%;
+            cursor: pointer;
+
+            @media screen and (max-width:480px){
+                font-size: 4vw;
+            }
         }
     }
 

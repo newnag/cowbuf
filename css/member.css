@@ -579,9 +579,21 @@
   margin: 3% 0;
 }
 
-.dialog-privacy .check-confirm span {
+.dialog-privacy .check-confirm input {
+  width: 1rem;
+  height: 2rem;
+}
+
+.dialog-privacy .check-confirm label {
   color: #fff;
   margin: 0 2%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .dialog-privacy .check-confirm label {
+    font-size: 4vw;
+  }
 }
 
 .dialog-privacy .confirm-ok {
