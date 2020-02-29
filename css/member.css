@@ -56,6 +56,7 @@
   border: unset;
   height: 3rem;
   padding-left: 2%;
+  margin: 1% 0;
 }
 
 .login .form-login form .input-login .view {
@@ -179,6 +180,7 @@
   border: unset;
   height: 3rem;
   padding-left: 2%;
+  margin: 1% 0;
 }
 
 .register-page .form-register form .input-login .view {
@@ -286,6 +288,7 @@
   border: unset;
   height: 3rem;
   padding-left: 2%;
+  margin: 1% 0;
 }
 
 .forget .form-forget form .input-login .view {
@@ -481,6 +484,7 @@
   border: unset;
   height: 3rem;
   padding-left: 2%;
+  margin: 1% 0;
 }
 
 .account form .input-login .view {

@@ -173,7 +173,7 @@
 .storePage .storePage-all .grid-store .box .title, .storePage .storePage-all .grid-myfav .box .title, .storePage .storePage-all .grid-mybid .box .title, .storePage .storePage-all .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 2.5rem;
+  height: 50px;
   overflow: hidden;
 }
 
@@ -322,7 +322,7 @@
 .storePage .storePage-notbuy .grid-store .box .title, .storePage .storePage-notbuy .grid-myfav .box .title, .storePage .storePage-notbuy .grid-mybid .box .title, .storePage .storePage-notbuy .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 2.5rem;
+  height: 50px;
   overflow: hidden;
 }
 
@@ -471,7 +471,7 @@
 .storePage .storePage-buynow .grid-store .box .title, .storePage .storePage-buynow .grid-myfav .box .title, .storePage .storePage-buynow .grid-mybid .box .title, .storePage .storePage-buynow .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 2.5rem;
+  height: 50px;
   overflow: hidden;
 }
 
@@ -620,7 +620,7 @@
 .storePage .storePage-success .grid-store .box .title, .storePage .storePage-success .grid-myfav .box .title, .storePage .storePage-success .grid-mybid .box .title, .storePage .storePage-success .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 2.5rem;
+  height: 50px;
   overflow: hidden;
 }
 
@@ -769,7 +769,7 @@
 .storePage .storePage-timeout .grid-store .box .title, .storePage .storePage-timeout .grid-myfav .box .title, .storePage .storePage-timeout .grid-mybid .box .title, .storePage .storePage-timeout .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 2.5rem;
+  height: 50px;
   overflow: hidden;
 }
 
@@ -918,7 +918,7 @@
 .storePage .storePage-now .grid-store .box .title, .storePage .storePage-now .grid-myfav .box .title, .storePage .storePage-now .grid-mybid .box .title, .storePage .storePage-now .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 2.5rem;
+  height: 50px;
   overflow: hidden;
 }
 

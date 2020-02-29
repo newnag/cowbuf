@@ -1514,7 +1514,7 @@ footer .footer-section .info .detail {
 .cate-page .grid-store .box .title, .cate-page .grid-myfav .box .title, .cate-page .grid-mybid .box .title, .cate-page .cate-grid .box .title {
   font-size: 1vw;
   font-weight: 100;
-  height: 2.5rem;
+  height: 50px;
   overflow: hidden;
 }
 
