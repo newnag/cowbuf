@@ -201,6 +201,10 @@
     z-index: 20;
     padding: 10%;
 
+    @media screen and (min-width:1024px) and (max-width:1600px) {
+        padding: 4%;
+    }
+
     .box-privacy{
         background: $head-back;
         padding: 5%;
@@ -214,8 +218,9 @@
         .box-text{
             padding: 0 5%;
 
-            @media screen and (max-width:1330px) {
+            @media screen and (max-width:1366px) {
                 padding: 0;
+                overflow: scroll;
             }
 
             p{

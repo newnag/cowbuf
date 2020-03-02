@@ -535,6 +535,12 @@
   padding: 10%;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  .dialog-privacy {
+    padding: 4%;
+  }
+}
+
 .dialog-privacy .box-privacy {
   background: #2d2d2d;
   padding: 5%;
@@ -552,9 +558,10 @@
   padding: 0 5%;
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1366px) {
   .dialog-privacy .box-privacy .box-text {
     padding: 0;
+    overflow: scroll;
   }
 }
 
