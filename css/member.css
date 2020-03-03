@@ -554,14 +554,29 @@
   }
 }
 
+@media screen and (min-height: 401px) and (max-height: 679px) {
+  .dialog-privacy .box-privacy {
+    height: 10%;
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .dialog-privacy .box-privacy {
+    max-height: 5%;
+    overflow: scroll;
+  }
+}
+
 .dialog-privacy .box-privacy .box-text {
   padding: 0 5%;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
   .dialog-privacy .box-privacy .box-text {
     padding: 0;
     overflow: scroll;
+    height: 300px;
   }
 }
 

@@ -214,14 +214,24 @@
         @media screen and (max-width:768px) {
             margin: 0;
         }
+        @media screen and (min-height:401px) and (max-height:679px){
+            height: 10%;
+            overflow: scroll;
+        }
+        @media screen and (max-height:400px){
+            max-height: 5%;
+            overflow: scroll;
+        }
 
         .box-text{
             padding: 0 5%;
 
-            @media screen and (max-width:1366px) {
+            @media screen and (min-width:1025px) and (max-width:1366px) {
                 padding: 0;
                 overflow: scroll;
+                height: 300px;
             }
+            
 
             p{
                 color: $head-color;
