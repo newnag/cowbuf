@@ -554,7 +554,7 @@
   }
 }
 
-@media screen and (min-height: 401px) and (max-height: 679px) {
+@media screen and (min-height: 401px) and (max-height: 600px) {
   .dialog-privacy .box-privacy {
     height: 10%;
     overflow: scroll;
@@ -575,8 +575,6 @@
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
   .dialog-privacy .box-privacy .box-text {
     padding: 0;
-    overflow: scroll;
-    height: 300px;
   }
 }
 
