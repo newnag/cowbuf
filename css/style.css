@@ -29,15 +29,9 @@ li {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1365px) {
   .container, nav, footer .footer-section {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .container, nav, footer .footer-section {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -693,6 +687,37 @@ nav .status-credit .coin i {
 
 .grid-body .main-side .slide-head {
   margin-bottom: 3%;
+  max-height: 350px;
+}
+
+@media screen and (max-width: 480px) {
+  .grid-body .main-side .slide-head {
+    max-height: 120px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .grid-body .main-side .slide-head {
+    max-height: 240px;
+  }
+}
+
+.grid-body .main-side .slide-head .owl-item img {
+  height: 350px !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 480px) {
+  .grid-body .main-side .slide-head .owl-item img {
+    height: 120px !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .grid-body .main-side .slide-head .owl-item img {
+    height: 240px !important;
+  }
 }
 
 .grid-body .main-side article .head-text {
