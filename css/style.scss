@@ -54,14 +54,17 @@ li{
     padding-left: 3%;
     padding-bottom: 7%;
     position: relative;
-    font-size: 1vw;
+    font-size: 1rem;
 
     a,span{
         color: $left-menu-color;
-        font-size: 0.8vw;
+        font-size: 1rem;
 
         @media screen and (max-width:480px) {
             font-size: 5vw;
+        }
+        @media screen and (min-width:481px) and (max-width:1024px) {
+            font-size: .8rem;
         }
     }
 }
@@ -84,9 +87,9 @@ li{
     width: 75%;
 
     @media screen and (max-width:480px) {
-        width: 100%;
+        width: 95%;
     }
-    @media screen and (min-width:768px) and (max-width:1365px) {
+    @media screen and (min-width:481px) and (max-width:1365px) {
         width: 95%;
     }
 }
@@ -127,7 +130,7 @@ header{
         .bugger{
             display: none;
 
-            @media screen and (max-width:480px) {
+            @media screen and (max-width:767px) {
                 display: flex;
                 width: 40%;
                 justify-content: flex-end;
@@ -147,7 +150,7 @@ header{
             align-items: flex-end;
             position: relative;
 
-            @media screen and (max-width:480px) {
+            @media screen and (max-width:767px) {
                 display: none;
             }
 
@@ -359,10 +362,14 @@ header{
     position: absolute;
     right: 10%;
     z-index: 2;
+    width: 150px;
+    @media screen and (min-width:769px){
+        width: 130px;
+    }
 
     ul{
         background: $head-back;
-        width: 150px;
+        width: 100%;
         padding: 5%;
 
         li{
@@ -381,7 +388,7 @@ nav{
     @extend .container;
     position: relative;
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:767px) {
         display: none;
     }
 
@@ -440,13 +447,13 @@ nav{
     grid-template-columns: 14% 85%;
     grid-gap: 1%;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         display: block;
     }
 
     //ส่วนซ้าย
     .left-side{
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 767px) {
             display: none;
             position: absolute;
             top: 0%;
@@ -582,11 +589,11 @@ nav{
     .bar-mobile{
         display: none;
 
-        @media screen and (max-width:480px) {
+        @media screen and (max-width:767px) {
             display: block;
             position: fixed;
             top: 20%;
-            left: 0;
+            left: -3%;
             width: 10%;
             background: $price-color;
             text-align: center;
@@ -617,16 +624,39 @@ nav{
                 max-height: 240px;
             }
 
-            .owl-item img{
-                height: 350px!important;
-                object-fit: contain;
+            .owl-stage-outer{
+                z-index: 3;
 
-                @media screen and (max-width:480px){
-                    height: 120px!important;
+                .owl-item img{
+                    height: 350px!important;
+                    object-fit: cover;
+    
+                    @media screen and (max-width:480px){
+                        height: 120px!important;
+                    }
+                    @media screen and (min-width:481px) and (max-width:768px){
+                        height: 240px!important;
+                    }
+                    @media screen and (min-width:769px) and (max-width:1023px){
+                        height: 200px!important;
+                    }
+                    
                 }
-                @media screen and (min-width:481px) and (max-width:768px){
-                    height: 240px!important;
+                .detail-post{
+                    a{
+                        button{
+                            background: $left-menu-color;
+                        }
+                    }
                 }
+            }
+            .owl-nav{
+                button{
+                    z-index: 4;
+                }
+            }
+            .owl-dots{
+                z-index: 4;
             }
         }
 
@@ -688,11 +718,15 @@ nav{
                         }
                         .title{
                             // height: 3rem;
-                            height: 4rem;
+                            height: 55px;
                             overflow: hidden;
                             display: -webkit-box;
                             -webkit-line-clamp: 2;
                             -webkit-box-orient: vertical;
+
+                            @media screen and (min-width:481px) and (max-width:768px) {
+                                height: 50px;
+                            }
 
                            h2{
                                 font-size: 18px;
@@ -738,6 +772,7 @@ nav{
 
                 @media screen and (max-width:480px) {
                     display: block;
+                    margin: 3% 0;
                 }
 
                 .slide-article{
@@ -752,7 +787,7 @@ nav{
                     }
 
                     .box{
-                        width: 80%;
+                        width: 90%;
                         margin: 1% auto;
 
                         figure{
@@ -769,7 +804,7 @@ nav{
                             font-size: .75rem;
                         }
                         .title{
-                            height: 3rem;
+                            height: 55px;
                             overflow: hidden;
                             font-size: .8rem;
                         }
@@ -800,10 +835,10 @@ footer{
     .footer-section{
         @extend .container;
 
-        @media screen and (max-width:480px) {
+        @media screen and (max-width:767px) {
             grid-template-columns: repeat(1,1fr);
-            grid-row-gap: 4%;
-            margin-bottom: 15%;
+            grid-row-gap: 40px;
+            width: 75%;
         }
 
         display: grid;
@@ -816,7 +851,7 @@ footer{
             .menu{
                 @include menu_footer();
 
-                @media screen and (max-width:480px) {
+                @media screen and (max-width:767px) {
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
                 }
@@ -852,7 +887,7 @@ footer{
             .receive-news{
                 margin-top: 20%;
 
-                @media screen and (max-width:480px) {
+                @media screen and (max-width:767px) {
                     margin-top: 10%;
                 }
 
@@ -879,7 +914,7 @@ footer{
                         color: $head-color;
                         cursor: pointer;
 
-                        @media screen and (max-width:480px) {
+                        @media screen and (max-width:767px) {
                             top: 20%;
                         }
                     }
@@ -890,12 +925,12 @@ footer{
         .info{
             text-align: center;
 
-            @media screen and (max-width:480px){
+            @media screen and (max-width:767px){
                 display: flex;
             }
 
             figure{
-                @media screen and (max-width:480px){
+                @media screen and (max-width:767px){
                     width: 50%;
                 }
 
@@ -1049,8 +1084,9 @@ footer{
 
                 h2{
                     margin: 10% 0;
-                    height: 4rem;
+                    height: 60px;
                     overflow: hidden;
+                    padding: 1% 0;
                 }
                 
                 .button{
@@ -1088,9 +1124,10 @@ footer{
 
             .button-menu{
                 margin: 0 1%;
+                width: 30%;
 
                 button{
-                    width: 10rem;
+                    width: 100%;
                     height: 2rem;
                     border: unset;
                     border-radius: 20px;
@@ -1098,9 +1135,9 @@ footer{
                     color: $head-color;
                     cursor: pointer;
 
-                    @media screen and (max-width:480px) {
-                        width: 7rem;
-                    }
+                    // @media screen and (max-width:480px) {
+                    //     width: 7rem;
+                    // }
                 } 
                 .active{
                     background: #000!important;
@@ -1112,7 +1149,7 @@ footer{
 
 .paid-page{
     @media screen and (max-width:480px) {
-        width: 85%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -1138,12 +1175,11 @@ footer{
     .bank-grid{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-row-gap: 10%;
+        grid-row-gap: 20px;
         margin-bottom: 5%;
 
         @media screen and (max-width:480px) {
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(5,1fr);
+            grid-template-columns: 100%;
         }
 
         .bank{
@@ -1178,7 +1214,7 @@ footer{
                 width: 13%;
                 height: 2rem;
                 cursor: pointer;
-                font-size: 1vw;
+                font-size: 1rem;
 
                 @media screen and (max-width:480px) {
                     width: 30%;
@@ -1216,9 +1252,10 @@ footer{
                 border-radius: 20px;
                 background: $price-color;
                 color: $head-color;
-                width: 30%;
-                height: 2rem;
+                width: 20%;
+                height: 30px;
                 cursor: pointer;
+                font-size: 1rem;
             }
         }
     }

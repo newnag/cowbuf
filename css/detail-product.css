@@ -28,6 +28,12 @@
   margin-top: 5%;
 }
 
+@media screen and (min-width: 1025px) {
+  .top-zone .slide-img .select-img {
+    padding: 0 10%;
+  }
+}
+
 .top-zone .slide-img .select-img figure {
   margin: 0 10px;
 }
@@ -55,6 +61,7 @@
 
 .top-zone .detail .title h1 {
   font-weight: 100;
+  padding: 1% 0;
 }
 
 .top-zone .detail .detail-bet {
@@ -143,20 +150,26 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .top-zone .detail .share .button-share span, .top-zone .detail .share .favorites span {
-  width: 50%;
   font-size: 0.7vw;
 }
 
 @media screen and (max-width: 480px) {
   .top-zone .detail .share .button-share span, .top-zone .detail .share .favorites span {
-    font-size: .75rem;
+    font-size: .5rem;
   }
 }
 
-.top-zone .detail .share .button-share img, .top-zone .detail .share .favorites img {
+.top-zone .detail .share .button-share a, .top-zone .detail .share .favorites a {
+  width: 50%;
+}
+
+.top-zone .detail .share .button-share a img, .top-zone .detail .share .favorites a img {
   width: 100%;
 }
 
@@ -231,6 +244,7 @@
   width: 10%;
   border: unset;
   font-size: 1vw;
+  margin: 3% 0;
 }
 
 @media screen and (max-width: 480px) {

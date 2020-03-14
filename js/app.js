@@ -48,8 +48,7 @@ $('.slider-nav').slick({
   slidesToScroll: 1,
   asNavFor: '.slider-for',
   dots: true,
-  centerMode: true,
-  focusOnSelect: true,
+
   arrows: false,
 });
 
@@ -104,6 +103,8 @@ $('.new-pass .button #copy-newpass').click(function () {
   $('#newpass').val('')
   $('#forget-user').val('')
   $('#idnubmer').val('')
+
+  setTimeout(()=> window.location = "/เข้าสู่ระบบ",1000)
 });
 
 
@@ -323,7 +324,7 @@ $('.login .form-login form').submit(function (e) {
             });
           } else if (response.message == "Block") {
             swal({
-              text: "user นี้ ยังไม่ได้ Activate",
+              text: "user have been banned !!",
               icon: "error",
             });
           } else {
@@ -632,7 +633,7 @@ $('.grid-body .bar-mobile').click(function () {
 // สไลด์หน้าแรก
 $('.slide-article').owlCarousel({
   loop: false,
-  margin: 10,
+  margin: 0,
   nav: true,
   dots: false,
   items: 2,
@@ -674,10 +675,7 @@ $(document).ready(function () {
 
 
 //-------------------------- ปุ่มค้นหา Header ------------------ //
-$('.fa-search').click(function () {
-  $('.box-search').toggleClass('active')
-  console.log($('.box-search'))
-})
+$('.btnToggleSearch').click(()=>$('.box-search').toggleClass('active'))
 
 // ------------------------ ส่ง Email รับข่าวสาร ----------------- //
 $('#footerEmailSubmit').on('submit', function (e) {
@@ -750,6 +748,7 @@ $('#add_product_favorites').click(function (e) {
             swal({
               text: "เพิ่มรายการโปรดเรียบร้อย",
               icon: "success",
+              timer: 1500
             }).then(() => {
               location.reload()
             });
@@ -774,14 +773,15 @@ $('#add_product_favorites').click(function (e) {
 
 
 // --------------------------- store follower -------------------------
-$('#store_follower').click(function (e) {
+$('#store_follower , #store_follower_').click(function (e) {
   e.preventDefault();
+  let store_id = $(this).data('store')
   grecaptcha.ready(function () {
     grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'addStoreFollower' }).then(function (token) {
       let data = {
         gRecaptchaToken: token,
         action: "addStoreFollower",
-        store_id: $('#store_follower').data('store')
+        store_id
       }
       $.ajax({
         url: "/ajax/ajax.bid.php",
@@ -793,6 +793,7 @@ $('#store_follower').click(function (e) {
             swal({
               text: "ติดตามร้านค้าเรียบร้อย",
               icon: "success",
+              timer: 1500
             }).then(() => {
               location.reload()
             });
@@ -813,8 +814,60 @@ $('#store_follower').click(function (e) {
       })
     });
   });
-})
-
+});
+//------------------------------- unfollow ---------------------------
+// ลบร้านค้าโปรด
+$('#store_unfollower_').on('click', function () {
+  let storeFollowerID = $(this).data('follower');
+  swal({
+    text: "ต้องการลบร้านที่คุณติดตามใช่หรือไม่",
+    icon: "warning",
+    buttons: {
+      cancel: true,
+      confirm: true,
+    },
+  }).then((v)=>{
+    if(v == true){
+      grecaptcha.ready(function () {
+        grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'deleteStoreFollower' }).then(function (token) {
+          let data = {
+            gRecaptchaToken: token,
+            action: "deleteStoreFollower",
+            id: storeFollowerID,
+          }
+          $.ajax({
+            url: "/ajax/ajax.bid.php",
+            type: "POST",
+            dataType: "json",
+            data: data,
+            success: function (response) {
+              if (response.message == "Success") {
+                swal({
+                  text: "ลบร้านที่คุณติดตามเรียบร้อย",
+                  icon: "success",
+                  timer: 1500
+                }).then(()=>{
+                  // $('.shop-box .button-shop .delete button').closest('.shop-box').fadeOut(function(){
+                  //   $('.shop-box .button-shop .delete button').closest('.shop-box').remove();
+                  // });
+                  window.location.reload();
+                });
+              } else {
+                swal({
+                  text: "ไม่สามารถลบได้",
+                  icon: "error",
+                });
+              }
+            }
+          })
+        });
+      });
+    }
+  })
+  // $(this).closest('.shop-box').fadeOut(function(){
+  //   $(this).closest('.shop-box').remove();
+  // });
+});
 
 // --------------------------- กดประมูล ---------------------------------
 $('#btn-bid-product').click(function (e) {
@@ -838,6 +891,7 @@ $('#btn-bid-product').click(function (e) {
             swal({
               text: "ประมูลเรียบร้อย",
               icon: "success",
+              timer: 1500
             }).then(() => { location.reload() });
           }
           else if (response.message == "status_invalid") {
@@ -910,6 +964,7 @@ $('#btn-buy-product').click(function (e) {
             swal({
               text: "ซื้อเรียบร้อย",
               icon: "success",
+              timer: 1500
             }).then(() => { location.reload() });
           }
           else if (response.message == "status_invalid") {
@@ -958,4 +1013,55 @@ $('#btn-buy-product').click(function (e) {
       })
     });
   });
+});
+
+
+$('.searchProductDesktop').on("keyup",function(e){
+  e.preventDefault(); if(e.keyCode == 13 || e.which == 13) searchProduct('Desktop')
+});
+$(".btnSearchProductDesktop").on('click',function(e){
+  e.preventDefault(); searchProduct('Desktop');
 })
+
+$('.searchProductMobile').on("keyup",function(e){
+  e.preventDefault(); if(e.keyCode == 13 || e.which == 13) searchProduct('Mobile')
+});
+$(".btnSearchProductMobile").on('click',function(e){
+  e.preventDefault(); searchProduct('Mobile');
+})
+
+function searchProduct(type){
+  let searchValue = ''
+  if(type == "Desktop"){
+    searchValue = $('.searchProductDesktop').val().trim()
+  }else{
+    searchValue = $('.searchProductMobile').val().trim()
+  }
+  
+  if(searchValue.length == 0){
+    swal({
+      text: "กรุณากรอกคำที่จะค้นหาด้วย",
+      icon: "warning",
+    });
+  }
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6Lf24NUUAAAAACoehs9XAp0bph79xrV0VarMqg7L', { action: 'getSearchURL' }).then(function (token) {
+      let data = {
+        gRecaptchaToken: token,
+        action: "getSearchURL",
+        search: searchValue
+      }
+      $.ajax({
+        url: "/ajax/ajax.bid.php",
+        type: "POST",
+        dataType: "json",
+        data: data,
+        success: function (response) {
+          if (response.message == "success") {
+            window.location = response.url
+          }
+        }
+      })
+    });
+  });
+}

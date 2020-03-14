@@ -26,6 +26,10 @@
         .select-img{
             margin-top: 5%;
 
+            @media screen and (min-width:1025px) {
+                padding: 0 10%;
+            }
+
             figure{
                 
                 margin: 0 10px;
@@ -56,6 +60,7 @@
 
             h1{
                 font-weight: 100;
+                padding: 1% 0;
             }
         }
 
@@ -129,19 +134,24 @@
             .button-share,.favorites{
                 display: flex;
                 align-items: center;
+                justify-content: space-evenly;
 
                 span{
-                    width: 50%;
+                    
                     font-size: 0.7vw;
 
                     @media screen and (max-width:480px) {
-                        font-size: .75rem;
+                        font-size: .5rem;
                     }
                 }
 
-                img{
-                    width: 100%;
+                a{
+                    width: 50%;
+                    img{
+                        width: 100%;
+                    }
                 }
+                
             }
         }
         .requirement{
@@ -199,6 +209,7 @@
                             width: 10%;
                             border: unset;
                             font-size: 1vw;
+                            margin: 3% 0;
 
                             @media screen and (max-width:480px) {
                                 font-size: .75rem;

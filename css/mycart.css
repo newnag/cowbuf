@@ -35,22 +35,29 @@
 
 .mycart .menu-mycart .leaf-menu .button-menu {
   margin: 0 1%;
+  width: 30%;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .mycart .menu-mycart .leaf-menu .button-menu {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .mycart .menu-mycart .leaf-menu .button-menu {
+    width: 15%;
+  }
 }
 
 .mycart .menu-mycart .leaf-menu .button-menu button {
-  width: 10rem;
+  width: 100%;
   height: 2rem;
   border: unset;
   border-radius: 20px;
   background: #c6c4c4;
   color: #fff;
   cursor: pointer;
-}
-
-@media screen and (max-width: 480px) {
-  .mycart .menu-mycart .leaf-menu .button-menu button {
-    width: 7rem;
-  }
 }
 
 .mycart .menu-mycart .leaf-menu .button-menu .active {
@@ -95,10 +102,10 @@
 }
 
 .mycart-page .mydetail .box .right h3 {
-  font-size: 1.3vw;
+  font-size: 1rem;
   font-weight: 100;
   overflow: hidden;
-  height: 4.3rem;
+  height: 42px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
