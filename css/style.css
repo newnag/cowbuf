@@ -1232,8 +1232,9 @@ footer .footer-section .info .detail {
 .about .text-content .head-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
+  -ms-grid-columns: 51% 49%;
+      grid-template-columns: 51% 49%;
+  margin-bottom: 5%;
 }
 
 @media screen and (max-width: 480px) {

@@ -99,6 +99,9 @@
     top: 35%;
 
     padding: 0 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
 
 }
 
@@ -123,6 +126,7 @@
     color: #e4e4e4;
 
     font-size: 1vw;
+    text-align: center;
 
 }
 
@@ -140,7 +144,7 @@
 
     width: 10%;
 
-    height: 50%;
+    height: 30px;
 
     border-radius: 20px;
 

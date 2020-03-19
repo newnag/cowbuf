@@ -1070,7 +1070,8 @@ footer{
 
         .head-grid{
             display: grid;
-            grid-template-columns: 60% 40%;
+            grid-template-columns: 51% 49%;
+            margin-bottom: 5%;
 
             @media screen and (max-width:480px) {
                 display: block;

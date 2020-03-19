@@ -35,10 +35,10 @@
 .article .grid-box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (31.33%)[3];
-      grid-template-columns: repeat(3, 31.33%);
-  grid-gap: 30px;
-  grid-row-gap: 25px;
+  -ms-grid-columns: (32%)[3];
+      grid-template-columns: repeat(3, 32%);
+  grid-gap: 20px;
+  grid-row-gap: 20px;
   margin: 2% 0;
 }
 
@@ -55,7 +55,6 @@
 
 .article .grid-box a .box figure {
   height: 300px;
-  border: 1px solid #000;
 }
 
 @media screen and (max-width: 480px) {
@@ -73,10 +72,16 @@
 }
 
 .article .grid-box a .box h2 {
-  height: 4rem;
+  height: 40px;
   overflow: hidden;
   font-weight: 400;
   font-size: 1rem;
+}
+
+@media screen and (min-width: 1901px) {
+  .article .grid-box a .box h2 {
+    padding: 1% 65px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -100,7 +105,7 @@
 }
 
 .article .text-content {
-  width: 70%;
+  width: 80%;
   margin: 5% auto;
 }
 
